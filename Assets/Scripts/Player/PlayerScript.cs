@@ -26,6 +26,8 @@ public class PlayerScript : MonoBehaviour
     public bool isGrabbing;
     public bool isJumping;
     public bool isFlipping;
+    public bool isPicturing;
+    public bool canMove;
     public bool Grounded;
     public bool isWalkPressed;
     public bool onWall;
@@ -64,6 +66,11 @@ public class PlayerScript : MonoBehaviour
         currentState = "Player_Idle";
     }
 
+    void Start()
+    {
+        canMove = true;
+    }
+
 
     void Update()
     {
@@ -73,11 +80,11 @@ public class PlayerScript : MonoBehaviour
         else
             canWalk = true;
         Vector2 dir = new Vector2(horizontalMove, verticalMove);
-        if (isWalkPressed && canWalk)
+        if (isWalkPressed && canWalk && canMove)
         {
             Walk(dir);
         }
-        if (Input.GetButtonDown("Jump") && !isGrabbing)
+        if (Input.GetButtonDown("Jump") && !isGrabbing && canMove)
         {
             if (Grounded)
             {
@@ -89,25 +96,25 @@ public class PlayerScript : MonoBehaviour
 
 
         //ESCALADA
-        if (Input.GetButton("Jump") && isGrabbing)
+        if (Input.GetButton("Jump") && isGrabbing && canMove)
         {
             escalar(true);
         }
-        else if (Input.GetButtonUp("Jump") && isGrabbing)
+        else if (Input.GetButtonUp("Jump") && isGrabbing && canMove)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             climbing = false;
         }
-        if ((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && isGrabbing)
+        if ((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && isGrabbing && canMove)
         {
             escalar(false);
         }
-        else if ((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && isGrabbing)
+        else if ((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && isGrabbing && canMove)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             climbing = false;
         }
-        if (Input.GetKeyDown(KeyCode.R) && isGrabbing)
+        if (Input.GetKeyDown(KeyCode.R) && isGrabbing && canMove)
         {
             iniciarFlipArvore();
         }
@@ -126,7 +133,7 @@ public class PlayerScript : MonoBehaviour
         }
 
 
-        if (!Mathf.Approximately(0, dir.x) && canWalk)
+        if (!Mathf.Approximately(0, dir.x) && canWalk && canMove)
         {
             transform.rotation = dir.x > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
         }
@@ -154,6 +161,12 @@ public class PlayerScript : MonoBehaviour
             isGrabbing = false;
         }
 
+        //Tirar foto
+        if(Input.GetKey(KeyCode.Q))
+        {
+            isPicturing = true;
+        }
+
 
         //COLLISION
         Grounded = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
@@ -168,7 +181,12 @@ public class PlayerScript : MonoBehaviour
 
 
         //ANIMATION
-        if (isGrabbing)
+        if(isPicturing)
+        {
+            ChangeState("Player_Taking_Picture");
+            return;
+        }
+        else if (isGrabbing)
         {
             if (climbing)
             {
@@ -277,6 +295,14 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log(obstacles.GetTile(obstacleMapTile).name);
         }
+    }
+
+    void takingPicture()
+    {
+        isPicturing = true;
+        canMove = false;
+        //Wait 5seconds
+        canMove = true;
     }
 
 
