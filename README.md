@@ -8,8 +8,5 @@
 
 
 Mechanics to do
-
-- [ ] Cam animation
-- [ ] Catalog logo of the search
 - [ ] Open catalog and infos
 - [ ] Go down from bough
