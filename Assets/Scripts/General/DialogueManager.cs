@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     private string inQuestSentenca;
     private string declineSentenca;
     private string redencaoSentenca;
+    private string concluiuSentenca;
 
     private Queue<string> sentencas;
     void Start()
@@ -43,7 +44,7 @@ public class DialogueManager : MonoBehaviour
         sentencas.Clear();
         
 
-        if(animal.jaFalou)
+        if(animal.jaDialogou)
         {
             if(animal.recusou)
             {
@@ -69,7 +70,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            animal.jaFalou = true;
+            animal.jaDialogou = true;
             animator.SetBool("IsOpen", true);
             
             //BOTOES
@@ -84,6 +85,7 @@ public class DialogueManager : MonoBehaviour
             inQuestSentenca = dialogue.inQuestSentenca;
             declineSentenca = dialogue.recusouSentenca;
             redencaoSentenca = dialogue.redencaoSentenca;
+            concluiuSentenca = dialogue.concluiuSentenca;
             DisplayNextSentence();
         }
     }
@@ -111,6 +113,16 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = inQuestSentenca;
             continueButton.SetActive(true);
             return;
+        }
+        if(animals.concluiuQuest)
+        {
+            dialogueText.text = concluiuSentenca;
+
+            continueButton.SetActive(false);
+            acceptButton.SetActive(false);  
+            declineButton.SetActive(false);
+            redencaoButton.SetActive(false);
+            
         }
         if(animals.redimiu)
         {

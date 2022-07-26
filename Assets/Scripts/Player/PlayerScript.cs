@@ -11,6 +11,8 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     [HideInInspector]
     public Animator anim;
+    [SerializeField]
+    public PictureManager pic;
 
 
     [Header("Layers")]
@@ -26,8 +28,8 @@ public class PlayerScript : MonoBehaviour
     public bool isGrabbing;
     public bool isJumping;
     public bool isFlipping;
-    public bool isPicturing;
     public bool canMove;
+    public bool inQuest;
     public bool Grounded;
     public bool isWalkPressed;
     public bool onWall;
@@ -40,7 +42,7 @@ public class PlayerScript : MonoBehaviour
     public bool onRightWall;
     public bool onLeftWall;
     public Vector3 moveposition;
-    
+
     Vector3Int obstacleMapTile;
 
     [Space]
@@ -75,7 +77,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         //MOVEMENT
-        if(isGrabbing)
+        if (isGrabbing)
             canWalk = false;
         else
             canWalk = true;
@@ -162,9 +164,9 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Tirar foto
-        if(Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q) && canMove)
         {
-            isPicturing = true;
+            takingPicture();
         }
 
 
@@ -181,39 +183,37 @@ public class PlayerScript : MonoBehaviour
 
 
         //ANIMATION
-        if(isPicturing)
+        if (canMove)
         {
-            ChangeState("Player_Taking_Picture");
-            return;
-        }
-        else if (isGrabbing)
-        {
-            if (climbing)
+            if (isGrabbing)
             {
-                ChangeState("Player_Climb");
-                return;
-            }
+                if (climbing)
+                {
+                    ChangeState("Player_Climb");
+                    return;
+                }
 
-            ChangeState("Player_Grab");
-        }
-        else if (Grounded)
-        {
-            if (isJumping)
-                return;
-            if (isWalkPressed)
-                ChangeState("Player_Walk");
-            else
-                ChangeState("Player_Idle");
-        }
-        else if (isJumping)
-        {
-            if (rb.velocity.y > 0)
+                ChangeState("Player_Grab");
+            }
+            else if (Grounded)
             {
-                ChangeState("Player_Jump");
+                if (isJumping)
+                    return;
+                if (isWalkPressed)
+                    ChangeState("Player_Walk");
+                else
+                    ChangeState("Player_Idle");
+            }
+            else if (isJumping)
+            {
+                if (rb.velocity.y > 0)
+                {
+                    ChangeState("Player_Jump");
+                    return;
+                }
+                ChangeState("Player_Fall");
                 return;
             }
-            ChangeState("Player_Fall");
-            return;
         }
     }
     void FixedUpdate()
@@ -254,7 +254,9 @@ public class PlayerScript : MonoBehaviour
                 rb.velocity = Vector2.down * speed;
                 climbing = true;
             }
-        }else{
+        }
+        else
+        {
             rb.velocity = Vector2.up * 0;
         }
     }
@@ -299,10 +301,26 @@ public class PlayerScript : MonoBehaviour
 
     void takingPicture()
     {
-        isPicturing = true;
+        ChangeState("Player_Taking_Picture");
         canMove = false;
-        //Wait 5seconds
+    }
+    void finishPicture()
+    {
+        pic.picture();
         canMove = true;
+    }
+
+    public void returnPictureAnimal(AnimalScript _FotoAnimal)
+    {
+        Debug.Log("Return animal: " + _FotoAnimal);
+    }
+    public void returnPicturePlanta(PlantsScript _FotoPlanta)
+    {
+        Debug.Log("Return planta: " + _FotoPlanta);
+    }
+    public void returnPictureVazia()
+    {
+        Debug.Log("Return vazio");
     }
 
 

@@ -5195,7 +5195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &694315391
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6573,6 +6573,7 @@ GameObject:
   - component: {fileID: 1329236350}
   - component: {fileID: 1329236349}
   - component: {fileID: 1329236352}
+  - component: {fileID: 1329236353}
   - component: {fileID: 1329236351}
   m_Layer: 0
   m_Name: GameController
@@ -6652,6 +6653,22 @@ MonoBehaviour:
   velocidadeEscrita: 0.02
   nextIcon: {fileID: 1695020360}
   isOpen: 0
+--- !u!114 &1329236353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329236348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800d05a2384956b40b7e45c27b81e899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1887121911}
+  animais:
+  - {fileID: 1562751378}
+  plantas: []
 --- !u!1 &1329655702
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,6 +8761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   anim: {fileID: 0}
+  pic: {fileID: 1329236353}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -8755,8 +8773,8 @@ MonoBehaviour:
   isGrabbing: 0
   isJumping: 0
   isFlipping: 0
-  isPicturing: 0
   canMove: 0
+  inQuest: 0
   Grounded: 0
   isWalkPressed: 0
   onWall: 0
@@ -9354,7 +9372,7 @@ PrefabInstance:
       objectReference: {fileID: 426609929}
     - target: {fileID: 4518658048148122987, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
       propertyPath: dialogue.nome
-      value: Pantera
+      value: Macaco
       objectReference: {fileID: 0}
     - target: {fileID: 4518658048148122987, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
       propertyPath: dialogue.acceptSentenca
@@ -9367,6 +9385,10 @@ PrefabInstance:
     - target: {fileID: 4518658048148122987, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
       propertyPath: dialogue.recusouSentenca
       value: "Tudo bem! At\xE9 uma pr\xF3xima. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4518658048148122987, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
+      propertyPath: dialogue.concluiuSentenca
+      value: sasaas
       objectReference: {fileID: 0}
     - target: {fileID: 4518658048148122987, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
       propertyPath: dialogue.redencaoSentenca

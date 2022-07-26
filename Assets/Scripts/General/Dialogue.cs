@@ -13,4 +13,5 @@ public class Dialogue
     public string inQuestSentenca;
     public string acceptSentenca;
     public string redencaoSentenca;
+    public string concluiuSentenca;
 }

@@ -7,21 +7,19 @@ public class AnimalScript : MonoBehaviour
     [SerializeField]
     internal string nome;
     internal bool podeDialogar;
-    internal bool jaFalou;
+    internal bool jaDialogou;
     internal bool inQuest;
+    internal bool concluiuQuest;
     internal bool recusou;
     internal bool redimiu;
     internal bool jaFotografou;
+    public bool podeFotografar;
     [SerializeField]
     internal Collider2D trigger;
     [SerializeField]
     internal PlayerScript player;
 
     public Dialogue dialogue;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -31,16 +29,23 @@ public class AnimalScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D trigger)
+    private void OnTriggerEnter2D(Collider2D _trigger)
     {
-        trigger = this.trigger;
-        this.podeDialogar = true;
+        podeDialogar = true;
     }
 
-    private void OnTriggerExit2D(Collider2D trigger)
+    private void OnTriggerStay2D(Collider2D _trigger)
     {
-        trigger = this.trigger;
-        this.podeDialogar = false;
+        if(recusou || concluiuQuest)
+        {
+            podeFotografar = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D _trigger)
+    {
+        podeDialogar = false;
+        podeFotografar = false;
     }
     private void dialogar()
     {
@@ -49,6 +54,6 @@ public class AnimalScript : MonoBehaviour
 
     public void Quest(bool aceita)
     {
-
+        
     }
 }
