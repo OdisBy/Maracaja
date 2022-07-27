@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,26 +15,31 @@ public class CatalogueManager : MonoBehaviour
     public bool isOpen;    
     public int actualBookmark;
     public int actualPage;
-    private Sprite sprite_01;
-    private Sprite sprite_02;
-    private Sprite sprite_03;
+    private Sprite sprite;
     
     [Space]
     //INFO Pag missoes
     [Header("Pagina das missoes")]
+    public Image Quest_Foto;
 
     [Space]
     //INFOS PAG Animais
     [Header("Area dos animais")]
-    public Image Animais_Foto_1;
-    public Image Animais_Foto_2;
-    public Image Animais_Foto_3;
-    public GameObject Animais_Infos;
+    public Image Animal_Foto;
+    public TextMeshProUGUI Animais_Info_1;
+    public TextMeshProUGUI Animais_Info_2;
+
     [Space]
     [Header("Area das plantas")]
     public Image Plantas_Foto_1;
     public Image Plantas_screenshot;
     public GameObject Plantas_Infos;
+
+
+
+    //INFOS ADD
+    [TextArea(3, 30)]
+    public string[] infos; 
 
 
     void Start()
@@ -64,7 +70,7 @@ public class CatalogueManager : MonoBehaviour
 
     //Mudar de sessoes
 
-    public void firstBookmark()
+    public void blueBookmark()
     {
         bookmarks[actualBookmark].SetActive(false);
         actualBookmark = 0;
@@ -90,12 +96,17 @@ public class CatalogueManager : MonoBehaviour
     //SESSAO ANIMAL
     public void AnimaisCatalogo()
     {
-        sprite_01 = Resources.Load<Sprite>("Animais/Macaco/Macaco_01_Teste");
-        sprite_02 = Resources.Load<Sprite>("Animais/Macaco/Macaco_02_Teste");
-        sprite_03 = Resources.Load<Sprite>("Animais/Macaco/Macaco_03_Teste");
-        Animais_Foto_1.sprite = sprite_01;
-        Animais_Foto_2.sprite = sprite_02;
-        Animais_Foto_3.sprite = sprite_03;
+        switch(actualPage)
+        {
+            case 0:
+                sprite = Resources.Load<Sprite>("Animais/tamandua");
+                Animais_Info_1.text = infos[0];
+                Animais_Info_2.text = infos[1];
+            break;
+            case 1:
+            break;
+        }
+        Animal_Foto.sprite = sprite;
     }
 
 
