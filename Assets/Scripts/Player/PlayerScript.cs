@@ -15,6 +15,9 @@ public class PlayerScript : MonoBehaviour
     public PictureManager pic;
     public CatalogueManager catalogue;
 
+    [Header("Manager")]
+    public bool isPaused;
+
 
     [Header("Layers")]
     public LayerMask groundLayer;
@@ -49,7 +52,8 @@ public class PlayerScript : MonoBehaviour
     [Space]
 
     [Header("Variaveis movimento")]
-    public float verticalMove, horizontalMove;
+    public float verticalMove;
+    public float horizontalMove;
 
 
     [Space]
@@ -173,13 +177,31 @@ public class PlayerScript : MonoBehaviour
         }
 
         //UI
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if(!catalogue.isOpen){
                 catalogue.openCatalogue();
             }else{
                 catalogue.closeCatalogue();
             }
+        }
+
+
+        //ESC FUNCTIONS
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            if(isPaused)
+            {
+                isPaused = false;
+                Time.timeScale = 1;
+                return;
+            }
+            if(catalogue.isOpen){
+                catalogue.closeCatalogue();
+                return;
+            }
+            Time.timeScale = 0;
+            isPaused = true;
+
         }
 
 
