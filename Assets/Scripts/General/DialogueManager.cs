@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public GameObject dialogueBox;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     // public Text continueText;
@@ -38,6 +39,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue, AnimalScript animal)
     {
+        dialogueBox.SetActive(true);
         animator.SetBool("IsOpen", true);
         closeButton.SetActive(true);
         nameText.text = dialogue.nome;
@@ -192,5 +194,11 @@ public class DialogueManager : MonoBehaviour
     {
 
         animator.SetBool("IsOpen", false);
+        Invoke("disableDialogueBox", 1);
+    }
+
+    public void disableDialogueBox()
+    {
+        dialogueBox.SetActive(false);
     }
 }

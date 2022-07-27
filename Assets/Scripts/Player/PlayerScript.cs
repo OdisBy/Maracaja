@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     public Animator anim;
     [SerializeField]
     public PictureManager pic;
+    public CatalogueManager catalogue;
 
 
     [Header("Layers")]
@@ -143,6 +144,8 @@ public class PlayerScript : MonoBehaviour
 
 
         //INPUT
+
+        //MOVEMENT
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
@@ -163,11 +166,22 @@ public class PlayerScript : MonoBehaviour
             isGrabbing = false;
         }
 
-        //Tirar foto
+        //TAKE PICTURE
         if (Input.GetKey(KeyCode.Q) && canMove)
         {
             takingPicture();
         }
+
+        //UI
+        if (Input.GetKey(KeyCode.C))
+        {
+            if(!catalogue.isOpen){
+                catalogue.openCatalogue();
+            }else{
+                catalogue.closeCatalogue();
+            }
+        }
+
 
 
         //COLLISION
@@ -322,7 +336,6 @@ public class PlayerScript : MonoBehaviour
     {
         Debug.Log("Return vazio");
     }
-
 
 
     //MAQUINA DE ESTADOS ANIMAÇÃO
