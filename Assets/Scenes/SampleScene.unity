@@ -161,37 +161,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'asa
-
-    as
-
-    sa
-
-    a
-
-    s
-
-    as
-
-    a
-
-    s
-
-    as
-
-    as
-
-    a
-
-    s
-
-    sa
-
-    as
-
-    sa
-
-    s'
+  m_text: "<color=\"blue\">Nome:</color> Nome do animal\n\n<color=\"blue\">Filo:</color>
+    Desconhecido\n\n<color=\"blue\">Classe:</color> Desconhecida\n\n<color=\"blue\">Ordem:</color>
+    Desconhecida\n\n<color=\"blue\">Fam\xEDlia:</color>: Desconhecida\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    F\xEDsica:</color> Desconhecida"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
   m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
@@ -2663,8 +2636,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "V\xE1rias informa\xE7\xF5es\nSuper \xFAteis\nPOR FAVOR ME AJUDEM NAO SOU
-    DESIGNER\nS\xD3 PRA PREENCHER\nOBRIGADO PELA\nCOMPREENS\xC3O\nBEIJINHOS\nTCHAU"
+  m_text: "<color=\"blue\">Nome:</color> ???\n\n<color=\"blue\">Habitat:</color>
+    ???\n\n<color=\"blue\">Descri\xE7\xE3o F\xEDsica:</color> ???"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2691,8 +2664,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3.3
-  m_fontSizeBase: 3.3
+  m_fontSize: 2.83
+  m_fontSizeBase: 2.83
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 1
@@ -6989,58 +6962,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'sasasassa
-
-    sa
-
-
-    sa
-
-    sa
-
-
-    as
-
-    sa
-
-    as
-
-
-    as
-
-    sa
-
-    s
-
-    a
-
-    sa
-
-    sa
-
-    s
-
-    a
-
-    s
-
-    a
-
-    sa
-
-    s
-
-    a
-
-    s
-
-    as
-
-    a
-
-    s
-
-'
+  m_text: "<color=\"blue\">H\xE1bitos alimentares:</color> Desconhecidos\n\r\n<color=\"blue\">Habitat:</color>
+    Desconhecido\n\r\n<color=\"blue\">Curiosidades:</color>\r\nN\xE3o descobertas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
   m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
@@ -9059,7 +8982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MACACOOO
+  m_text: ????????
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 68c9321ca049de747850d1bb0489d0b7, type: 2}
   m_sharedMaterial: {fileID: 6674928013652971436, guid: 68c9321ca049de747850d1bb0489d0b7, type: 2}
@@ -9683,7 +9606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1776717231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10282,10 +10205,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909446569}
+  - component: {fileID: 1909446572}
   - component: {fileID: 1909446571}
   - component: {fileID: 1909446570}
   m_Layer: 5
-  m_Name: Pag_1
+  m_Name: QuestPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10349,6 +10273,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909446568}
   m_CullTransparentMesh: 1
+--- !u!114 &1909446572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909446568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f6f5ff4af69bd47ba3902632fbdc4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeQuestPagina: {fileID: 1544948526}
+  infosPagina: {fileID: 485112776}
+  actualId: 0
+  allPages:
+  - {fileID: 11400000, guid: 889df0a83817f0e4ea69187b2a2c1438, type: 2}
 --- !u!1 &1927188799
 GameObject:
   m_ObjectHideFlags: 0
@@ -11255,15 +11196,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078559021}
+  - component: {fileID: 2078559024}
   - component: {fileID: 2078559023}
   - component: {fileID: 2078559022}
   m_Layer: 5
-  m_Name: Pag_2
+  m_Name: AnimalPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2078559021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11325,6 +11267,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078559020}
   m_CullTransparentMesh: 1
+--- !u!114 &2078559024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078559020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e3b454567c96d478754f200290259f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info1: {fileID: 70503670}
+  info2: {fileID: 963463379}
+  defaultInfo1: "<color=\"blue\">Nome:</color> Nome do animal\n\n<color=\"blue\">Filo:</color>
+    Desconhecido\n\n<color=\"blue\">Classe:</color> Desconhecida\n\n<color=\"blue\">Ordem:</color>
+    Desconhecida\n\n<color=\"blue\">Fam\xEDlia:</color>: Desconhecida\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    F\xEDsica:</color> Desconhecida"
+  defaultInfo2: "<color=\"blue\">H\xE1bitos alimentares:</color> Desconhecidos\n\r\n<color=\"blue\">Habitat:</color>
+    Desconhecido\n\r\n<color=\"blue\">Curiosidades:</color>\r\nN\xE3o descobertas"
+  foto: {fileID: 1039115434}
+  actualId: 0
+  allAnimals:
+  - {fileID: 11400000, guid: 9fc95bbc19ca6c84b8cbbc21c36b0302, type: 2}
 --- !u!1 &2095707760
 GameObject:
   m_ObjectHideFlags: 0

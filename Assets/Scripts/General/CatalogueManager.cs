@@ -91,23 +91,23 @@ public class CatalogueManager : MonoBehaviour
         bookmarks[actualBookmark].SetActive(true);
     }
 
-
+    public void AnimaisCatalogo(){}
     //MUDAR DE PAGINAS NAS SESSÕES
     //SESSAO ANIMAL
-    public void AnimaisCatalogo()
-    {
-        switch(actualPage)
-        {
-            case 0:
-                sprite = Resources.Load<Sprite>("Animais/tamandua");
-                Animais_Info_1.text = infos[0];
-                Animais_Info_2.text = infos[1];
-            break;
-            case 1:
-            break;
-        }
-        Animal_Foto.sprite = sprite;
-    }
+    // public void AnimaisCatalogo()
+    // {
+    //     switch(actualPage)
+    //     {
+    //         case 0:
+    //             sprite = Resources.Load<Sprite>("Animais/tamandua");
+    //             Animais_Info_1.text = infos[0];
+    //             Animais_Info_2.text = infos[1];
+    //         break;
+    //         case 1:
+    //         break;
+    //     }
+    //     Animal_Foto.sprite = sprite;
+    // }
 
 
 }
