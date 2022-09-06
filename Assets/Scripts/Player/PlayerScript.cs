@@ -14,6 +14,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     public PictureManager pic;
     public CatalogueManager catalogue;
+    public QuestPageManager questManager;
+    public AnimalPageManager animalPageManager;
 
     [Header("Manager")]
     public bool isPaused;
@@ -47,7 +49,9 @@ public class PlayerScript : MonoBehaviour
     public bool onLeftWall;
     public Vector3 moveposition;
 
-    Vector3Int obstacleMapTile;
+    public bool canGoNextPhase;
+    public BoxCollider2D spawnCollider;
+    public int questId;
 
     [Space]
 
@@ -62,7 +66,8 @@ public class PlayerScript : MonoBehaviour
     public float collisionRadius = 0.25f;
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
-    public Tilemap obstacles;
+    public FlipTree flipScript;
+    
 
 
 
@@ -75,7 +80,18 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("questPageId", 0);
+        PlayerPrefs.SetInt("animalPageId", 0);
         canMove = true;
+        irSpawnPoint();
+        getQuestId();
+        questManager.updateInfos();
+        animalPageManager.updateInfos();
+    }
+
+    public void getQuestId()
+    {
+        questId = PlayerPrefs.GetInt("questPageId", 0);
     }
 
 
@@ -103,32 +119,13 @@ public class PlayerScript : MonoBehaviour
 
 
         //ESCALADA
-        if (Input.GetButton("Jump") && isGrabbing && canMove)
+        if(isGrabbing && canMove)
         {
-            escalar(true);
-        }
-        else if (Input.GetButtonUp("Jump") && isGrabbing && canMove)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            climbing = false;
-        }
-        if ((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && isGrabbing && canMove)
-        {
-            escalar(false);
-        }
-        else if ((Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S)) && isGrabbing && canMove)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            climbing = false;
-        }
-        if (Input.GetKeyDown(KeyCode.R) && isGrabbing && canMove)
-        {
-            iniciarFlipArvore();
+            escalar();
         }
 
 
-
-
+        //JUMP
 
         if (rb.velocity.y != 0 && !isGrabbing && isJumping == false)
         {
@@ -146,8 +143,18 @@ public class PlayerScript : MonoBehaviour
         }
 
 
-
         //INPUT
+
+        //GO NEXT PHASE
+        if(Input.GetKey(KeyCode.P) && canGoNextPhase)
+        {
+            canGoNextPhase = false;
+            Debug.Log("Next Phase");
+            questId += 1;
+            PlayerPrefs.SetInt("questPageId", questId);
+            questManager.updateInfos();
+            animalPageManager.updateInfos();
+        }
 
         //MOVEMENT
         horizontalMove = Input.GetAxis("Horizontal");
@@ -223,13 +230,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (isGrabbing)
             {
-                if (climbing)
-                {
-                    ChangeState("Player_Climb");
-                    return;
-                }
-
-                ChangeState("Player_Grab");
+                ChangeState("Player_Escalando_Costas");
             }
             else if (Grounded)
             {
@@ -266,6 +267,11 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    public void irSpawnPoint()
+    {
+        transform.position = new Vector3(74, -45.5f, 1);
+    }
+
     void Jump()
     {
         rb.velocity = Vector2.up * jumpForce;
@@ -275,65 +281,14 @@ public class PlayerScript : MonoBehaviour
     {
         rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
     }
+    
 
-    private void escalar(bool up)
+    private void escalar()
     {
-        if (!isFlipping)
-        {
-            if (up)
-            {
-                rb.velocity = Vector2.up * speed;
-                climbing = true;
-            }
-            else
-            {
-                rb.velocity = Vector2.down * speed;
-                climbing = true;
-            }
-        }
-        else
-        {
-            rb.velocity = Vector2.up * 0;
-        }
+        climbing = true;
+        rb.velocity = new Vector3(horizontalMove * speed, verticalMove * speed, 0);
     }
 
-    private void iniciarFlipArvore()
-    {
-        //TODO PLAYER PODER ENTRAR NA ARVORE
-        isFlipping = true;
-        anim.Play("Player_Arvore_Flip");
-    }
-
-    private void rodarArvore()
-    {
-        isFlipping = false;
-        anim.Play("Player_Grab");
-
-        if (onRightWall)
-        {
-            moveposition = transform.position + new Vector3(horizontalMove + -2.5f, verticalMove, 0);
-            obstacleMapTile = obstacles.WorldToCell(moveposition);
-        }
-        else
-        {
-            moveposition = transform.position + new Vector3(horizontalMove + 2.5f, verticalMove, 0);
-            obstacleMapTile = obstacles.WorldToCell(moveposition);
-        }
-        if (obstacles.GetTile(obstacleMapTile) == null)
-        {
-
-            transform.position = moveposition;
-            transform.rotation = onRightWall ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-        }
-        else if (obstacles.GetTile(obstacleMapTile).name.Contains("pixil-frame-0_69"))
-        {
-            Debug.Log("Galho");
-        }
-        else
-        {
-            Debug.Log(obstacles.GetTile(obstacleMapTile).name);
-        }
-    }
 
     void takingPicture()
     {
@@ -370,18 +325,39 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-
-    void OnDrawGizmos()
+    public void OnTriggerEnter2D(Collider2D col)
     {
-        Gizmos.color = Color.red;
-
-        var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
-
-        Gizmos.DrawWireSphere((Vector2)transform.position + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
-
-        Gizmos.DrawSphere(moveposition, 0.2f);
+        if(col.gameObject.layer == LayerMask.NameToLayer("Casa"))
+        {
+            if(questManager.allPages[questId].isUnlocked)
+            {
+                canGoNextPhase = true;
+            }
+            else{
+                canGoNextPhase = false;
+            }
+        }
     }
+    public void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.layer == LayerMask.NameToLayer("Casa"))
+        {
+            canGoNextPhase = false;
+        }
+    }
+
+
+    // void OnDrawGizmos()
+    // {
+    //     Gizmos.color = Color.red;
+
+    //     var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
+
+    //     Gizmos.DrawWireSphere((Vector2)transform.position + bottomOffset, collisionRadius);
+    //     Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
+    //     Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
+
+    //     Gizmos.DrawSphere(moveposition, 0.2f);
+    // }
 
 }

@@ -20,26 +20,24 @@ public class CatalogueManager : MonoBehaviour
     [Space]
     //INFO Pag missoes
     [Header("Pagina das missoes")]
-    public Image Quest_Foto;
+    [SerializeField]
+    private QuestPageManager questManager;
 
     [Space]
     //INFOS PAG Animais
     [Header("Area dos animais")]
-    public Image Animal_Foto;
-    public TextMeshProUGUI Animais_Info_1;
-    public TextMeshProUGUI Animais_Info_2;
+    [SerializeField]
+    private AnimalPageManager animalManager;
+    [SerializeField]
+    private GameObject previousPageGO;
+    [SerializeField]
+    private GameObject nextPageGO;
 
     [Space]
     [Header("Area das plantas")]
     public Image Plantas_Foto_1;
     public Image Plantas_screenshot;
     public GameObject Plantas_Infos;
-
-
-
-    //INFOS ADD
-    [TextArea(3, 30)]
-    public string[] infos; 
 
 
     void Start()
@@ -66,22 +64,47 @@ public class CatalogueManager : MonoBehaviour
         bookmarks[actualBookmark].SetActive(false);
     }
 
+    //Desabilitar e habilitar next and previous button
+    void checkButtonAnimal()
+    {
+        //Animais
+        //previous
+        if(PlayerPrefs.GetInt("animalPageId", 0) == 0)
+        {
+            previousPageGO.SetActive(false);
+        }else{
+            previousPageGO.SetActive(true);
+        }
+        //next
+        if(PlayerPrefs.GetInt("animalPageId", 0) + 1 == animalManager.allAnimals.Length)
+        {
+            nextPageGO.SetActive(false);
+        }else{
+            nextPageGO.SetActive(true);
+        }
+
+
+    }
+
 
 
     //Mudar de sessoes
 
     public void blueBookmark()
     {
+        questManager.updateInfos();
         bookmarks[actualBookmark].SetActive(false);
         actualBookmark = 0;
+        checkButtonAnimal();
         bookmarks[actualBookmark].SetActive(true);
     }
     public void greenBookmark()
     {
+        animalManager.updateInfos();
         bookmarks[actualBookmark].SetActive(false);
         actualBookmark = 1;
+        checkButtonAnimal();
         bookmarks[actualBookmark].SetActive(true);
-        AnimaisCatalogo();
     }
 
     public void brownBookmark()
@@ -91,23 +114,22 @@ public class CatalogueManager : MonoBehaviour
         bookmarks[actualBookmark].SetActive(true);
     }
 
-    public void AnimaisCatalogo(){}
-    //MUDAR DE PAGINAS NAS SESSÕES
-    //SESSAO ANIMAL
-    // public void AnimaisCatalogo()
-    // {
-    //     switch(actualPage)
-    //     {
-    //         case 0:
-    //             sprite = Resources.Load<Sprite>("Animais/tamandua");
-    //             Animais_Info_1.text = infos[0];
-    //             Animais_Info_2.text = infos[1];
-    //         break;
-    //         case 1:
-    //         break;
-    //     }
-    //     Animal_Foto.sprite = sprite;
-    // }
-
-
+    public void nextPage()
+    {
+        Debug.Log("Next Page");
+        actualPage = PlayerPrefs.GetInt("animalPageId", 0);
+        actualPage += 1;
+        PlayerPrefs.SetInt("animalPageId", actualPage);
+        checkButtonAnimal();
+        animalManager.updateInfos();
+    }
+    public void previousPage()
+    {
+        Debug.Log("Previous Page");
+        actualPage = PlayerPrefs.GetInt("animalPageId", 0);
+        actualPage -= 1;
+        PlayerPrefs.SetInt("animalPageId", actualPage);
+        checkButtonAnimal();
+        animalManager.updateInfos();
+    }
 }

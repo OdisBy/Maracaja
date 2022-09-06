@@ -7,9 +7,11 @@ using TMPro;
 public class QuestPageTemplate : ScriptableObject
 {
     public int id;
+    public bool isUnlocked;
+    public Sprite fotoDesbloqueada;
     public string questName;
     [TextArea(3, 30)]
     public string infos;
 
-
+    public Sprite fotoOculta;
 }

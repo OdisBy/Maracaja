@@ -23,7 +23,8 @@ public class DialogueManager : MonoBehaviour
 
 
     public Animator animator;
-    public AnimalScript animals;
+    public AnimalScript animalSelected;
+    public AnimalPageManager animalPageManager;
     private string inQuestSentenca;
     private string declineSentenca;
     private string redencaoSentenca;
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue, AnimalScript animal)
     {
+        animalSelected = animal;
         dialogueBox.SetActive(true);
         animator.SetBool("IsOpen", true);
         closeButton.SetActive(true);
@@ -67,7 +69,7 @@ public class DialogueManager : MonoBehaviour
             {
                 //BOTOES
                 // closeButton.SetActive(true);
-                redencaoButton.SetActive(true);
+                acceptButton.SetActive(true);
             }
         }
         else
@@ -104,19 +106,19 @@ public class DialogueManager : MonoBehaviour
             acceptButton.SetActive(true);  
             declineButton.SetActive(true);
         }
-        if(animals.recusou)
+        if(animalSelected.recusou)
         {
             dialogueText.text = declineSentenca;
             redencaoButton.SetActive(true);
             return;
         }
-        if(animals.inQuest)
+        if(animalSelected.inQuest)
         {
             dialogueText.text = inQuestSentenca;
             continueButton.SetActive(true);
             return;
         }
-        if(animals.concluiuQuest)
+        if(animalSelected.concluiuQuest)
         {
             dialogueText.text = concluiuSentenca;
 
@@ -124,9 +126,8 @@ public class DialogueManager : MonoBehaviour
             acceptButton.SetActive(false);  
             declineButton.SetActive(false);
             redencaoButton.SetActive(false);
-            
         }
-        if(animals.redimiu)
+        if(animalSelected.redimiu)
         {
             dialogueText.text = redencaoSentenca;
             continueButton.SetActive(true);
@@ -151,8 +152,8 @@ public class DialogueManager : MonoBehaviour
     {
         sentencas.Enqueue(inQuestSentenca);
         DisplayNextSentence();
-        animals.inQuest = true;
-        animals.recusou = false;
+        animalSelected.inQuest = true;
+        animalSelected.recusou = false;
         
 
         continueButton.SetActive(false);
@@ -163,8 +164,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DeclineQuest()
     {
-        animals.inQuest = false;
-        animals.recusou = true;
+        animalSelected.inQuest = false;
+        animalSelected.recusou = true;
         sentencas.Enqueue(declineSentenca);
         DisplayNextSentence();
         
@@ -178,8 +179,8 @@ public class DialogueManager : MonoBehaviour
 
     public void Redencao()
     {
-        animals.inQuest = true;
-        animals.recusou = false;
+        animalSelected.inQuest = true;
+        animalSelected.recusou = false;
         sentencas.Enqueue(redencaoSentenca);
         DisplayNextSentence();
 
@@ -200,5 +201,10 @@ public class DialogueManager : MonoBehaviour
     public void disableDialogueBox()
     {
         dialogueBox.SetActive(false);
+    }
+
+    public void AAAAA()
+    {
+        Debug.Log("A");
     }
 }

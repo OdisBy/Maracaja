@@ -7,6 +7,11 @@ public class AnimalPageTemplate : ScriptableObject
 {
     public int id;
     public bool isUnlocked = false;
+    public bool inQuestPage;
+    public bool inQuest;
+    public bool questFineshed;
+    public Sprite fotoItem;
+    public Sprite fotoBloqueada;
     public Sprite foto;
     [TextArea(3, 30)]
     public string infos_1;

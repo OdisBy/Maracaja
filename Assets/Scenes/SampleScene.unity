@@ -6844,7 +6844,7 @@ GameObject:
   - component: {fileID: 958173897}
   - component: {fileID: 958173896}
   m_Layer: 5
-  m_Name: Pag_3
+  m_Name: PlantPages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7311,16 +7311,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139207584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2078559021}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.8, y: -29.5}
+  m_AnchoredPosition: {x: -35.7, y: -14.3}
   m_SizeDelta: {x: 7.69268, y: 9.24564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139207586
@@ -8095,29 +8095,13 @@ MonoBehaviour:
   isOpen: 0
   actualBookmark: 0
   actualPage: 0
-  Quest_Foto: {fileID: 0}
-  Animal_Foto: {fileID: 1039115434}
-  Animais_Info_1: {fileID: 70503670}
-  Animais_Info_2: {fileID: 963463379}
+  questManager: {fileID: 1909446572}
+  animalManager: {fileID: 2078559024}
+  previousPageGO: {fileID: 1139207584}
+  nextPageGO: {fileID: 1955144995}
   Plantas_Foto_1: {fileID: 0}
   Plantas_screenshot: {fileID: 0}
   Plantas_Infos: {fileID: 0}
-  infos:
-  - "<color=\"blue\">Nome:</color> Tamandu\xE1-Bandeira\n\n<color=\"blue\">Filo:</color>
-    Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
-    Pilosa\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Mirmecofag\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
-    F\xEDsica:</color> O Tamandu\xE1-Bandeira pode ser identificado pela sua cauda
-    peluda e seus p\xEAlos pretos e marrons, al\xE9m de sua boca longa que \xE9 usada
-    para se alimentar de pequenos vermes e cupins"
-  - "<color=\"blue\">H\xE1bitos alimentares:</color> Insetos\r\npequenos, como formigas
-    e\r\nlarvas, al\xE9m de centop\xE9ias e\r\nvermes\r\n\r\n<color=\"blue\">Habitat:</color>
-    Florestas tropicais,\r\nCaatingas e savanas, como o\r\nCerrado\r\n\r\nano de
-    entrada na lista de\r\nesp\xE9cies <color=\"red\">amea\xE7adas</color> de\r\nextin\xE7\xE3o:
-    <color=\"red\">1982</color>\r\n\r\n<color=\"blue\">Curiosidades:</color>\r\n<color=\"red\">*</color> 
-    O tamandu\xE1-bandeira era\r\nconhecido como um animal\r\nm\xEDstico e trai\xE7oeiro
-    pelas\r\ntribos ind\xEDgenas antigas\r\n\r\n<color=\"red\">*</color> A l\xEDngua
-    do tamandu\xE1-\r\nbandeira pode se estender\r\nat\xE9 60 cent\xEDmetros, devido\r\na
-    seu alimento principal\r\nserem formigas."
 --- !u!1 &1373149849
 GameObject:
   m_ObjectHideFlags: 0
@@ -8243,24 +8227,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391905459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33962262, g: 0.2675329, b: 0.2675329, a: 1}
+  m_Color: {r: 0.34117648, g: 0.26666668, b: 0.26666668, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1391905462
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9208,6 +9195,222 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2163742387692831357, guid: 30a32a9835554704d9f09fb6da0ef5da, type: 3}
   m_PrefabInstance: {fileID: 2014878438}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1597807427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597807434}
+  - component: {fileID: 1597807433}
+  - component: {fileID: 1597807432}
+  - component: {fileID: 1597807431}
+  - component: {fileID: 1597807430}
+  - component: {fileID: 1597807429}
+  - component: {fileID: 1597807428}
+  m_Layer: 6
+  m_Name: Player (1)
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1597807428
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fcc2442860a1bb24e97099d41022d335, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1597807429
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.093480006, y: -0.11333162}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.55}
+    newSize: {x: 1, y: 0.55}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46358362, y: 0.3217686}
+  m_EdgeRadius: 0
+--- !u!50 &1597807430
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1597807431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cace8814c152774cbe917aa980bc3e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
+--- !u!114 &1597807432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6998ea8a7ccd534ca0f68799a1f25c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  anim: {fileID: 0}
+  pic: {fileID: 0}
+  catalogue: {fileID: 0}
+  isPaused: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  escalavelLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  Jumping: 0
+  canWalk: 0
+  isGrabbing: 0
+  isJumping: 0
+  isFlipping: 0
+  canMove: 0
+  inQuest: 0
+  Grounded: 0
+  isWalkPressed: 0
+  onWall: 0
+  climbing: 0
+  wallSide: 0
+  speed: 5
+  jumpForce: 6.97
+  currentState: 
+  onRightWall: 0
+  onLeftWall: 0
+  moveposition: {x: 0, y: 0, z: 0}
+  verticalMove: 0
+  horizontalMove: 0
+  collisionRadius: 0.25
+  bottomOffset: {x: 0.25, y: -0.59}
+  rightOffset: {x: -0.18, y: -0.16}
+  leftOffset: {x: 0.75, y: -0.16}
+  obstacles: {fileID: 0}
+--- !u!212 &1597807433
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3fbb5c5209bd4004587e675703f8a356, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 0.55}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1597807434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597807427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.66, y: -2.16, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1600723684
 GameObject:
   m_ObjectHideFlags: 0
@@ -9606,7 +9809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1776717231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10290,6 +10493,8 @@ MonoBehaviour:
   actualId: 0
   allPages:
   - {fileID: 11400000, guid: 889df0a83817f0e4ea69187b2a2c1438, type: 2}
+  - {fileID: 11400000, guid: c385773c697546f4a9e0247085164ed7, type: 2}
+  fotoOculta: {fileID: 1391905461}
 --- !u!1 &1927188799
 GameObject:
   m_ObjectHideFlags: 0
@@ -10585,16 +10790,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955144995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2078559021}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.17, y: -29.5}
+  m_AnchoredPosition: {x: 38.17, y: -14.3}
   m_SizeDelta: {x: 7.69268, y: 9.24564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955144997
@@ -10640,7 +10845,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1955144998}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1329236354}
+        m_TargetAssemblyTypeName: CatalogueManager, Assembly-CSharp
+        m_MethodName: nextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1955144998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11205,7 +11422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2078559021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11287,10 +11504,12 @@ MonoBehaviour:
     F\xEDsica:</color> Desconhecida"
   defaultInfo2: "<color=\"blue\">H\xE1bitos alimentares:</color> Desconhecidos\n\r\n<color=\"blue\">Habitat:</color>
     Desconhecido\n\r\n<color=\"blue\">Curiosidades:</color>\r\nN\xE3o descobertas"
+  unlockedSprite: {fileID: 0}
   foto: {fileID: 1039115434}
   actualId: 0
   allAnimals:
   - {fileID: 11400000, guid: 9fc95bbc19ca6c84b8cbbc21c36b0302, type: 2}
+  - {fileID: 11400000, guid: ae4378bb452051049a80597957264a7a, type: 2}
 --- !u!1 &2095707760
 GameObject:
   m_ObjectHideFlags: 0

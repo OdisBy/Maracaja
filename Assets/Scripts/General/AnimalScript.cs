@@ -8,6 +8,7 @@ public class AnimalScript : MonoBehaviour
     internal string nome;
     internal bool podeDialogar;
     internal bool jaDialogou;
+    internal int inQuestPage;
     internal bool inQuest;
     internal bool concluiuQuest;
     internal bool recusou;
@@ -20,36 +21,60 @@ public class AnimalScript : MonoBehaviour
     internal PlayerScript player;
 
     public Dialogue dialogue;
+    public DialogueManager dialogueManager;
 
+    [Space]
+    public AnimalPageTemplate pageTemplate;
+    public QuestPageTemplate questPageTemplate;
+    public QuestPageManager questPageManager;
+    public Animator playerAnimator;
+    public AnimalPageManager animalPageManager;
+
+    void Start()
+    {
+        inQuestPage = PlayerPrefs.GetInt("questPageId", 0);
+        if(pageTemplate.id == inQuestPage)
+        {
+            pageTemplate.inQuestPage = true;
+        }
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && podeDialogar)
+        foreach (AnimalPageTemplate animal in animalPageManager.allAnimals)
         {
-            dialogar();
+            if(animal.questFineshed)
+            {
+                concluiuQuest = true;
+                pageTemplate.inQuestPage = false;
+                PlayerPrefs.SetInt("questPageId", +1);
+                inQuestPage = PlayerPrefs.GetInt("questPageId", 0);
+                pageTemplate.inQuestPage = true;
+
+            }else{
+                concluiuQuest = false;
+            }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D _trigger)
-    {
-        podeDialogar = true;
-    }
 
-    private void OnTriggerStay2D(Collider2D _trigger)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if(recusou || concluiuQuest)
+        if(col.gameObject.CompareTag("Player"))
         {
             podeFotografar = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D _trigger)
+    void OnTriggerExit2D(Collider2D col)
     {
-        podeDialogar = false;
-        podeFotografar = false;
+        if(col.gameObject.CompareTag("Player"))
+        {
+            podeFotografar = false;
+        }
     }
-    private void dialogar()
+    public void dialogar()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
+        dialogueManager.StartDialogue(dialogue, this);
     }
 
     public void Quest(bool aceita)

@@ -19,25 +19,39 @@ public class AnimalPageManager : MonoBehaviour
     public Image foto;
     public int actualId;
     public AnimalPageTemplate[] allAnimals;
+    public GameObject itemGO;
+    public Image itemImage;
 
     void Start()
     {
+        PlayerPrefs.SetInt("animalPageId", 0);
         actualId = PlayerPrefs.GetInt("animalPageId", 0);
-        Debug.Log(actualId);
         updateInfos();
+        foreach(AnimalPageTemplate animal in allAnimals)
+        {
+            animal.isUnlocked = false;
+        }
     }
 
     public void updateInfos()
     {
+        actualId = PlayerPrefs.GetInt("animalPageId", 0);
         if(allAnimals[actualId].isUnlocked)
         {
             foto.sprite = allAnimals[actualId].foto;
             info1.text = allAnimals[actualId].infos_1;
             info2.text = allAnimals[actualId].infos_2;
+
+            if(allAnimals[actualId].questFineshed)
+            {
+                itemGO.SetActive(true);
+                itemImage.sprite = allAnimals[actualId].fotoItem;
+            }
         }else{
-            foto.sprite	= unlockedSprite;
+            foto.sprite	= allAnimals[actualId].fotoBloqueada;
             info1.text = defaultInfo1;
             info2.text = defaultInfo2;
+            itemGO.SetActive(false);
         }
     }
 }
