@@ -8,5 +8,4 @@
 
 
 Mechanics to do
-- [ ] Open catalog and infos
 - [ ] Go down from bough
