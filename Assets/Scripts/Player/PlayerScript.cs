@@ -269,7 +269,7 @@ public class PlayerScript : MonoBehaviour
 
     public void irSpawnPoint()
     {
-        transform.position = new Vector3(74, -45.5f, 1);
+        transform.position = new Vector3(105.32f, -45.5f, 1);
     }
 
     void Jump()
