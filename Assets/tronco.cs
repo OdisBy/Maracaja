@@ -24,7 +24,7 @@ public class tronco : MonoBehaviour
             if(animalPageManager.allAnimals[0].inQuest)
             {
                 Debug.Log("Encostou tronco");
-                animalPageManager.allAnimals[0].questFineshed = true;
+                animalPageManager.allAnimals[0].podeFinalizar = true;
                 animalPageManager.allAnimals[0].inQuest = false;
                 Destroy(this.gameObject);
             }

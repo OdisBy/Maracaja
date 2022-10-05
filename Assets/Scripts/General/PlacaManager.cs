@@ -12,6 +12,8 @@ public class PlacaManager : MonoBehaviour
     public GameObject nextIcon;
     private Queue<string> sentencas;
     public bool isOpen;
+    [SerializeField]
+    PlayerScript player;
     
     void Start()
     {
@@ -30,6 +32,7 @@ public class PlacaManager : MonoBehaviour
 
     public void StartDisplay(string[] frases)
     {
+        player.isTalking = true;
         Debug.Log("Start Display");
         infoBox.SetActive(true);
         isOpen = true;
@@ -57,6 +60,7 @@ public class PlacaManager : MonoBehaviour
         
     }
     public void EndDialogue(){
+        player.isTalking = false;
         Debug.Log("End dialogue");
         isOpen = false;
         nextIcon.SetActive(false);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a670639c794424fba455b0cfacc52c, type: 3}
   m_Name: Onca
   m_EditorClassIdentifier: 
-  id: 2
+  id: 3
   isUnlocked: 0
   inQuestPage: 0
   inQuest: 0

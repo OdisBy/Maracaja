@@ -7,6 +7,7 @@ public class AnimalPageTemplate : ScriptableObject
 {
     public int id;
     public bool isUnlocked = false;
+    public bool podeFinalizar;
     public bool inQuestPage;
     public bool inQuest;
     public bool questFineshed;

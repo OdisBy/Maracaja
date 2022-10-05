@@ -24,13 +24,10 @@ public class AnimalPageManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Startando animalpagemanager");
         PlayerPrefs.SetInt("animalPageId", 0);
         actualId = PlayerPrefs.GetInt("animalPageId", 0);
         updateInfos();
-        foreach(AnimalPageTemplate animal in allAnimals)
-        {
-            animal.isUnlocked = false;
-        }
     }
 
     public void updateInfos()

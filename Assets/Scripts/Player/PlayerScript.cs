@@ -31,6 +31,7 @@ public class PlayerScript : MonoBehaviour
     [HideInInspector]
     public bool Jumping;
     public bool canWalk;
+    public bool isTalking;
     public bool isGrabbing;
     public bool isJumping;
     public bool isFlipping;
@@ -98,8 +99,9 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         //MOVEMENT
-        if (isGrabbing)
+        if (isGrabbing || isTalking){
             canWalk = false;
+        }
         else
             canWalk = true;
         Vector2 dir = new Vector2(horizontalMove, verticalMove);
@@ -107,7 +109,7 @@ public class PlayerScript : MonoBehaviour
         {
             Walk(dir);
         }
-        if (Input.GetButtonDown("Jump") && !isGrabbing && canMove)
+        if (Input.GetButtonDown("Jump") && !isGrabbing && canMove && canWalk)
         {
             if (Grounded)
             {
@@ -236,7 +238,7 @@ public class PlayerScript : MonoBehaviour
             {
                 if (isJumping)
                     return;
-                if (isWalkPressed)
+                if (isWalkPressed && canWalk)
                     ChangeState("Player_Walk");
                 else
                     ChangeState("Player_Idle");
@@ -297,6 +299,7 @@ public class PlayerScript : MonoBehaviour
     }
     void finishPicture()
     {
+        ChangeState("Player_Idle");
         pic.picture();
         canMove = true;
     }

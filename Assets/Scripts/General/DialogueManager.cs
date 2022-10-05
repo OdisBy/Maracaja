@@ -28,7 +28,10 @@ public class DialogueManager : MonoBehaviour
     private string inQuestSentenca;
     private string declineSentenca;
     private string redencaoSentenca;
+    private string finalSentenca = "Muito obrigado por me ajudar meu amiguinho. Pode retornar para casa agora!";
     private string concluiuSentenca;
+
+    public bool terminou;
 
     private Queue<string> sentencas;
     void Start()
@@ -50,6 +53,10 @@ public class DialogueManager : MonoBehaviour
 
         if(animal.jaDialogou)
         {
+            if(animalPageManager.allAnimals[0].podeFinalizar){
+                dialogueText.text = concluiuSentenca;
+                DisplayNextSentence();
+            }
             if(animal.recusou)
             {
                 redencaoButton.SetActive(true);
@@ -118,15 +125,15 @@ public class DialogueManager : MonoBehaviour
             continueButton.SetActive(true);
             return;
         }
-        if(animalSelected.concluiuQuest)
-        {
-            dialogueText.text = concluiuSentenca;
+        // if(animalSelected.concluiuQuest)
+        // {
+        //     dialogueText.text = concluiuSentenca;
 
-            continueButton.SetActive(false);
-            acceptButton.SetActive(false);  
-            declineButton.SetActive(false);
-            redencaoButton.SetActive(false);
-        }
+        //     continueButton.SetActive(false);
+        //     acceptButton.SetActive(false);  
+        //     declineButton.SetActive(false);
+        //     redencaoButton.SetActive(false);
+        // }
         if(animalSelected.redimiu)
         {
             dialogueText.text = redencaoSentenca;
@@ -190,10 +197,8 @@ public class DialogueManager : MonoBehaviour
         declineButton.SetActive(true);
         redencaoButton.SetActive(false);
     }
-
     public void EndDialogue()
     {
-
         animator.SetBool("IsOpen", false);
         Invoke("disableDialogueBox", 1);
     }
@@ -201,10 +206,10 @@ public class DialogueManager : MonoBehaviour
     public void disableDialogueBox()
     {
         dialogueBox.SetActive(false);
-    }
+        animalSelected.player.isTalking = false;
 
-    public void AAAAA()
-    {
-        Debug.Log("A");
+        if(animalPageManager.allAnimals[0].podeFinalizar){
+            animalSelected.player.irSpawnPoint();
+        }
     }
 }

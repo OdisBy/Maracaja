@@ -44,11 +44,17 @@ public class AnimalScript : MonoBehaviour
         {
             if(animal.questFineshed)
             {
+
+                player.irSpawnPoint();
+
+
+
                 concluiuQuest = true;
                 pageTemplate.inQuestPage = false;
                 PlayerPrefs.SetInt("questPageId", +1);
                 inQuestPage = PlayerPrefs.GetInt("questPageId", 0);
                 pageTemplate.inQuestPage = true;
+                questPageManager.updateInfos();
 
             }else{
                 concluiuQuest = false;
@@ -62,6 +68,9 @@ public class AnimalScript : MonoBehaviour
         if(col.gameObject.CompareTag("Player"))
         {
             podeFotografar = true;
+            if(animalPageManager.allAnimals[0].podeFinalizar){
+                dialogar();
+            }
         }
     }
 
@@ -70,10 +79,12 @@ public class AnimalScript : MonoBehaviour
         if(col.gameObject.CompareTag("Player"))
         {
             podeFotografar = false;
+
         }
     }
     public void dialogar()
     {
+        player.isTalking = true;
         dialogueManager.StartDialogue(dialogue, this);
     }
 

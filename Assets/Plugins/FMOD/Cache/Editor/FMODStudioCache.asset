@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637999793220329377
+  lastModified: 638005277518200425
   FileSizes:
   - Name: Desktop
     Value: 1465664
@@ -73,7 +73,7 @@ MonoBehaviour:
   - {fileID: -304484278604510694}
   StringsBanks:
   - {fileID: 3400153269834114597}
-  cacheTime: 637999793220349378
+  cacheTime: 638005277518210424
   cacheVersion: 131591
 --- !u!114 &3400153269834114597
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637999793220349378
+  lastModified: 638005277518210424
   FileSizes:
   - Name: Desktop
     Value: 922

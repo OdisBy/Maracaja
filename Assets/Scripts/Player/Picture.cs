@@ -19,7 +19,9 @@ public class PictureManager : MonoBehaviour
                 // nextQuestID = PlayerPrefs.GetInt("questPageId", 1) + 1;
                 // PlayerPrefs.SetInt("questPageId", nextQuestID);
                 animal.dialogar();
+                player.canWalk = false;
                 animal.questPageTemplate.isUnlocked = true;
+                // animal.animalPageManager.isUnlocked = true;
                 animal.questPageManager.updateInfos();
                 Debug.Log(animal + " foi desbloqueado");
                 return;

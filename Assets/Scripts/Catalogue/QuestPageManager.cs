@@ -15,14 +15,10 @@ public class QuestPageManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Startando animalpagemanager");
         PlayerPrefs.SetInt("questPageId", 0);
         actualId = PlayerPrefs.GetInt("questPageId", 0);
         updateInfos();
-
-        foreach(QuestPageTemplate questTemplate in allPages)
-        {
-            questTemplate.isUnlocked = false;
-        }
     }
 
     public void updateInfos()

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Ararajuba
   m_EditorClassIdentifier: 
   id: 1
-  isUnlocked: 1
-  inQuestPage: 1
+  isUnlocked: 0
+  podeFinalizar: 0
+  inQuestPage: 0
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: b1ed7f016e0ce984c9584d5502ad9c08, type: 3}
