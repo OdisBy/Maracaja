@@ -13,6 +13,7 @@ public class AnimalPageTemplate : ScriptableObject
     public bool questFineshed;
     public Sprite fotoItem;
     public Sprite fotoBloqueada;
+    public Sprite FotoReal;
     public Sprite foto;
     [TextArea(3, 30)]
     public string infos_1;

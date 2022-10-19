@@ -87,9 +87,4 @@ public class AnimalScript : MonoBehaviour
         player.isTalking = true;
         dialogueManager.StartDialogue(dialogue, this);
     }
-
-    public void Quest(bool aceita)
-    {
-        
-    }
 }

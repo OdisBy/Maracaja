@@ -20,6 +20,7 @@ MonoBehaviour:
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: b1ed7f016e0ce984c9584d5502ad9c08, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: e26f4a3bf72e6a041a1ea51b92246a13, type: 3}
+  FotoReal: {fileID: 21300000, guid: d285557aa705b824a8c24cd1001875b7, type: 3}
   foto: {fileID: 21300000, guid: 664b7866a0bad3d4a8c562a3c80815a9, type: 3}
   infos_1: "<color=\"blue\">Nome:</color> Ararajuba(Guaruba guarouba)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Aves\r\n\n<color=\"blue\">Ordem:</color>
@@ -28,8 +29,8 @@ MonoBehaviour:
     34cm), al\xE9m de suas cores claras e caracter\xEDsticas, que remetem \xE0 bandeira
     brasileira. Apesar destas caracter\xEDsticas ela \xE9 extremamente similar em
     apar\xEAncia a qualquer outra arara.\r"
-  infos_2: "<color=\"blue\">H\xE1bitos alimentares:</color>Herb\xEDvoros, comem Flores,
-    sementes, brotos e frutas, em especial, a murici.\r\n\n\r\n<color=\"blue\">Habitat:</color>
+  infos_2: "<color=\"blue\">H\xE1bitos alimentares:</color> Herb\xEDvoros, comem
+    Flores, sementes, brotos e frutas, em especial, a murici.\r\n\n\r\n<color=\"blue\">Habitat:</color>
     Sendo uma esp\xE9cie migrat\xF3ria, e poucos estudos sobre ela, \xE9 dif\xEDcil
     se determinar seu habitat especificamente, no entanto popula\xE7\xF5es desta
     ave j\xE1 foram avistadas entre a plan\xEDcie amaz\xF4nica e o planalto central.\r\n\n\rEntre

@@ -16,6 +16,8 @@ public class PlayerScript : MonoBehaviour
     public CatalogueManager catalogue;
     public QuestPageManager questManager;
     public AnimalPageManager animalPageManager;
+    public Album albumManager;
+    public AudioController audioController;
 
     [Header("Manager")]
     public bool isPaused;
@@ -68,6 +70,11 @@ public class PlayerScript : MonoBehaviour
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
     public FlipTree flipScript;
+
+
+
+    
+    public FMODUnity.EventReference EventFS;
     
 
 
@@ -98,6 +105,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        
         //MOVEMENT
         if (isGrabbing || isTalking){
             canWalk = false;
@@ -156,6 +164,7 @@ public class PlayerScript : MonoBehaviour
             PlayerPrefs.SetInt("questPageId", questId);
             questManager.updateInfos();
             animalPageManager.updateInfos();
+            albumManager.updateInfos();
         }
 
         //MOVEMENT
@@ -232,7 +241,12 @@ public class PlayerScript : MonoBehaviour
         {
             if (isGrabbing)
             {
-                ChangeState("Player_Escalando_Costas");
+                if(verticalMove != 0)
+                {
+                    ChangeState("Player_Escalando");
+                }else{
+                    ChangeState("Player_Segurando_Arvore");
+                }
             }
             else if (Grounded)
             {
@@ -287,7 +301,6 @@ public class PlayerScript : MonoBehaviour
 
     private void escalar()
     {
-        climbing = true;
         rb.velocity = new Vector3(horizontalMove * speed, verticalMove * speed, 0);
     }
 
@@ -315,6 +328,13 @@ public class PlayerScript : MonoBehaviour
     public void returnPictureVazia()
     {
         Debug.Log("Return vazio");
+    }
+
+    public void somPasso()
+    {
+        // audioController.tocarPasso();
+        Debug.Log("ASoiu");
+        FMODUnity.RuntimeManager.PlayOneShotAttached(EventFS, gameObject);
     }
 
 

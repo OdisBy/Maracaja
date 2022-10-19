@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class vitoriaRegia : MonoBehaviour
 {
-    public float respawnTime = 10.0f;
-    public float delayTime = 3.0f;
+    float respawnTime = 5.0f;
     private Vector3 initialPosition;
     private Rigidbody2D rb;
 
@@ -19,8 +18,6 @@ public class vitoriaRegia : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            
-            Debug.Log("Player collision vitoria regia");
             StartCoroutine(Fall());
 
         }
@@ -29,7 +26,7 @@ public class vitoriaRegia : MonoBehaviour
     IEnumerator Fall()
     {
         DropPlatform();
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(respawnTime);
         respawnPlataform();
 
     }
@@ -42,7 +39,6 @@ public class vitoriaRegia : MonoBehaviour
     void respawnPlataform()
     {
         rb.velocity = new Vector2(0, 0);
-        Debug.Log("Respawn");
         rb.isKinematic = true;
         transform.position = initialPosition;
     }

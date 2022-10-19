@@ -34,11 +34,9 @@ public class CatalogueManager : MonoBehaviour
     private GameObject nextPageGO;
 
     [Space]
-    [Header("Area das plantas")]
-    public Image Plantas_Foto_1;
-    public Image Plantas_screenshot;
-    public GameObject Plantas_Infos;
-
+    [Header("Area do album")]
+    [SerializeField]
+    private Album albumManager;
 
     void Start()
     {
@@ -53,6 +51,9 @@ public class CatalogueManager : MonoBehaviour
         Time.timeScale = 0f;
         UI.SetActive(false);
         catalogo.SetActive(true);
+        questManager.updateInfos();
+        animalManager.updateInfos();
+        albumManager.updateInfos();
         bookmarks[actualBookmark].SetActive(true);
     }
     public void closeCatalogue()
@@ -100,7 +101,7 @@ public class CatalogueManager : MonoBehaviour
     }
     public void greenBookmark()
     {
-        animalManager.updateInfos();
+        questManager.updateInfos();
         bookmarks[actualBookmark].SetActive(false);
         actualBookmark = 1;
         checkButtonAnimal();
@@ -109,6 +110,7 @@ public class CatalogueManager : MonoBehaviour
 
     public void brownBookmark()
     {
+        albumManager.updateInfos();
         bookmarks[actualBookmark].SetActive(false);
         actualBookmark = 2;
         bookmarks[actualBookmark].SetActive(true);
