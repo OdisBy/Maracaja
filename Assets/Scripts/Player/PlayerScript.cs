@@ -6,6 +6,9 @@ using UnityEngine.Tilemaps;
 public class PlayerScript : MonoBehaviour
 {
 
+    float proximoMiado = 0.0f;
+    float period = 10f;
+
     //Instancias
     [HideInInspector]
     public Rigidbody2D rb;
@@ -18,6 +21,7 @@ public class PlayerScript : MonoBehaviour
     public AnimalPageManager animalPageManager;
     public Album albumManager;
     public AudioController audioController;
+    //public AudioController audioController;
 
     [Header("Manager")]
     public bool isPaused;
@@ -105,6 +109,13 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+
+
+        //SOM MIADO
+        if (Time.time > proximoMiado) {
+            proximoMiado += period;
+            audioController.miadoGato();
+        }
         
         //MOVEMENT
         if (isGrabbing || isTalking){
@@ -329,14 +340,6 @@ public class PlayerScript : MonoBehaviour
     {
         Debug.Log("Return vazio");
     }
-
-    public void somPasso()
-    {
-        // audioController.tocarPasso();
-        Debug.Log("ASoiu");
-        FMODUnity.RuntimeManager.PlayOneShotAttached(EventFS, gameObject);
-    }
-
 
     //MAQUINA DE ESTADOS ANIMAÇÃO
     internal void ChangeState(string newState)

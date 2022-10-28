@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2031189879461083936
+--- !u!114 &-9006333956123031601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/passo_1
+  m_Name: event:/NightBG
   m_EditorClassIdentifier: 
-  Path: event:/passo_1
+  Path: event:/NightBG
   Guid:
-    Data1: 1603031633
-    Data2: 1207953438
-    Data3: -1776934007
-    Data4: -1117266618
+    Data1: -20850444
+    Data2: 1328780199
+    Data3: 1460076951
+    Data4: -1186370582
   Banks:
   - {fileID: -304484278604510694}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 948181
+--- !u!114 &-4835126857914909510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuIntro
+  m_EditorClassIdentifier: 
+  Path: event:/MenuIntro
+  Guid:
+    Data1: 1240709505
+    Data2: 1149537956
+    Data3: 1065115268
+    Data4: 1498511149
+  Banks:
+  - {fileID: -304484278604510694}
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 14837
 --- !u!114 &-304484278604510694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638005277518200425
+  lastModified: 638017724823118438
   FileSizes:
   - Name: Desktop
-    Value: 1465664
+    Value: 44783232
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -64,17 +91,45 @@ MonoBehaviour:
   - {fileID: -304484278604510694}
   EditorEvents:
   - {fileID: 8889805448288323106}
-  - {fileID: -2031189879461083936}
-  - {fileID: 4188959390583780496}
-  - {fileID: 6314272531894328154}
   - {fileID: 7432345718446340242}
+  - {fileID: -4835126857914909510}
+  - {fileID: 3047861200285708172}
+  - {fileID: 4118092317957396438}
+  - {fileID: -9006333956123031601}
   EditorParameters: []
   MasterBanks:
   - {fileID: -304484278604510694}
   StringsBanks:
   - {fileID: 3400153269834114597}
-  cacheTime: 638005277518210424
+  cacheTime: 638017724823138457
   cacheVersion: 131591
+--- !u!114 &3047861200285708172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Orquestra-Selvagem
+  m_EditorClassIdentifier: 
+  Path: event:/Orquestra-Selvagem
+  Guid:
+    Data1: -2025684778
+    Data2: 1326309715
+    Data3: -535660643
+    Data4: 1076973544
+  Banks:
+  - {fileID: -304484278604510694}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120000
 --- !u!114 &3400153269834114597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,12 +145,12 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638005277518210424
+  lastModified: 638017724823138457
   FileSizes:
   - Name: Desktop
-    Value: 922
+    Value: 976
   Exists: 1
---- !u!114 &4188959390583780496
+--- !u!114 &4118092317957396438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,50 +160,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/camerafinal
+  m_Name: event:/NightTheme
   m_EditorClassIdentifier: 
-  Path: event:/camerafinal
+  Path: event:/NightTheme
   Guid:
-    Data1: -413372317
-    Data2: 1222230110
-    Data3: 1635528605
-    Data4: -1907066858
+    Data1: -553500969
+    Data2: 1311156916
+    Data3: 51964047
+    Data4: -1187007369
   Banks:
   - {fileID: -304484278604510694}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &6314272531894328154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/escalando
-  m_EditorClassIdentifier: 
-  Path: event:/escalando
-  Guid:
-    Data1: -602454921
-    Data2: 1080403128
-    Data3: 1740656315
-    Data4: -2043102204
-  Banks:
-  - {fileID: -304484278604510694}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Length: 43049
 --- !u!114 &7432345718446340242
 MonoBehaviour:
   m_ObjectHideFlags: 0
