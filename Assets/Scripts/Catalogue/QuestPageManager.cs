@@ -13,12 +13,13 @@ public class QuestPageManager : MonoBehaviour
     [SerializeField]
     public Image fotoOculta;
 
-    void Start()
+    void Awake()
     {
         Debug.Log("Startando animalpagemanager");
         PlayerPrefs.SetInt("questPageId", 0);
         actualId = PlayerPrefs.GetInt("questPageId", 0);
         updateInfos();
+        resetInfos();
     }
 
     public void updateInfos()
@@ -34,5 +35,22 @@ public class QuestPageManager : MonoBehaviour
         infosPagina.text = allPages[actualId].infos;
     }
 
+    public void resetInfos(){
+        foreach (QuestPageTemplate template in allPages)
+        {
+            template.isUnlocked = false;
+        }
+    }
 
+    public void animalConversou(int id, bool item){
+        allPages[id].isUnlocked = true;
+    }
+
+    public void finalizouQuest(int id){
+        //TODO ADD FOTO DO ITEM
+    }
+
+    public void finalizouAnimal(int id){
+        allPages[id].questPageAtual = false;
+    }
 }

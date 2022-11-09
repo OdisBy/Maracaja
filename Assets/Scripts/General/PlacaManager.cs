@@ -36,9 +36,7 @@ public class PlacaManager : MonoBehaviour
         Debug.Log("Start Display");
         infoBox.SetActive(true);
         isOpen = true;
-        nextIcon.SetActive(true);
         sentencas.Clear();
-
         sentencas.Enqueue("A");
         foreach(string frase in frases)
         {

@@ -324,6 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &25559676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,7 +3501,7 @@ MonoBehaviour:
     do tamandu\xE1-\r\nbandeira pode se estender\r\nat\xE9 60 cent\xEDmetros, devido\r\na
     seu alimento principal\r\nserem formigas."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
   m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3563,7 +3565,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &291541499
@@ -4620,6 +4622,7 @@ RectTransform:
   - {fileID: 1993622743}
   - {fileID: 1281654341}
   - {fileID: 484625812}
+  - {fileID: 1763608582}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4945,6 +4948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &449136040
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,6 +5265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &460685059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,6 +7890,7 @@ MonoBehaviour:
   canGoNextPhase: 0
   spawnCollider: {fileID: 1862460314}
   questId: 0
+  questIdFloat: 0
   verticalMove: 0
   horizontalMove: 0
   collisionRadius: 0.25
@@ -7897,6 +7905,10 @@ MonoBehaviour:
       Data3: 1460076951
       Data4: -1186370582
     Path: event:/NightBG
+  luzGlobal: {fileID: 2136400328}
+  coresLuz:
+  - {r: 0.8784314, g: 0.8862745, b: 0.7647059, a: 0}
+  - {r: 0.29803923, g: 0.4, b: 0.6, a: 0}
 --- !u!212 &727026789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8893,6 +8905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &775609434
 GameObject:
   m_ObjectHideFlags: 0
@@ -9056,6 +9070,7 @@ Transform:
   m_Children:
   - {fileID: 2136400327}
   - {fileID: 618273891}
+  - {fileID: 2106788528}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10512,8 +10527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85a6a9346878b840a4bcaef15b2a30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoBox: {fileID: 1281654340}
-  informacoes: {fileID: 841646805}
+  infoBox: {fileID: 1763608581}
+  informacoes: {fileID: 1672475371}
   velocidadeEscrita: 0.02
   nextIcon: {fileID: 1702715223}
   isOpen: 0
@@ -11200,7 +11215,7 @@ MonoBehaviour:
     Desconhecida\n\n<color=\"blue\">Fam\xEDlia:</color>: Desconhecida\n\r\n<color=\"blue\">Descri\xE7\xE3o
     F\xEDsica:</color> Desconhecida"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
   m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11264,7 +11279,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1063969225
@@ -11967,8 +11982,8 @@ MonoBehaviour:
   m_text: Dialogo Dialogo Dialogo Dialogo Dialogo Dialogo Dialogo Dialogo Dialogo
     Dialogo Dialogo Dialogo Dialogo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
+  m_sharedMaterial: {fileID: 9210000139648220921, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12313,6 +12328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &1152940583
 GameObject:
   m_ObjectHideFlags: 0
@@ -13143,6 +13160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &1237361740
 GameObject:
   m_ObjectHideFlags: 0
@@ -13203,7 +13222,7 @@ MonoBehaviour:
   m_text: "<color=\"blue\">Nome:</color> ???\n\n<color=\"blue\">Habitat:</color>
     ???\n\n<color=\"blue\">Descri\xE7\xE3o F\xEDsica:</color> ???"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -13267,7 +13286,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1237361743
@@ -13422,6 +13441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806e7dc7b67b4b4e8bec9916d57e0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  anim: {fileID: 0}
 --- !u!1 &1265419519
 GameObject:
   m_ObjectHideFlags: 0
@@ -13627,7 +13648,7 @@ GameObject:
   - component: {fileID: 1281654343}
   - component: {fileID: 1281654342}
   m_Layer: 5
-  m_Name: PlacaBox
+  m_Name: PlacaBoxOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14014,7 +14035,7 @@ MonoBehaviour:
   m_text: "<color=\"blue\">H\xE1bitos alimentares:</color> Desconhecidos\n\r\n<color=\"blue\">Habitat:</color>
     Desconhecido\n\r\n<color=\"blue\">Curiosidades:</color>\r\nN\xE3o descobertas"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
   m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14078,7 +14099,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1323858778
@@ -15961,6 +15982,143 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1672475369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672475370}
+  - component: {fileID: 1672475372}
+  - component: {fileID: 1672475371}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1672475370
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672475369}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1763608582}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -35.38589, y: -9.3035}
+  m_SizeDelta: {x: 2054.553, y: 609.9729}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1672475371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672475369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text New <color=green>green</color> New Text New Text New Text New
+    Text New Text New Text New Text New Text asasuhasuh uashuashuhasu haushuashusahuhasuh.......New
+    Text New <color=green>green</color> New Text New Text New Text New Text New Text
+    New Text New Text New Text asasuhasuh uashuashuhasu haushuashusahuhasuh.......
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
+  m_sharedMaterial: {fileID: 9210000139648220921, guid: 1c0d951f57ca0f34fb6d4ca720462fc7, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 86.04
+  m_fontSizeBase: 86.04
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 1
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1672475372
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672475369}
+  m_CullTransparentMesh: 1
 --- !u!1 &1674582548
 GameObject:
   m_ObjectHideFlags: 0
@@ -17000,6 +17158,82 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1763608581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1763608582}
+  - component: {fileID: 1763608584}
+  - component: {fileID: 1763608583}
+  m_Layer: 5
+  m_Name: Placa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1763608582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763608581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1672475370}
+  m_Father: {fileID: 415334539}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 31.272993, y: -3.5546}
+  m_SizeDelta: {x: 862.5459, y: 485.3275}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1763608583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763608581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0cba157d03302c54183d28c3304b5229, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1763608584
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763608581}
+  m_CullTransparentMesh: 1
 --- !u!1 &1765524954
 GameObject:
   m_ObjectHideFlags: 0
@@ -21064,6 +21298,78 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8747199}
   m_EdgeRadius: 0
+--- !u!1 &2106788527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106788528}
+  - component: {fileID: 2106788529}
+  m_Layer: 0
+  m_Name: LuzGlobalDia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2106788528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106788527}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5231992, y: 4.780603, z: 13.043423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788998191}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2106788529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106788527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.8798477, g: 0.8867924, b: 0.7654859, a: 1}
+  m_Intensity: 1.3
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensity: 0.75
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &2107023300
 GameObject:
   m_ObjectHideFlags: 0
@@ -21393,7 +21699,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3, g: 0.4, b: 0.6, a: 1}
   m_Intensity: 1.3
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
