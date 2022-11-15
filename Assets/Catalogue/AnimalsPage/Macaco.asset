@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Macaco
   m_EditorClassIdentifier: 
   id: 2
-  faseDia: 1
   isUnlocked: 0
   podeFinalizar: 0
   inQuestPage: 0

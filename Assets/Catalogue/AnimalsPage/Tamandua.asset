@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Tamandua
   m_EditorClassIdentifier: 
   id: 0
-  faseDia: 1
   isUnlocked: 0
   podeFinalizar: 0
   inQuestPage: 1

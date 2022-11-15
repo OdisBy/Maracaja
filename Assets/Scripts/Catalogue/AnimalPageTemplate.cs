@@ -6,7 +6,6 @@ using UnityEngine;
 public class AnimalPageTemplate : ScriptableObject
 {
     public int id;
-    public bool faseDia;
     public bool isUnlocked = false;
     public bool podeFinalizar;
     public bool inQuestPage;
@@ -20,4 +19,6 @@ public class AnimalPageTemplate : ScriptableObject
     public string infos_1;
     [TextArea(3, 30)]
     public string infos_2;
+
+
 }
