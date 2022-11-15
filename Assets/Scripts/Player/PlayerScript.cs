@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -59,6 +60,7 @@ public class PlayerScript : MonoBehaviour
     public bool canGoNextPhase;
     public BoxCollider2D spawnCollider;
     public int questId;
+    public float questIdFloat;
 
     [Space]
 
@@ -79,6 +81,12 @@ public class PlayerScript : MonoBehaviour
 
     
     public FMODUnity.EventReference EventFS;
+
+    [SerializeField]
+    public Light2D luzGlobal;
+
+    [SerializeField]
+    public Color[] coresLuz;
     
 
 
@@ -88,17 +96,19 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentState = "Player_Idle";
+        PlayerPrefs.SetInt("questPageId", 0);
+        PlayerPrefs.SetInt("animalPageId", 0);
+        animalPageManager.resetInfos();
+        questManager.resetInfos();
+        albumManager.updateInfos();
     }
 
     void Start()
     {
-        PlayerPrefs.SetInt("questPageId", 0);
-        PlayerPrefs.SetInt("animalPageId", 0);
         canMove = true;
         irSpawnPoint();
         getQuestId();
-        questManager.updateInfos();
-        animalPageManager.updateInfos();
+        luzGlobal.color = coresLuz[0];
     }
 
     public void getQuestId()
@@ -170,12 +180,26 @@ public class PlayerScript : MonoBehaviour
         if(Input.GetKey(KeyCode.P) && canGoNextPhase)
         {
             canGoNextPhase = false;
+            getQuestId();
+            //IF ITEM CONSEGUIDO, ADD VARIAVEL AQ NO PLAYER ELE VAI DECIDIR SE CHAMA O OUTRO VOID PARA ADD O ITEM NO CATALOGO
+            animalPageManager.animalCompleto(questId);
             Debug.Log("Next Phase");
+            
             questId += 1;
             PlayerPrefs.SetInt("questPageId", questId);
             questManager.updateInfos();
             animalPageManager.updateInfos();
             albumManager.updateInfos();
+            irSpawnPoint();
+            questIdFloat = PlayerPrefs.GetInt("questPageId", 0);
+            if(questIdFloat / 2 == 0){
+                Debug.Log("Mudando luz pra dia");
+                luzGlobal.color = coresLuz[0];   
+            }
+            else{
+                Debug.Log("Mudando luz pra noite");
+                luzGlobal.color = coresLuz[1];
+            }
         }
 
         //MOVEMENT
