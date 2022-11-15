@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a670639c794424fba455b0cfacc52c, type: 3}
+  m_Name: Tamandua
+  m_EditorClassIdentifier: 
+  id: 0
+  isUnlocked: 0
+  podeFinalizar: 0
+  inQuestPage: 1
+  inQuest: 0
+  questFineshed: 0
+  fotoItem: {fileID: 21300000, guid: aad0c3f95d8d5de4a8fcf06fb302d7ca, type: 3}
+  fotoBloqueada: {fileID: 21300000, guid: 2f5187cef51334e49b47327f744baedf, type: 3}
+  FotoReal: {fileID: 21300000, guid: 076299b8dbd6c334b927ee944c698225, type: 3}
+  foto: {fileID: 21300000, guid: 29b6e7efcda9a1d429a845e2ee5706f7, type: 3}
+  infos_1: "<color=\"blue\">Nome:</color> Tamandu\xE1-Bandeira\n\n<color=\"blue\">Filo:</color>
+    Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
+    Pilosa\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Mirmecofag\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    F\xEDsica:</color> O Tamandu\xE1-Bandeira pode ser identificado pela sua cauda
+    peluda e seus p\xEAlos pretos e marrons, al\xE9m de sua boca longa que \xE9 usada
+    para se alimentar de pequenos vermes e cupins"
+  infos_2: "<color=\"blue\">H\xE1bitos alimentares:</color> Insetos\r\npequenos,
+    como formigas e\r\nlarvas, al\xE9m de centop\xE9ias e\r\nvermes\r\n\r\n<color=\"blue\">Habitat:</color>
+    Florestas tropicais,\r\nCaatingas e savanas, como o\r\nCerrado\r\n\r\nano de
+    entrada na lista de\r\nesp\xE9cies <color=\"red\">amea\xE7adas</color> de\r\nextin\xE7\xE3o:
+    <color=\"red\">1982</color>\r\n\r\n<color=\"blue\">Curiosidades:</color>\r\n<color=\"red\">*</color> 
+    O tamandu\xE1-bandeira era\r\nconhecido como um animal\r\nm\xEDstico e trai\xE7oeiro
+    pelas\r\ntribos ind\xEDgenas antigas\r\n\r\n<color=\"red\">*</color> A l\xEDngua
+    do tamandu\xE1-\r\nbandeira pode se estender\r\nat\xE9 60 cent\xEDmetros, devido\r\na
+    seu alimento principal\r\nserem formigas."

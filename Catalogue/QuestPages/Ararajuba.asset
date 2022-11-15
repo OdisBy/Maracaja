@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7157ebc4c685f49b688cf54a52b170, type: 3}
+  m_Name: Ararajuba
+  m_EditorClassIdentifier: 
+  id: 1
+  isUnlocked: 0
+  fotoDesbloqueada: {fileID: 21300000, guid: 664b7866a0bad3d4a8c562a3c80815a9, type: 3}
+  questName: Ararajuba
+  infos: "<color=\"blue\">Nome:</color>Ararajuba<br> <color=\"blue\">Habitat:</color>
+    A popula\xE7\xF5es desta ave j\xE1 foram avistadas entre a plan\xEDcie amaz\xF4nica
+    e o planalto central.\r<br>\n<color=\"blue\">Descri\xE7\xE3o F\xEDsica:</color>
+    A ararajuba pode ser notada por seu pequeno porte, al\xE9m de suas cores claras
+    e caracter\xEDsticas."
+  fotoOculta: {fileID: 21300000, guid: e26f4a3bf72e6a041a1ea51b92246a13, type: 3}
