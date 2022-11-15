@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a670639c794424fba455b0cfacc52c, type: 3}
+  m_Name: Onca
+  m_EditorClassIdentifier: 
+  id: 3
+  isUnlocked: 0
+  podeFinalizar: 0
+  inQuestPage: 0
+  inQuest: 0
+  questFineshed: 0
+  fotoItem: {fileID: 21300000, guid: 25f17b02b7779714284e37d83cc7fd18, type: 3}
+  fotoBloqueada: {fileID: 21300000, guid: 1feab8f08dde1be4fb3c4644301c6caf, type: 3}
+  FotoReal: {fileID: 21300000, guid: 0a064e68c42a1b844b9729d542638010, type: 3}
+  foto: {fileID: 21300000, guid: 1d574135cbcb7704fbfadb516ec3c208, type: 3}
+  infos_1: "<color=\"blue\">Nome:</color> On\xE7a-pintada(Panthera Onca)\n\n<color=\"blue\">Filo:</color>
+    Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
+    Carn\xEDvora\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Fel\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    F\xEDsica:</color> A on\xE7a-pintada pode ser identificad apor suas pintas pretas
+    e marrons em seu pelo loiro. Sendo uma felino de grande porte, a esp\xE9cie tem
+    por volta de 1,40 metros de comprimento, sem considerar a cauda que \xE9 pequena."
+  infos_2: "<color=\"blue\">H\xE1bitos alimentares:</color> Dieta carn\xEDvora\n\n\r\n<color=\"blue\">Habitat:</color>
+    Aparecem e vivem do sul da Am\xE9rica-do-norte at\xE9 a Am\xE9rica-do-sul, ou
+    seja, do M\xE9xico at\xE9 a Bacia Amaz\xF4nica, geralmente vivendo pr\xF3xima
+    a rios.\n\nEntrou na lista de <color=\"red\">esp\xE9cies amea\xE7adas de extin\xE7\xE3o</color>
+    em 2016\n\n<color=\"blue\">Curiosidades:</color>\r\n<color=\"red\">*</color> 
+    A on\xE7a-pintada tem a mordida mais poderosa de todos os grandes felinos.\n\r\n<color=\"red\">*</color>
+    O ser humano \xE9 um dos poucos animais que n\xE3o \xE9 parte da dieta das on\xE7as-pintadas.\n"
