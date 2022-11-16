@@ -864,8 +864,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ????????
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 68c9321ca049de747850d1bb0489d0b7, type: 2}
-  m_sharedMaterial: {fileID: 6674928013652971436, guid: 68c9321ca049de747850d1bb0489d0b7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 044798e47989d9846babd8aa3b615521, type: 2}
+  m_sharedMaterial: {fileID: 5185829666545690946, guid: 044798e47989d9846babd8aa3b615521, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3437,7 +3437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34117648, g: 0.26666668, b: 0.26666668, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3631,13 +3631,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298190017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.66, y: -3.66, z: 35.3}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -88.74, y: -3.66, z: 35.3}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1506750293}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!58 &298190019
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4565,7 +4565,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -6670,8 +6670,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.0814, y: -2.9869}
-  m_SizeDelta: {x: 547.0262, y: 250.5774}
+  m_AnchoredPosition: {x: 24.0814, y: -19.1852}
+  m_SizeDelta: {x: 547.0262, y: 378.3424}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603511481
 MonoBehaviour:
@@ -6731,7 +6731,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -10559,14 +10559,14 @@ RectTransform:
   m_GameObject: {fileID: 997359193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3944227, y: 1.3944227, z: 1.3944227}
   m_Children: []
   m_Father: {fileID: 1030529976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377.72, y: 196.42389}
+  m_AnchoredPosition: {x: 415.9, y: 211.1}
   m_SizeDelta: {x: 34.0022, y: 48.1522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997359195
@@ -11221,7 +11221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.41509432, g: 0.32564953, b: 0.25649697, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11452,8 +11452,8 @@ MonoBehaviour:
     Desconhecida\n\n<color=\"blue\">Fam\xEDlia:</color>: Desconhecida\n\r\n<color=\"blue\">Descri\xE7\xE3o
     F\xEDsica:</color> Desconhecida"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
-  m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 044798e47989d9846babd8aa3b615521, type: 2}
+  m_sharedMaterial: {fileID: 5185829666545690946, guid: 044798e47989d9846babd8aa3b615521, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13459,8 +13459,8 @@ MonoBehaviour:
   m_text: "<color=\"blue\">Nome:</color> ???\n\n<color=\"blue\">Habitat:</color>
     ???\n\n<color=\"blue\">Descri\xE7\xE3o F\xEDsica:</color> ???"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 044798e47989d9846babd8aa3b615521, type: 2}
+  m_sharedMaterial: {fileID: 5185829666545690946, guid: 044798e47989d9846babd8aa3b615521, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14272,8 +14272,8 @@ MonoBehaviour:
   m_text: "<color=\"blue\">H\xE1bitos alimentares:</color> Desconhecidos\n\r\n<color=\"blue\">Habitat:</color>
     Desconhecido\n\r\n<color=\"blue\">Curiosidades:</color>\r\nN\xE3o descobertas"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
-  m_sharedMaterial: {fileID: -5334149751827582387, guid: 254f166fa859f384fbf7ffbd26070c72, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 044798e47989d9846babd8aa3b615521, type: 2}
+  m_sharedMaterial: {fileID: 5185829666545690946, guid: 044798e47989d9846babd8aa3b615521, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17657,8 +17657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.345493, y: 0.0004425}
-  m_SizeDelta: {x: 816.6912, y: 393.82}
+  m_AnchoredPosition: {x: 0.000047684, y: -0.00066948}
+  m_SizeDelta: {x: 923.76, y: 519.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799521949
 MonoBehaviour:
@@ -20001,8 +20001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000066757, y: -164.44624}
-  m_SizeDelta: {x: 592.3543, y: 87.9381}
+  m_AnchoredPosition: {x: -5.2027, y: -162.04501}
+  m_SizeDelta: {x: 620.3685, y: 92.7406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1993622744
 Animator:

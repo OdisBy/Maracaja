@@ -5,25 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class menuInicial : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip click;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start(){
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = click;
     }
 
     public void goToGame(){
-        SceneManager.LoadScene("Game");
+        GetComponent<AudioSource>().Play();
+        SceneManager.LoadScene("CutScene-Inicial");
     }
     public void openConfiguration(){
         //TODO
+        GetComponent<AudioSource>().Play();
     }
     public void quitGame(){
+        GetComponent<AudioSource>().Play();
         Application.Quit();
+    }
+
+    public void clickSound(){
+        GetComponent<AudioSource>().clip = click;
+        GetComponent<AudioSource>().Play();
     }
 }

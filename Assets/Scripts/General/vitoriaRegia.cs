@@ -16,6 +16,7 @@ public class vitoriaRegia : MonoBehaviour
         initialPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        ChangeState("vitoriaRegia");
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -23,7 +24,6 @@ public class vitoriaRegia : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             StartCoroutine(Fall());
-
         }
     }
 
