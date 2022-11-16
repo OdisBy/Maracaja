@@ -41,6 +41,7 @@ public class Placa : MonoBehaviour
         {
             if(!alreadyOpen)
             {
+                // exclamacaoPop.GetComponent<RectTransform>().anchoredPosition =  new Vector2(6, 2);
                 exclamacaoPop.SetActive(true);
             }
             canBeOpen = true;
