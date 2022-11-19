@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638017724823138457
+  lastModified: 638042097721118741
   FileSizes:
   - Name: Desktop
-    Value: 976
+    Value: 1184
   Exists: 1
 --- !u!114 &-3486160300340323569
 MonoBehaviour:
@@ -47,6 +47,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 40500
+--- !u!114 &-2345329964889541103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game 2
+  m_EditorClassIdentifier: 
+  Path: event:/Game 2
+  Guid:
+    Data1: -249717893
+    Data2: 1101391276
+    Data3: -29787263
+    Data4: 687362242
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40500
+--- !u!114 &-1880057465732415657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/escalando
+  m_EditorClassIdentifier: 
+  Path: event:/escalando
+  Guid:
+    Data1: -602454921
+    Data2: 1080403128
+    Data3: 1740656315
+    Data4: -2043102204
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1642745637205361030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +128,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 43049
+--- !u!114 &-1540250059523481269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/passo_1
+  m_EditorClassIdentifier: 
+  Path: event:/passo_1
+  Guid:
+    Data1: 1603031633
+    Data2: 1207953438
+    Data3: -1776934007
+    Data4: -1117266618
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-836660475592564145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/passo1
+  m_EditorClassIdentifier: 
+  Path: event:/passo1
+  Guid:
+    Data1: 363655815
+    Data2: 1094805582
+    Data3: 1606406038
+    Data4: -1802318395
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,12 +204,17 @@ MonoBehaviour:
   - {fileID: -1642745637205361030}
   - {fileID: -3486160300340323569}
   - {fileID: 6216932875606127494}
+  - {fileID: -1540250059523481269}
+  - {fileID: 3062498891456607509}
+  - {fileID: -1880057465732415657}
+  - {fileID: -2345329964889541103}
+  - {fileID: -836660475592564145}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3057343605701101963}
   StringsBanks:
   - {fileID: -6520123813183136801}
-  cacheTime: 638017724823138457
+  cacheTime: 638042097721118741
   cacheVersion: 131591
 --- !u!114 &3000793855638900987
 MonoBehaviour:
@@ -145,11 +258,38 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638017724823118438
+  lastModified: 638042097721108750
   FileSizes:
   - Name: Desktop
-    Value: 44783232
+    Value: 4119200
   Exists: 1
+--- !u!114 &3062498891456607509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camerafinal
+  m_EditorClassIdentifier: 
+  Path: event:/camerafinal
+  Guid:
+    Data1: -413372317
+    Data2: 1222230110
+    Data3: 1635528605
+    Data4: -1907066858
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4264321003494624989
 MonoBehaviour:
   m_ObjectHideFlags: 0
