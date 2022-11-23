@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638047746335307747
+  lastModified: 638047906064758953
   FileSizes:
   - Name: Desktop
-    Value: 1318
+    Value: 1362
   Exists: 1
 --- !u!114 &-5612438071160711694
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 40500
+--- !u!114 &-2303996417488637783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CutsceneFinal
+  m_EditorClassIdentifier: 
+  Path: event:/CutsceneFinal
+  Guid:
+    Data1: 650272757
+    Data2: 1215237930
+    Data3: 1625267
+    Data4: -1081550706
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49585
 --- !u!114 &-1642745637205361030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,12 +293,13 @@ MonoBehaviour:
   - {fileID: -7212167334397991124}
   - {fileID: 5903664253952347496}
   - {fileID: 1387784077347162842}
+  - {fileID: -2303996417488637783}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3057343605701101963}
   StringsBanks:
   - {fileID: -6520123813183136801}
-  cacheTime: 638047746335307747
+  cacheTime: 638047906064758953
   cacheVersion: 131591
 --- !u!114 &1387784077347162842
 MonoBehaviour:
@@ -342,10 +370,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638047746335297746
+  lastModified: 638047906064738706
   FileSizes:
   - Name: Desktop
-    Value: 5413792
+    Value: 5992768
   Exists: 1
 --- !u!114 &5903664253952347496
 MonoBehaviour:

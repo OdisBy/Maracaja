@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 32590617}
   - component: {fileID: 32590621}
   - component: {fileID: 32590620}
+  - component: {fileID: 32590622}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -252,6 +253,36 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &32590622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32590616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 650272757
+      Data2: 1215237930
+      Data3: 1625267
+      Data4: -1081550706
+    Path: event:/CutsceneFinal
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &161481500
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +986,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=\"black\">Cr\xE9ditos\nValter\nGabriela da Rocha\nLucas Peixoto\nPaloma\nRuliam\n"
+  m_text: "<color=\"black\">Cr\xE9ditos\n<color=\"red>Valter</color> Roberto Schaffrath\n\n<color=\"red>Gabriela</color>
+    da Rocha de Oliveira\n\n<color=\"red>Lucas</color> Cust\xF3dio Bublitz Peixoto\n\n<color=\"red>Paloma</color>
+    Machado Martin\r\n\n<color=\"red>Ruliam</color> dos Santos de Oliveira\r\n\n<color=\"red>Vitor</color>
+    dos Santos Neri Marcondes\r\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e68f6c5d31e3d842b6378564a505730, type: 2}
   m_sharedMaterial: {fileID: 8132074103354006278, guid: 6e68f6c5d31e3d842b6378564a505730, type: 2}
@@ -982,8 +1016,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.52
-  m_fontSizeBase: 42.52
+  m_fontSize: 25.8
+  m_fontSizeBase: 25.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
