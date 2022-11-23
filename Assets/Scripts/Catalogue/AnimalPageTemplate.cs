@@ -8,8 +8,6 @@ public class AnimalPageTemplate : ScriptableObject
     public int id;
     public bool faseDia;
     public bool isUnlocked = false;
-    public bool podeFinalizar;
-    public bool inQuestPage;
     public bool inQuest;
     public bool questFineshed;
     public Sprite fotoItem;

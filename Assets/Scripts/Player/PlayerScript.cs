@@ -38,10 +38,8 @@ public class PlayerScript : MonoBehaviour
     [HideInInspector]
     public bool Jumping;
     public bool canWalk;
-    public bool isTalking;
     public bool isGrabbing;
     public bool isJumping;
-    public bool isFlipping;
     public bool canMove;
     public bool inQuest;
     public bool Grounded;
@@ -49,6 +47,7 @@ public class PlayerScript : MonoBehaviour
     public bool onWall;
     public bool climbing;
     public int wallSide;
+    public bool isTalking;
     public float speed = 10;
     [Range(0, 10)]
     public float jumpForce;
@@ -56,11 +55,10 @@ public class PlayerScript : MonoBehaviour
     public bool onRightWall;
     public bool onLeftWall;
     public Vector3 moveposition;
-
     public bool canGoNextPhase;
-    public BoxCollider2D spawnCollider;
-    public int questId;
+    public int faseAtual;
     public float questIdFloat;
+    public gameConfigs gameConfigs;
 
     [Space]
 
@@ -76,9 +74,12 @@ public class PlayerScript : MonoBehaviour
     public Vector2 bottomOffset, rightOffset, leftOffset;
     private Color debugCollisionColor = Color.red;
     public FlipTree flipScript;
+    public BoxCollider2D spawnCollider;
 
 
+    [Space]
 
+    [Header("FMOD e outros")]
     
     public FMODUnity.EventReference EventFS;
 
@@ -87,6 +88,8 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     public Color[] coresLuz;
+
+    public faseController faseController;
     
 
 
@@ -101,6 +104,7 @@ public class PlayerScript : MonoBehaviour
         animalPageManager.resetInfos();
         questManager.resetInfos();
         albumManager.updateInfos();
+        audioController.atualizarSom();
     }
 
     void Start()
@@ -109,18 +113,19 @@ public class PlayerScript : MonoBehaviour
         irSpawnPoint();
         getQuestId();
         luzGlobal.color = coresLuz[0];
+        PlayerPrefs.SetInt("fase", 0);
     }
 
     public void getQuestId()
     {
-        questId = PlayerPrefs.GetInt("questPageId", 0);
+        faseAtual = PlayerPrefs.GetInt("fase", 0);
     }
 
 
     void Update()
     {
 
-
+        // Debug.Log(faseAtual);
         //SOM MIADO
         if (Time.time > proximoMiado) {
             proximoMiado += period;
@@ -128,7 +133,7 @@ public class PlayerScript : MonoBehaviour
         }
         
         //MOVEMENT
-        if (isGrabbing || isTalking){
+        if (isGrabbing){
             canWalk = false;
         }
         else
@@ -179,26 +184,29 @@ public class PlayerScript : MonoBehaviour
         //GO NEXT PHASE
         if(Input.GetKey(KeyCode.P) && canGoNextPhase)
         {
-            canGoNextPhase = false;
             getQuestId();
-            //IF ITEM CONSEGUIDO, ADD VARIAVEL AQ NO PLAYER ELE VAI DECIDIR SE CHAMA O OUTRO VOID PARA ADD O ITEM NO CATALOGO
-            animalPageManager.animalCompleto(questId);
-            Debug.Log("Next Phase");
+            if(faseAtual == 3){
+                faseController.finalizarJogo();
+            }else{
+            faseController.atualizarFase();
+            getQuestId();
+            canGoNextPhase = false;
             
-            questId += 1;
-            PlayerPrefs.SetInt("questPageId", questId);
             questManager.updateInfos();
             animalPageManager.updateInfos();
             albumManager.updateInfos();
             irSpawnPoint();
-            questIdFloat = PlayerPrefs.GetInt("questPageId", 0);
-            if(questIdFloat / 2 == 0){
+
+            questIdFloat = PlayerPrefs.GetInt("fase", 0);
+            Debug.Log("Fase = " + questIdFloat);
+            if(questIdFloat % 2 == 0){
                 Debug.Log("Mudando luz pra dia");
                 luzGlobal.color = coresLuz[0];   
             }
             else{
                 Debug.Log("Mudando luz pra noite");
                 luzGlobal.color = coresLuz[1];
+            }
             }
         }
 
@@ -244,6 +252,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)){
             if(isPaused)
             {
+                gameConfigs.fecharConfiguracoes();
                 isPaused = false;
                 Time.timeScale = 1;
                 return;
@@ -254,6 +263,7 @@ public class PlayerScript : MonoBehaviour
             }
             Time.timeScale = 0;
             isPaused = true;
+            gameConfigs.abrirConfiguracoes();
 
         }
 
@@ -349,20 +359,6 @@ public class PlayerScript : MonoBehaviour
     {
         ChangeState("Player_Idle");
         pic.picture();
-        canMove = true;
-    }
-
-    public void returnPictureAnimal(AnimalScript _FotoAnimal)
-    {
-        Debug.Log("Return animal: " + _FotoAnimal);
-    }
-    public void returnPicturePlanta(PlantsScript _FotoPlanta)
-    {
-        Debug.Log("Return planta: " + _FotoPlanta);
-    }
-    public void returnPictureVazia()
-    {
-        Debug.Log("Return vazio");
     }
 
     //MAQUINA DE ESTADOS ANIMAÇÃO
@@ -379,7 +375,8 @@ public class PlayerScript : MonoBehaviour
     {
         if(col.gameObject.layer == LayerMask.NameToLayer("Casa"))
         {
-            if(questManager.allPages[questId].isUnlocked)
+            getQuestId();
+            if(questManager.allPages[faseAtual].isUnlocked)
             {
                 canGoNextPhase = true;
             }
@@ -395,19 +392,5 @@ public class PlayerScript : MonoBehaviour
             canGoNextPhase = false;
         }
     }
-
-
-    // void OnDrawGizmos()
-    // {
-    //     Gizmos.color = Color.red;
-
-    //     var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
-
-    //     Gizmos.DrawWireSphere((Vector2)transform.position + bottomOffset, collisionRadius);
-    //     Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
-    //     Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
-
-    //     Gizmos.DrawSphere(moveposition, 0.2f);
-    // }
 
 }

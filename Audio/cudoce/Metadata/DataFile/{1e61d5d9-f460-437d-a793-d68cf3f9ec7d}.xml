@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{1e61d5d9-f460-437d-a793-d68cf3f9ec7d}">
+		<property name="assetPath">
+			<value>Ararajuba/Ararajuba2.mp3.meta</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{60b5d8a6-be1e-4e46-a377-21706de459ad}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Ararajuba
   m_EditorClassIdentifier: 
   id: 1
-  isUnlocked: 0
-  fotoDesbloqueada: {fileID: 21300000, guid: 664b7866a0bad3d4a8c562a3c80815a9, type: 3}
+  isUnlocked: 1
+  fotoDesbloqueada: {fileID: 21300000, guid: 67bd4d3d7241c4a4cb43b9b3de325197, type: 3}
+  itemDesbloqueado: {fileID: 21300000, guid: b1ed7f016e0ce984c9584d5502ad9c08, type: 3}
   questName: Ararajuba
   infos: "<color=\"blue\">Nome:</color>Ararajuba<br> <color=\"blue\">Habitat:</color>
     A popula\xE7\xF5es desta ave j\xE1 foram avistadas entre a plan\xEDcie amaz\xF4nica

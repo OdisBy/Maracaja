@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class itemQuestScript : MonoBehaviour
 {
-    public GameObject tronco;
-    public GameObject pena;
-    public AnimalPageManager animalPageManager;
+    public AnimalScript animal;
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if(tronco != null)
+        Debug.Log("ASAS");
+        if(col.gameObject.CompareTag("Player"))
         {
-            if(animalPageManager.allAnimals[0].inQuest)
-            {
-                tronco.SetActive(true);
-            }
-        }
-        if(pena != null)
-        {
-            if(animalPageManager.allAnimals[1].inQuest)
-            {
-                pena.SetActive(true);
-            }
+            animal.concluiuQuest();
+            Destroy(gameObject);
         }
     }
 }

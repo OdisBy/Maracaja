@@ -14,15 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   faseDia: 1
-  isUnlocked: 0
-  podeFinalizar: 0
-  inQuestPage: 1
+  isUnlocked: 1
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: aad0c3f95d8d5de4a8fcf06fb302d7ca, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: 2f5187cef51334e49b47327f744baedf, type: 3}
-  FotoReal: {fileID: 21300000, guid: 076299b8dbd6c334b927ee944c698225, type: 3}
-  foto: {fileID: 21300000, guid: 29b6e7efcda9a1d429a845e2ee5706f7, type: 3}
+  FotoReal: {fileID: 21300000, guid: 876297aed1f528b4eb23dc536548a867, type: 3}
+  foto: {fileID: 21300000, guid: b2ecb79882d6a734f874c56f095ffdaa, type: 3}
   infos_1: "<color=\"blue\">Nome:</color> Tamandu\xE1-Bandeira\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
     Pilosa\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Mirmecofag\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o

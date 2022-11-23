@@ -6,11 +6,10 @@ public class AnimalScript : MonoBehaviour
 {
     [SerializeField]
     internal string nome;
-    internal bool podeDialogar;
+    public int id;
+    internal int missaoAtual;
     internal bool jaDialogou;
-    internal int inQuestPage;
     internal bool inQuest;
-    internal bool concluiuQuest;
     internal bool recusou;
     internal bool redimiu;
     internal bool jaFotografou;
@@ -30,36 +29,12 @@ public class AnimalScript : MonoBehaviour
     public Animator playerAnimator;
     public AnimalPageManager animalPageManager;
 
+    public GameObject itemQuestAnimal;
+
+
     void Start()
     {
-        inQuestPage = PlayerPrefs.GetInt("questPageId", 0);
-        if(pageTemplate.id == inQuestPage)
-        {
-            pageTemplate.inQuestPage = true;
-        }
-    }
-    void Update()
-    {
-        foreach (AnimalPageTemplate animal in animalPageManager.allAnimals)
-        {
-            if(animal.questFineshed)
-            {
-
-                player.irSpawnPoint();
-
-
-
-                concluiuQuest = true;
-                pageTemplate.inQuestPage = false;
-                PlayerPrefs.SetInt("questPageId", +1);
-                inQuestPage = PlayerPrefs.GetInt("questPageId", 0);
-                pageTemplate.inQuestPage = true;
-                questPageManager.updateInfos();
-
-            }else{
-                concluiuQuest = false;
-            }
-        }
+        missaoAtual = PlayerPrefs.GetInt("fase", 0);
     }
 
 
@@ -68,11 +43,9 @@ public class AnimalScript : MonoBehaviour
         if(col.gameObject.CompareTag("Player"))
         {
             podeFotografar = true;
-            if(animalPageManager.allAnimals[0].podeFinalizar){
-                dialogar();
-            }
         }
     }
+    
 
     void OnTriggerExit2D(Collider2D col)
     {
@@ -84,7 +57,18 @@ public class AnimalScript : MonoBehaviour
     }
     public void dialogar()
     {
-        player.isTalking = true;
         dialogueManager.StartDialogue(dialogue, this);
+
+    }
+
+    public void questSecundaria(){
+        inQuest = true;
+        itemQuestAnimal.SetActive(true);
+    }
+
+    public void concluiuQuest(){
+        missaoAtual = PlayerPrefs.GetInt("fase", 0);
+        animalPageManager.allAnimals[missaoAtual].questFineshed = true;
+        animalPageManager.updateInfos();
     }
 }

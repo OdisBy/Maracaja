@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{312e93a0-7e97-40e6-866b-f20c78fd9f46}">
+		<property name="assetPath">
+			<value>Gato/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{60b5d8a6-be1e-4e46-a377-21706de459ad}</destination>
+		</relationship>
+	</object>
+</objects>

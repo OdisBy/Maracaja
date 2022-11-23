@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{24a19f50-8b2a-49f5-98fa-16218f0406b3}">
+		<property name="assetPath">
+			<value>Gato/Miado5.wav.meta</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{60b5d8a6-be1e-4e46-a377-21706de459ad}</destination>
+		</relationship>
+	</object>
+</objects>

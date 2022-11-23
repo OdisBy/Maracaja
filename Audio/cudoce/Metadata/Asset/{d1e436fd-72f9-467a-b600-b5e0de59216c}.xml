@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{d1e436fd-72f9-467a-b600-b5e0de59216c}">
+		<property name="assetPath">
+			<value>Onça Pintada/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{60b5d8a6-be1e-4e46-a377-21706de459ad}</destination>
+		</relationship>
+	</object>
+</objects>

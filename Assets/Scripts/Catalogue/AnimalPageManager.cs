@@ -25,11 +25,7 @@ public class AnimalPageManager : MonoBehaviour
     void Awake()
     {
         Debug.Log("Startando animalpagemanager");
-        PlayerPrefs.SetInt("animalPageId", 0);
-        actualId = PlayerPrefs.GetInt("animalPageId", 0);
         updateInfos();
-        resetInfos();
-        
     }
 
     public void updateInfos()
@@ -55,24 +51,12 @@ public class AnimalPageManager : MonoBehaviour
     }
 
     public void resetInfos(){
+        Debug.Log("Resetando animal");
         foreach (AnimalPageTemplate template in allAnimals)
         {
             template.isUnlocked = false;
-            template.podeFinalizar = false;
-            template.inQuestPage = false;
             template.inQuest = false;
             template.questFineshed = false;
         }
-    }
-
-    public void animalCompleto(int id){
-        allAnimals[id].isUnlocked = true;
-        allAnimals[id].podeFinalizar = false;
-        allAnimals[id].inQuestPage = false;
-    }
-
-    public void completouQuest(int id){
-        allAnimals[id].questFineshed = true;
-        //ADD FOTO DO ITEM
     }
 }

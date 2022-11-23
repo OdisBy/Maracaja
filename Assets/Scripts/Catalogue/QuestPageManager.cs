@@ -19,12 +19,12 @@ public class QuestPageManager : MonoBehaviour
         PlayerPrefs.SetInt("questPageId", 0);
         actualId = PlayerPrefs.GetInt("questPageId", 0);
         updateInfos();
-        resetInfos();
     }
 
     public void updateInfos()
     {
-        actualId = PlayerPrefs.GetInt("questPageId", 0);
+        actualId = PlayerPrefs.GetInt("fase", 0);
+        Debug.Log("id = " + actualId);
         if(allPages[actualId].isUnlocked)
         {
             fotoOculta.sprite = allPages[actualId].fotoDesbloqueada;
@@ -36,6 +36,7 @@ public class QuestPageManager : MonoBehaviour
     }
 
     public void resetInfos(){
+        Debug.Log("Resetando quest");
         foreach (QuestPageTemplate template in allPages)
         {
             template.isUnlocked = false;
@@ -48,9 +49,5 @@ public class QuestPageManager : MonoBehaviour
 
     public void finalizouQuest(int id){
         //TODO ADD FOTO DO ITEM
-    }
-
-    public void finalizouAnimal(int id){
-        allPages[id].questPageAtual = false;
     }
 }

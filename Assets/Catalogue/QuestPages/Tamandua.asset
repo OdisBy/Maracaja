@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Tamandua
   m_EditorClassIdentifier: Assembly-CSharp::QuestPage
   id: 0
-  isUnlocked: 0
-  fotoDesbloqueada: {fileID: 21300000, guid: 29b6e7efcda9a1d429a845e2ee5706f7, type: 3}
+  isUnlocked: 1
+  fotoDesbloqueada: {fileID: 21300000, guid: b2ecb79882d6a734f874c56f095ffdaa, type: 3}
+  itemDesbloqueado: {fileID: 21300000, guid: aad0c3f95d8d5de4a8fcf06fb302d7ca, type: 3}
   questName: Tamandua
   infos: "<color=\"blue\">Nome:</color> Tamandu\xE1-Bandeira<br> <color=\"blue\">Habitat:</color>
     Florestas tropicais,  Caatingas e savanas.<br>\n<color=\"blue\">Descri\xE7\xE3o

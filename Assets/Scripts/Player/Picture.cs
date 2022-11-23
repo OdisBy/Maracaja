@@ -12,30 +12,19 @@ public class PictureManager : MonoBehaviour
     {
         foreach(AnimalScript animal in animais)
         {
-            if(animal.pageTemplate.inQuestPage && animal.podeFotografar)
+            if(animal.podeFotografar)
             {
                 animal.pageTemplate.isUnlocked = true;
-                animal.pageTemplate.inQuest = true;
-                // nextQuestID = PlayerPrefs.GetInt("questPageId", 1) + 1;
-                // PlayerPrefs.SetInt("questPageId", nextQuestID);
                 animal.dialogar();
                 player.canWalk = false;
                 animal.questPageTemplate.isUnlocked = true;
-                // animal.animalPageManager.isUnlocked = true;
                 animal.questPageManager.updateInfos();
+                animal.animalPageManager.updateInfos();
                 Debug.Log(animal + " foi desbloqueado");
                 return;
+            }else{
+                player.canMove = true;
             }
         }
-
-        foreach (PlantsScript planta in plantas)
-        {
-            if(planta.podeFotografar)
-            {
-                player.returnPicturePlanta(planta);
-                return;
-            }
-        }
-        player.returnPictureVazia();
     }
 }

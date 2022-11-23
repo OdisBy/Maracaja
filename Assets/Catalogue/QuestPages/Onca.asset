@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Onca
   m_EditorClassIdentifier: 
   id: 3
-  isUnlocked: 0
-  fotoDesbloqueada: {fileID: 21300000, guid: 1d574135cbcb7704fbfadb516ec3c208, type: 3}
+  isUnlocked: 1
+  fotoDesbloqueada: {fileID: 21300000, guid: e7888720698780849946f0006ea04b35, type: 3}
+  itemDesbloqueado: {fileID: 21300000, guid: 25f17b02b7779714284e37d83cc7fd18, type: 3}
   questName: "On\xE7a"
   infos: "<color=\"blue\">Nome:</color> On\xE7a-Pintada<br> <color=\"blue\">Habitat:</color>
     Vive geralmente pr\xF3xima a rios<br>\n<color=\"blue\">Descri\xE7\xE3o F\xEDsica:</color>

@@ -32,8 +32,8 @@ public class PlacaManager : MonoBehaviour
 
     public void StartDisplay(string[] frases)
     {
-        player.isTalking = true;
         Debug.Log("Start Display");
+        player.canMove = false;
         infoBox.SetActive(true);
         isOpen = true;
         sentencas.Clear();
@@ -58,7 +58,7 @@ public class PlacaManager : MonoBehaviour
         
     }
     public void EndDialogue(){
-        player.isTalking = false;
+        player.canMove = true;
         Debug.Log("End dialogue");
         isOpen = false;
         nextIcon.SetActive(false);

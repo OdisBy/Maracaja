@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Ararajuba
   m_EditorClassIdentifier: 
   id: 1
-  isUnlocked: 0
-  podeFinalizar: 0
-  inQuestPage: 0
+  faseDia: 0
+  isUnlocked: 1
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: b1ed7f016e0ce984c9584d5502ad9c08, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: e26f4a3bf72e6a041a1ea51b92246a13, type: 3}
-  FotoReal: {fileID: 21300000, guid: d285557aa705b824a8c24cd1001875b7, type: 3}
-  foto: {fileID: 21300000, guid: 664b7866a0bad3d4a8c562a3c80815a9, type: 3}
+  FotoReal: {fileID: 21300000, guid: ef86df1e541e13a42b6c41e5baa28bd2, type: 3}
+  foto: {fileID: 21300000, guid: 67bd4d3d7241c4a4cb43b9b3de325197, type: 3}
   infos_1: "<color=\"blue\">Nome:</color> Ararajuba(Guaruba guarouba)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Aves\r\n\n<color=\"blue\">Ordem:</color>
     Psittaciformes\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Psittacidae\r\n\r\n<color=\"blue\">Descri\xE7\xE3o

@@ -17,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject redencaoButton;
     public GameObject acceptButton;
     public GameObject closeButton;
+    public GameObject fecharButton;
+    public string currentState;
 
 
 
@@ -39,24 +41,29 @@ public class DialogueManager : MonoBehaviour
         sentencas = new Queue<string>();
         redencaoButton.SetActive(false);
         declineButton.SetActive(false);
+        ChangeState("DialogueBox_Stop");
     }
 
     public void StartDialogue(Dialogue dialogue, AnimalScript animal)
     {
         animalSelected = animal;
-        dialogueBox.SetActive(true);
-        animator.SetBool("IsOpen", true);
-        closeButton.SetActive(true);
+        animalSelected.player.canMove = false;
+        // dialogueBox.SetActive(true);
+        // animator.SetBool("IsOpen", true);
+        ChangeState("DialogueBox_Open");
+        // closeButton.SetActive(true);
         nameText.text = dialogue.nome;
         sentencas.Clear();
+        fecharButton.SetActive(false);
+        animal.player.canMove = false;
         
 
         if(animal.jaDialogou)
         {
-            if(animalPageManager.allAnimals[0].podeFinalizar){
-                dialogueText.text = concluiuSentenca;
-                DisplayNextSentence();
-            }
+            // if(animalPageManager.allAnimals[0].podeFinalizar){
+            //     dialogueText.text = concluiuSentenca;
+            //     DisplayNextSentence();
+            // }
             if(animal.recusou)
             {
                 redencaoButton.SetActive(true);
@@ -103,6 +110,7 @@ public class DialogueManager : MonoBehaviour
     
     public void DisplayNextSentence()
     {
+        Debug.Log(sentencas.Count);
         continueButton.SetActive(false);
         acceptButton.SetActive(false);  
         declineButton.SetActive(false);
@@ -141,10 +149,6 @@ public class DialogueManager : MonoBehaviour
             declineButton.SetActive(true);
             return;
         }
-        if(sentencas.Count == 0)
-        {
-            EndDialogue();
-        }
 
         if(sentencas.Count != 1)
         {
@@ -159,8 +163,10 @@ public class DialogueManager : MonoBehaviour
     {
         sentencas.Enqueue(inQuestSentenca);
         DisplayNextSentence();
-        animalSelected.inQuest = true;
         animalSelected.recusou = false;
+
+        fecharButton.SetActive(true);
+        animalSelected.questSecundaria();
         
 
         continueButton.SetActive(false);
@@ -176,7 +182,7 @@ public class DialogueManager : MonoBehaviour
         sentencas.Enqueue(declineSentenca);
         DisplayNextSentence();
         
-
+        fecharButton.SetActive(true);
 
         continueButton.SetActive(false);
         acceptButton.SetActive(false);  
@@ -191,6 +197,7 @@ public class DialogueManager : MonoBehaviour
         sentencas.Enqueue(redencaoSentenca);
         DisplayNextSentence();
 
+        fecharButton.SetActive(true);
 
         continueButton.SetActive(false);
         acceptButton.SetActive(false);  
@@ -199,17 +206,21 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
-        Invoke("disableDialogueBox", 1);
+        ChangeState("DialogueBox_Close");
+        animalSelected.player.isTalking = false;
+        animalSelected.player.canMove = true;
+        animalSelected.player.canWalk = true;
     }
 
-    public void disableDialogueBox()
-    {
-        dialogueBox.SetActive(false);
-        animalSelected.player.isTalking = false;
 
-        if(animalPageManager.allAnimals[0].podeFinalizar){
-            animalSelected.player.irSpawnPoint();
+
+
+    internal void ChangeState(string newState)
+    {
+        if (newState != currentState)
+        {
+            animator.Play(newState);
+            currentState = newState;
         }
     }
 }

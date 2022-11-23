@@ -14,15 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   faseDia: 1
-  isUnlocked: 0
-  podeFinalizar: 0
-  inQuestPage: 0
+  isUnlocked: 1
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: 62653f5425edb18498330c58ddf30187, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: 06ceacb676ad0e04ca88d2a33b9184a3, type: 3}
-  FotoReal: {fileID: 21300000, guid: 8839671c3173b0143baa356548ec5b48, type: 3}
-  foto: {fileID: 21300000, guid: 334bb72597eaf03439929a68145cdf99, type: 3}
+  FotoReal: {fileID: 21300000, guid: e3376b25ec1a5b846bacb1e16e2a287f, type: 3}
+  foto: {fileID: 21300000, guid: e73cff882c766b043801e04998994980, type: 3}
   infos_1: "<color=\"blue\">Nome:</color> Macaco-aranha(Ateles Belzebuth)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
     Primata\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Atelidae\r\n\r\n<color=\"blue\">Descri\xE7\xE3o

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Macaco
   m_EditorClassIdentifier: 
   id: 2
-  isUnlocked: 0
-  fotoDesbloqueada: {fileID: 21300000, guid: 334bb72597eaf03439929a68145cdf99, type: 3}
+  isUnlocked: 1
+  fotoDesbloqueada: {fileID: 21300000, guid: 575fa4e63ffb645419e851725fc3c75f, type: 3}
+  itemDesbloqueado: {fileID: 21300000, guid: 62653f5425edb18498330c58ddf30187, type: 3}
   questName: Macaco
   infos: "<color=\"blue\">Nome:</color> Macaco-Aranha<br> <color=\"blue\">Habitat:</color>
     Vivem no alto das \xE1rvores, principalmente na Amaz\xF4nia<br>\n<color=\"blue\">Descri\xE7\xE3o

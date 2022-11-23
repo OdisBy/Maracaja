@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7212167334397991124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tamandua
+  m_EditorClassIdentifier: 
+  Path: event:/Tamandua
+  Guid:
+    Data1: -823408349
+    Data2: 1236572303
+    Data3: 226786178
+    Data4: 1626098893
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8550
 --- !u!114 &-6520123813183136801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +42,65 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638042097721118741
+  lastModified: 638047746335307747
   FileSizes:
   - Name: Desktop
-    Value: 1184
+    Value: 1318
   Exists: 1
+--- !u!114 &-5612438071160711694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/miadoFeedback
+  m_EditorClassIdentifier: 
+  Path: event:/miadoFeedback
+  Guid:
+    Data1: 1025256786
+    Data2: 1081412200
+    Data3: 70512278
+    Data4: 1332261870
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
+--- !u!114 &-5365600689812821423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Onca
+  m_EditorClassIdentifier: 
+  Path: event:/Onca
+  Guid:
+    Data1: -1579391459
+    Data2: 1320720405
+    Data3: -1666582625
+    Data4: 2125105118
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6160
 --- !u!114 &-3486160300340323569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,33 +155,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 40500
---- !u!114 &-1880057465732415657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/escalando
-  m_EditorClassIdentifier: 
-  Path: event:/escalando
-  Guid:
-    Data1: -602454921
-    Data2: 1080403128
-    Data3: 1740656315
-    Data4: -2043102204
-  Banks:
-  - {fileID: 3057343605701101963}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-1642745637205361030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,11 +177,11 @@ MonoBehaviour:
   - {fileID: 3057343605701101963}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 43049
+  Length: 124052
 --- !u!114 &-1540250059523481269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,23 +253,53 @@ MonoBehaviour:
   - {fileID: 3057343605701101963}
   EditorEvents:
   - {fileID: 7201025678981025627}
-  - {fileID: 4264321003494624989}
   - {fileID: 3000793855638900987}
   - {fileID: -1642745637205361030}
   - {fileID: -3486160300340323569}
   - {fileID: 6216932875606127494}
   - {fileID: -1540250059523481269}
-  - {fileID: 3062498891456607509}
-  - {fileID: -1880057465732415657}
   - {fileID: -2345329964889541103}
   - {fileID: -836660475592564145}
+  - {fileID: -5612438071160711694}
+  - {fileID: 6025401999360186005}
+  - {fileID: -5365600689812821423}
+  - {fileID: -7212167334397991124}
+  - {fileID: 5903664253952347496}
+  - {fileID: 1387784077347162842}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3057343605701101963}
   StringsBanks:
   - {fileID: -6520123813183136801}
-  cacheTime: 638042097721118741
+  cacheTime: 638047746335307747
   cacheVersion: 131591
+--- !u!114 &1387784077347162842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/macaco
+  m_EditorClassIdentifier: 
+  Path: event:/macaco
+  Guid:
+    Data1: -59105554
+    Data2: 1153001180
+    Data3: 1995338890
+    Data4: 584033366
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2470
 --- !u!114 &3000793855638900987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,12 +342,12 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638042097721108750
+  lastModified: 638047746335297746
   FileSizes:
   - Name: Desktop
-    Value: 4119200
+    Value: 5413792
   Exists: 1
---- !u!114 &3062498891456607509
+--- !u!114 &5903664253952347496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,24 +357,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/camerafinal
+  m_Name: event:/Ararajuba
   m_EditorClassIdentifier: 
-  Path: event:/camerafinal
+  Path: event:/Ararajuba
   Guid:
-    Data1: -413372317
-    Data2: 1222230110
-    Data3: 1635528605
-    Data4: -1907066858
+    Data1: -1398021173
+    Data2: 1300475340
+    Data3: 1585690515
+    Data4: -372842783
   Banks:
   - {fileID: 3057343605701101963}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &4264321003494624989
+  Length: 3880
+--- !u!114 &6025401999360186005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,9 +384,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MenuIntro
+  m_Name: event:/menuIntro
   m_EditorClassIdentifier: 
-  Path: event:/MenuIntro
+  Path: event:/menuIntro
   Guid:
     Data1: 1240709505
     Data2: 1149537956

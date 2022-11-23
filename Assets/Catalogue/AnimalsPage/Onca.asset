@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Onca
   m_EditorClassIdentifier: 
   id: 3
-  isUnlocked: 0
-  podeFinalizar: 0
-  inQuestPage: 0
+  faseDia: 0
+  isUnlocked: 1
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: 25f17b02b7779714284e37d83cc7fd18, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: 1feab8f08dde1be4fb3c4644301c6caf, type: 3}
-  FotoReal: {fileID: 21300000, guid: 0a064e68c42a1b844b9729d542638010, type: 3}
-  foto: {fileID: 21300000, guid: 1d574135cbcb7704fbfadb516ec3c208, type: 3}
+  FotoReal: {fileID: 21300000, guid: a09c040ff1301e24e87a2f93a7a87515, type: 3}
+  foto: {fileID: 21300000, guid: e7888720698780849946f0006ea04b35, type: 3}
   infos_1: "<color=\"blue\">Nome:</color> On\xE7a-pintada(Panthera Onca)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
     Carn\xEDvora\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Fel\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
