@@ -21,6 +21,7 @@ public class AnimalPageManager : MonoBehaviour
     public AnimalPageTemplate[] allAnimals;
     public GameObject itemGO;
     public Image itemImage;
+    public bool comItem;
 
     void Awake()
     {

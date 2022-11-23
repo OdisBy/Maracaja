@@ -21,6 +21,7 @@ public class AnimalScript : MonoBehaviour
 
     public Dialogue dialogue;
     public DialogueManager dialogueManager;
+    public bool comItem;
 
     [Space]
     public AnimalPageTemplate pageTemplate;
@@ -61,6 +62,8 @@ public class AnimalScript : MonoBehaviour
 
     }
 
+    
+
     public void questSecundaria(){
         inQuest = true;
         itemQuestAnimal.SetActive(true);
@@ -68,7 +71,7 @@ public class AnimalScript : MonoBehaviour
 
     public void concluiuQuest(){
         missaoAtual = PlayerPrefs.GetInt("fase", 0);
-        animalPageManager.allAnimals[missaoAtual].questFineshed = true;
+        questPageManager.updateInfos();
         animalPageManager.updateInfos();
     }
 }

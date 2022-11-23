@@ -52,25 +52,25 @@ public class Cutscene : MonoBehaviour
 
     IEnumerator cutsceneInicial(){
         imagem.sprite = Sprite.Create (inicialArray[0], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[1], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[2], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[3], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[4], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[5], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         imagem.sprite = Sprite.Create (inicialArray[6], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.4f);
 
         id = 7;
     }

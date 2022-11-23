@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controles
+  m_text: Sons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 044798e47989d9846babd8aa3b615521, type: 2}
   m_sharedMaterial: {fileID: 5185829666545690946, guid: 044798e47989d9846babd8aa3b615521, type: 2}
@@ -2358,7 +2358,7 @@ GameObject:
   - component: {fileID: 1225258799}
   - component: {fileID: 1225258798}
   m_Layer: 5
-  m_Name: Controles
+  m_Name: Sons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3406,7 +3406,7 @@ MonoBehaviour:
     Path: event:/MenuIntro
   Event: 
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

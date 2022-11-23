@@ -14,6 +14,7 @@ public class AnimalPageTemplate : ScriptableObject
     public Sprite fotoBloqueada;
     public Sprite FotoReal;
     public Sprite foto;
+    public bool comItem;
     [TextArea(3, 30)]
     public string infos_1;
     [TextArea(3, 30)]

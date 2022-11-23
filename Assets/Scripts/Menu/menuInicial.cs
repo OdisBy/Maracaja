@@ -27,6 +27,7 @@ public class menuInicial : MonoBehaviour
     public float somMusica;
     public float somPersonagem;
 
+    
 
     
 
@@ -58,6 +59,7 @@ public class menuInicial : MonoBehaviour
 
     public void goToGame(){
         clickSound();
+        instanceFMODMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         SceneManager.LoadScene("CutScene-Inicial");
     }
     public void openConfiguration(){

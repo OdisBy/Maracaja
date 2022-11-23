@@ -8,10 +8,9 @@ public class itemQuestScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("ASAS");
         if(col.gameObject.CompareTag("Player"))
         {
-            animal.concluiuQuest();
+            animal.comItem = true;
             Destroy(gameObject);
         }
     }

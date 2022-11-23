@@ -19,11 +19,11 @@ public class cutSceneDiaNoite : MonoBehaviour
 
     public void diaParaNoite(){
         imagemGO.SetActive(true);
-        StartCoroutine(cutsceneDN());
+        StartCoroutine(cutsceneND());
     }
     public void noiteParaDia(){
         imagemGO.SetActive(true);
-        StartCoroutine(cutsceneND());
+        StartCoroutine(cutsceneDN());
     }
 
 
@@ -101,19 +101,19 @@ public class cutSceneDiaNoite : MonoBehaviour
         player.canMove = false;
         imagem.sprite = Sprite.Create (final[0], new Rect (0, 0, 280, 180), new Vector2 ());
         textfinal.text = textoproFinal[0];
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(5f);
 
         imagem.sprite = Sprite.Create (final[1], new Rect (0, 0, 280, 180), new Vector2 ());
         textfinal.text = textoproFinal[1];
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(4f);
 
         imagem.sprite = Sprite.Create (final[2], new Rect (0, 0, 280, 180), new Vector2 ());
         textfinal.text = textoproFinal[2];
-        yield return new WaitForSecondsRealtime(4f);
+        yield return new WaitForSecondsRealtime(6f);
 
         imagem.sprite = Sprite.Create (final[3], new Rect (0, 0, 280, 180), new Vector2 ());
         textfinal.text = textoproFinal[3];
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(5f);
 
         imagem.sprite = Sprite.Create (final[4], new Rect (0, 0, 280, 180), new Vector2 ());
         textfinal.text = textoproFinal[4];

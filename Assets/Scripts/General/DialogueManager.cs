@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     private string inQuestSentenca;
     private string declineSentenca;
     private string redencaoSentenca;
-    private string finalSentenca = "Muito obrigado por me ajudar meu amiguinho. Pode retornar para casa agora!";
+    // private string finalSentenca = "Muito obrigado por me ajudar meu amiguinho. Pode retornar para casa agora!";
     private string concluiuSentenca;
 
     public bool terminou;
@@ -60,17 +60,23 @@ public class DialogueManager : MonoBehaviour
 
         if(animal.jaDialogou)
         {
-            // if(animalPageManager.allAnimals[0].podeFinalizar){
-            //     dialogueText.text = concluiuSentenca;
-            //     DisplayNextSentence();
-            // }
-            if(animal.recusou)
+            if(animal.comItem){
+                sentencas.Clear();
+                sentencas.Enqueue(concluiuSentenca);
+                DisplayNextSentence();
+
+                fecharButton.SetActive(true);
+                redencaoButton.SetActive(false);
+                declineButton.SetActive(false);
+                acceptButton.SetActive(false);
+            }
+            else if(animal.recusou)
             {
                 redencaoButton.SetActive(true);
                 declineButton.SetActive(true);
+                continueButton.SetActive(false);
             }
-            continueButton.SetActive(false);
-            if(animal.inQuest)
+            else if(animal.inQuest)
             {
                 //BOTOES
                 // closeButton.SetActive(true);
@@ -93,7 +99,7 @@ public class DialogueManager : MonoBehaviour
             
             //BOTOES
             // closeButton.SetActive(true);
-
+            Debug.Log("ASsa");
 
 
             foreach(string sentenca in dialogue.sentencas)
@@ -110,11 +116,18 @@ public class DialogueManager : MonoBehaviour
     
     public void DisplayNextSentence()
     {
-        Debug.Log(sentencas.Count);
         continueButton.SetActive(false);
         acceptButton.SetActive(false);  
         declineButton.SetActive(false);
         redencaoButton.SetActive(false);
+        if(animalSelected.comItem){
+            sentencas.Clear();
+            sentencas.Enqueue(concluiuSentenca);
+            fecharButton.SetActive(true);
+            animalSelected.concluiuQuest();
+        }else{
+
+        
         if(sentencas.Count == 1)
         {
             continueButton.SetActive(false);
@@ -127,7 +140,7 @@ public class DialogueManager : MonoBehaviour
             redencaoButton.SetActive(true);
             return;
         }
-        if(animalSelected.inQuest)
+        if(animalSelected.inQuest && !animalSelected.pageTemplate.questFineshed)
         {
             dialogueText.text = inQuestSentenca;
             continueButton.SetActive(true);
@@ -153,6 +166,7 @@ public class DialogueManager : MonoBehaviour
         if(sentencas.Count != 1)
         {
             continueButton.SetActive(true);
+        }
         }
 
         string sentenca = sentencas.Dequeue();

@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8550
+  Length: 1050
 --- !u!114 &-6520123813183136801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638047906064758953
+  lastModified: 638048161263467270
   FileSizes:
   - Name: Desktop
-    Value: 1362
+    Value: 1406
   Exists: 1
 --- !u!114 &-5612438071160711694
 MonoBehaviour:
@@ -294,13 +294,41 @@ MonoBehaviour:
   - {fileID: 5903664253952347496}
   - {fileID: 1387784077347162842}
   - {fileID: -2303996417488637783}
+  - {fileID: 475053279997004467}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3057343605701101963}
   StringsBanks:
   - {fileID: -6520123813183136801}
-  cacheTime: 638047906064758953
+  cacheTime: 638048161263467270
   cacheVersion: 131591
+--- !u!114 &475053279997004467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tamandua2D
+  m_EditorClassIdentifier: 
+  Path: event:/Tamandua2D
+  Guid:
+    Data1: -1408035530
+    Data2: 1335123732
+    Data3: 1374946691
+    Data4: 46973752
+  Banks:
+  - {fileID: 3057343605701101963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &1387784077347162842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,10 +398,10 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638047906064738706
+  lastModified: 638048161263437263
   FileSizes:
   - Name: Desktop
-    Value: 5992768
+    Value: 5994368
   Exists: 1
 --- !u!114 &5903664253952347496
 MonoBehaviour:
@@ -424,11 +452,11 @@ MonoBehaviour:
   - {fileID: 3057343605701101963}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 14837
+  Length: 13000
 --- !u!114 &6216932875606127494
 MonoBehaviour:
   m_ObjectHideFlags: 0
