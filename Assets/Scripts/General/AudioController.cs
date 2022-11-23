@@ -5,17 +5,7 @@ using UnityEngine.Audio;
 
 public class AudioController : MonoBehaviour
 {
-    public AudioSource audioSource;
     int actualPlayer;
-    public AudioSource Foto;
-    public AudioSource passo;
-    public AudioSource escalando;
-    public AudioSource CairChao;
-    public AudioSource Caindo;
-    public AudioSource pulando;
-    public AudioSource Zoom;
-    public AudioClip[] ararajuba;
-    public AudioClip[] gatoMiado;
     public float somGeral;
     public float somAnimais;
     public float somBG;
@@ -24,14 +14,25 @@ public class AudioController : MonoBehaviour
 
     public int dayNight;
 
-
-    public FMOD.Studio.EventInstance ararajubaFMOD;
-    public FMOD.Studio.EventInstance macacoFMOD;
-    public FMOD.Studio.EventInstance oncaFMOD;
-    public FMOD.Studio.EventInstance tamanduaFMOD;
-
     public GameObject BGM, BG;
     public GameObject BGTheme, BGNight;
+
+
+    public FMODUnity.EventReference miadoGatoRef;
+    public FMODUnity.EventReference passosSoundRef;
+    public FMODUnity.EventReference fotoSoundRef;
+    public FMODUnity.EventReference escalandoSoundRef;
+    public FMODUnity.EventReference caindoChaoSoundRef;
+    public FMODUnity.EventReference caindoSoundRef;
+    public FMODUnity.EventReference pulandoSoundRef;
+
+    public FMOD.Studio.EventInstance miadoGato;
+    public FMOD.Studio.EventInstance fotoSound;
+    public FMOD.Studio.EventInstance escalandoSound;
+    public FMOD.Studio.EventInstance caindoChaoSound;
+    public FMOD.Studio.EventInstance caindoSound;
+    public FMOD.Studio.EventInstance pulandoSound;
+    public FMOD.Studio.EventInstance passosSound;
 
     public void Start(){
         atualizarSom();
@@ -39,6 +40,15 @@ public class AudioController : MonoBehaviour
         BG.SetActive(true);
         BGTheme.SetActive(false);
         BGNight.SetActive(false);
+
+
+        miadoGato = FMODUnity.RuntimeManager.CreateInstance(miadoGatoRef);
+        passosSound = FMODUnity.RuntimeManager.CreateInstance(passosSoundRef);
+        fotoSound = FMODUnity.RuntimeManager.CreateInstance(fotoSoundRef);
+        escalandoSound = FMODUnity.RuntimeManager.CreateInstance(escalandoSoundRef);
+        caindoChaoSoundRef = FMODUnity.RuntimeManager.CreateInstance(caindoChaoSoundRef);
+        caindoChaoSound = FMODUnity.RuntimeManager.CreateInstance(caindoSoundRef);
+        pulandoSound = FMODUnity.RuntimeManager.CreateInstance(pulandoSoundRef);
     }
     public void diaNoite(){
         dayNight = PlayerPrefs.GetInt("fase", 0);
@@ -66,12 +76,6 @@ public class AudioController : MonoBehaviour
         Caindo.volume = somPersonagem;
         pulando.volume = somPersonagem;
         Zoom.volume = somPersonagem;
-
-        //ANIMAIS SONS
-        ararajubaFMOD = FMODUnity.RuntimeManager.CreateInstance("event:/Ararajuba");
-        macacoFMOD = FMODUnity.RuntimeManager.CreateInstance("event:/Macaco");
-        tamanduaFMOD = FMODUnity.RuntimeManager.CreateInstance("event:/Onca");
-        oncaFMOD = FMODUnity.RuntimeManager.CreateInstance("event:/Tamandua");
     }
 
     void getActualVolume(){
@@ -82,61 +86,28 @@ public class AudioController : MonoBehaviour
         somPersonagem = PlayerPrefs.GetFloat("somPersonagem", 100);
     }
 
-    public void ajustarVolume(){
-        getActualVolume();
-        ararajubaFMOD.setVolume(somAnimais);
-        macacoFMOD.setVolume(somAnimais);
-        tamanduaFMOD.setVolume(somAnimais);
-        oncaFMOD.setVolume(somAnimais);
-    }
-
-    void Update(){
-        ararajubaFMOD.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        macacoFMOD.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        tamanduaFMOD.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        oncaFMOD.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-
-    }
 
     public void foto(){
-        Foto.Play();
+        fotoSound.start();
     }
     public void Passo(){
-        passo.Play();
+        passosSound.start();
     }
     public void Escalando(){
-        escalando.Play();
+        escalandoSound.start();
     }
     public void CairNoChao(){
-        CairChao.Play();
+        caindoChaoSoundRef.start();
     }
     public void caindo(){
-        Caindo.Play();
+        caindoChaoSound.start();
     }
     public void Pulando(){
-        pulando.Play();
-    }
-    public void zoom(){
-        Zoom.Play();
+        pulandoSound.start();
     }
 
-    public void ararajubaSom(){
-        ararajubaFMOD.start();
-    }
-    public void tamanduaSom(){
-        tamanduaFMOD.start();
-    }
-    public void macacoSom(){
-        macacoFMOD.start();
-    }
-    public void oncaSom(){
-        oncaFMOD.start();
-    }
-
-    public void miadoGato(){
-        actualPlayer = Random.Range(0, 2);
-        audioSource.clip = gatoMiado[actualPlayer]; 
-        audioSource.Play();
+    public void miadoGatoFunc(){
+        miadoGato.start();
     }
 
 }

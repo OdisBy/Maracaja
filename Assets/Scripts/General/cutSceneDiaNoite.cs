@@ -34,30 +34,30 @@ public class cutSceneDiaNoite : MonoBehaviour
     IEnumerator cutsceneDN(){
         player.canMove = false;
         imagem.sprite = Sprite.Create (diaParaNoiteArray[0], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[1], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[2], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[3], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[4], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
         audioController.diaNoite();
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[5], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
 
         imagem.sprite = Sprite.Create (diaParaNoiteArray[6], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
         imagem.sprite = Sprite.Create (diaParaNoiteArray[7], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
         imagem.sprite = Sprite.Create (diaParaNoiteArray[8], new Rect (0, 0, 280, 180), new Vector2 ());
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.5f);
         imagem.sprite = Sprite.Create (diaParaNoiteArray[9], new Rect (0, 0, 280, 180), new Vector2 ());
         yield return new WaitForSecondsRealtime(0.5f);
         player.canMove = true;
