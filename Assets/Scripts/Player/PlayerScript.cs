@@ -124,12 +124,11 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-
         // Debug.Log(faseAtual);
         //SOM MIADO
         if (Time.time > proximoMiado) {
             proximoMiado += period;
-            audioController.miadoGato();
+            sonsPlay(2);
         }
         
         //MOVEMENT
@@ -347,6 +346,24 @@ public class PlayerScript : MonoBehaviour
     private void escalar()
     {
         rb.velocity = new Vector3(horizontalMove * speed, verticalMove * speed, 0);
+    }
+
+    public void sonsPlay(int a){
+        if(a == 0){
+            audioController.Passo();
+        }else if(a == 1){
+            audioController.miadoGatoFunc();
+        }else if(a == 2){
+            audioController.CairNoChao();
+        }else if(a == 3){
+            audioController.Pulando();
+        }else if(a == 4){
+            audioController.foto();
+        }else if(a == 5){
+            audioController.caindo();
+        }else if(a == 6){
+            audioController.Escalando();
+        }
     }
 
 

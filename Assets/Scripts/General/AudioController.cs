@@ -34,6 +34,8 @@ public class AudioController : MonoBehaviour
     public FMOD.Studio.EventInstance pulandoSound;
     public FMOD.Studio.EventInstance passosSound;
 
+    public GameObject player;
+
     public void Start(){
         atualizarSom();
         BGM.SetActive(true);
@@ -46,9 +48,20 @@ public class AudioController : MonoBehaviour
         passosSound = FMODUnity.RuntimeManager.CreateInstance(passosSoundRef);
         fotoSound = FMODUnity.RuntimeManager.CreateInstance(fotoSoundRef);
         escalandoSound = FMODUnity.RuntimeManager.CreateInstance(escalandoSoundRef);
-        caindoChaoSoundRef = FMODUnity.RuntimeManager.CreateInstance(caindoChaoSoundRef);
-        caindoChaoSound = FMODUnity.RuntimeManager.CreateInstance(caindoSoundRef);
+        caindoChaoSound = FMODUnity.RuntimeManager.CreateInstance(caindoChaoSoundRef);
+        caindoSound = FMODUnity.RuntimeManager.CreateInstance(caindoSoundRef);
         pulandoSound = FMODUnity.RuntimeManager.CreateInstance(pulandoSoundRef);
+
+    }
+
+    void Update(){
+        miadoGato.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        passosSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        fotoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        escalandoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        caindoChaoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        caindoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        pulandoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
     }
     public void diaNoite(){
         dayNight = PlayerPrefs.GetInt("fase", 0);
@@ -69,13 +82,13 @@ public class AudioController : MonoBehaviour
         getActualVolume();
 
         //PERSONAGEM SONS
-        Foto.volume = somPersonagem;
-        passo.volume = somPersonagem;
-        escalando.volume = somPersonagem;
-        CairChao.volume = somPersonagem;
-        Caindo.volume = somPersonagem;
-        pulando.volume = somPersonagem;
-        Zoom.volume = somPersonagem;
+        miadoGato.setVolume(somPersonagem);
+        passosSound.setVolume(somPersonagem);
+        fotoSound.setVolume(somPersonagem);
+        escalandoSound.setVolume(somPersonagem);
+        caindoChaoSound.setVolume(somPersonagem);
+        caindoSound.setVolume(somPersonagem);
+        pulandoSound.setVolume(somPersonagem);
     }
 
     void getActualVolume(){
@@ -97,7 +110,7 @@ public class AudioController : MonoBehaviour
         escalandoSound.start();
     }
     public void CairNoChao(){
-        caindoChaoSoundRef.start();
+        caindoChaoSound.start();
     }
     public void caindo(){
         caindoChaoSound.start();

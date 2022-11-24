@@ -4530,7 +4530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &360784489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9737,7 +9737,7 @@ GameObject:
   - component: {fileID: 727026786}
   - component: {fileID: 727026785}
   - component: {fileID: 727026784}
-  - component: {fileID: 727026792}
+  - component: {fileID: 727026791}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -9960,7 +9960,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &727026792
+--- !u!114 &727026791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9972,7 +9972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 727026783}
 --- !u!1 &727245208
 GameObject:
   m_ObjectHideFlags: 0
@@ -11902,25 +11902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb7dbbecd362714fa7ab37bc9d293f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2078728039}
-  Foto: {fileID: 1139613350}
-  passo: {fileID: 1661657676}
-  escalando: {fileID: 1765524955}
-  CairChao: {fileID: 1913182775}
-  Caindo: {fileID: 464335532}
-  pulando: {fileID: 544524911}
-  Zoom: {fileID: 2078728039}
-  ararajuba:
-  - {fileID: 8300000, guid: d3b95bc43eccd364cb28350b12121854, type: 3}
-  - {fileID: 8300000, guid: 8812084bce30b77448e909202bbbf05e, type: 3}
-  - {fileID: 8300000, guid: 5c91cf4a3ed7b4c41bfbd9498d6f9b6e, type: 3}
-  gatoMiado:
-  - {fileID: 8300000, guid: 86bed1e5443328b4bb547808dc825ca0, type: 3}
-  - {fileID: 8300000, guid: f427351dfb494744da576563daad2ce8, type: 3}
-  - {fileID: 8300000, guid: b4a55965d5e30a44483890e2dc894e28, type: 3}
-  - {fileID: 8300000, guid: aa98772ee13b0d140a3b597d696c4ff7, type: 3}
-  - {fileID: 8300000, guid: 50b8cee714d0fb1439218273389af1ce, type: 3}
-  - {fileID: 8300000, guid: 7af51e2169a0fe7408469dc2327c2f7d, type: 3}
   somGeral: 0
   somAnimais: 0
   somBG: 0
@@ -11931,6 +11912,13 @@ MonoBehaviour:
   BG: {fileID: 360784488}
   BGTheme: {fileID: 2092864560}
   BGNight: {fileID: 1240403632}
+  miadoGatoRef:
+    Guid:
+      Data1: -2103597171
+      Data2: 1119174967
+      Data3: -157097546
+      Data4: -1436839215
+    Path: event:/miados
   passosSoundRef:
     Guid:
       Data1: 2015748778
@@ -11973,6 +11961,7 @@ MonoBehaviour:
       Data3: 1653865856
       Data4: 203217350
     Path: event:/Pulo
+  player: {fileID: 727026783}
 --- !u!4 &841670207
 Transform:
   m_ObjectHideFlags: 0
@@ -26250,7 +26239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2013436009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27123,7 +27112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 727026783}
+  attenuationObject: {fileID: 2078728032}
 --- !u!20 &2078728034
 Camera:
   m_ObjectHideFlags: 0
