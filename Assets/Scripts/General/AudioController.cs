@@ -25,6 +25,7 @@ public class AudioController : MonoBehaviour
     public FMODUnity.EventReference caindoChaoSoundRef;
     public FMODUnity.EventReference caindoSoundRef;
     public FMODUnity.EventReference pulandoSoundRef;
+    public FMODUnity.EventReference zoomSoundRef;
 
     public FMOD.Studio.EventInstance miadoGato;
     public FMOD.Studio.EventInstance fotoSound;
@@ -33,6 +34,7 @@ public class AudioController : MonoBehaviour
     public FMOD.Studio.EventInstance caindoSound;
     public FMOD.Studio.EventInstance pulandoSound;
     public FMOD.Studio.EventInstance passosSound;
+    public FMOD.Studio.EventInstance zoomSound;
 
     public GameObject player;
 
@@ -51,6 +53,7 @@ public class AudioController : MonoBehaviour
         caindoChaoSound = FMODUnity.RuntimeManager.CreateInstance(caindoChaoSoundRef);
         caindoSound = FMODUnity.RuntimeManager.CreateInstance(caindoSoundRef);
         pulandoSound = FMODUnity.RuntimeManager.CreateInstance(pulandoSoundRef);
+        zoomSound = FMODUnity.RuntimeManager.CreateInstance(zoomSoundRef);
 
     }
 
@@ -58,6 +61,7 @@ public class AudioController : MonoBehaviour
         miadoGato.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         passosSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         fotoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        zoomSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         escalandoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         caindoChaoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         caindoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
@@ -89,6 +93,7 @@ public class AudioController : MonoBehaviour
         caindoChaoSound.setVolume(somPersonagem);
         caindoSound.setVolume(somPersonagem);
         pulandoSound.setVolume(somPersonagem);
+        zoomSound.setVolume(somPersonagem);
     }
 
     void getActualVolume(){
@@ -102,6 +107,9 @@ public class AudioController : MonoBehaviour
 
     public void foto(){
         fotoSound.start();
+    }
+    public void zoom(){
+        zoomSound.start();
     }
     public void Passo(){
         passosSound.start();

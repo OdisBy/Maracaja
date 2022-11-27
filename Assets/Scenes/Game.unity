@@ -11961,6 +11961,13 @@ MonoBehaviour:
       Data3: 1653865856
       Data4: 203217350
     Path: event:/Pulo
+  zoomSoundRef:
+    Guid:
+      Data1: -685468219
+      Data2: 1180925348
+      Data3: -1298019410
+      Data4: 1474467367
+    Path: event:/Zoom
   player: {fileID: 727026783}
 --- !u!4 &841670207
 Transform:

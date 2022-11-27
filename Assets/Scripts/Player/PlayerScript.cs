@@ -363,6 +363,8 @@ public class PlayerScript : MonoBehaviour
             audioController.caindo();
         }else if(a == 6){
             audioController.Escalando();
+        }else if(a == 7){
+            audioController.zoom();
         }
     }
 
