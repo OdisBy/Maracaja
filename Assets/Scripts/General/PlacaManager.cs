@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlacaManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlacaManager : MonoBehaviour
     public bool isOpen;
     [SerializeField]
     PlayerScript player;
+    Placa placaScript;
     
     void Start()
     {
@@ -30,14 +32,14 @@ public class PlacaManager : MonoBehaviour
         }
     }
 
-    public void StartDisplay(string[] frases)
+    public void StartDisplay(string[] frases, Placa placa)
     {
-        Debug.Log("Start Display");
+        Debug.Log("Startando o display");
+        placaScript = placa;
         player.canMove = false;
         infoBox.SetActive(true);
         isOpen = true;
         sentencas.Clear();
-        sentencas.Enqueue("A");
         foreach(string frase in frases)
         {
                 sentencas.Enqueue(frase);
@@ -47,7 +49,7 @@ public class PlacaManager : MonoBehaviour
 
     public void NextSentence()
     {
-        Debug.Log("Next sentneca");
+        Debug.Log(sentencas.Count);
         if(sentencas.Count == 0)
         {
             EndDialogue();
@@ -55,7 +57,6 @@ public class PlacaManager : MonoBehaviour
             string sentenca = sentencas.Dequeue();
             informacoes.text = sentenca;
         }
-        
     }
     public void EndDialogue(){
         player.canMove = true;
@@ -63,6 +64,7 @@ public class PlacaManager : MonoBehaviour
         isOpen = false;
         nextIcon.SetActive(false);
         infoBox.SetActive(false);
+        placaScript.finalizarDialogo();
     }
 
 }

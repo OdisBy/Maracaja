@@ -15,8 +15,11 @@ public class Placa : MonoBehaviour
     public GameObject exclamacaoPop;
     public bool canBeOpen;
     public bool alreadyOpen;
+    public bool isOpenNow;
+
     [TextArea(3, 10)]
     public string[] sentencas;
+    public GameObject infoBox;
     void Start()
     {
         
@@ -25,14 +28,26 @@ public class Placa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canBeOpen && !manager.isOpen)
+        if (Input.GetKeyDown(KeyCode.E) && canBeOpen && !manager.isOpen && !isOpenNow)
         {
-           alreadyOpen = true;
-           exclamacaoPop.SetActive(false);
-           manager.StartDisplay(sentencas);
+            isOpenNow = true;
+            exclamacaoPop.SetActive(false);
+            manager.StartDisplay(sentencas, this);
+        }else {
+            
         }
 
         
+    }
+
+    public void finalizarDialogo(){
+        StartCoroutine(poderAbrirNovamente());
+    }
+
+    IEnumerator poderAbrirNovamente()
+    {
+        yield return new WaitForSeconds(3);
+        isOpenNow = false;
     }
 
     void OnTriggerEnter2D(Collider2D col)
