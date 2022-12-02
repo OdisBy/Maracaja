@@ -33,6 +33,7 @@ public class cutSceneDiaNoite : MonoBehaviour
     }
     IEnumerator cutsceneDN(){
         player.canMove = false;
+        textfinal.text = "";
         imagem.sprite = Sprite.Create (diaParaNoiteArray[0], new Rect (0, 0, 280, 180), new Vector2 ());
         yield return new WaitForSecondsRealtime(0.5f);
 
@@ -66,6 +67,7 @@ public class cutSceneDiaNoite : MonoBehaviour
 
     IEnumerator cutsceneND(){
         player.canMove = false;
+        textfinal.text = "";
         imagem.sprite = Sprite.Create (noiteParaDiaArray[0], new Rect (0, 0, 280, 180), new Vector2 ());
         yield return new WaitForSecondsRealtime(0.2f);
 

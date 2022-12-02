@@ -8,7 +8,7 @@ public class AnimalScript : MonoBehaviour
     internal string nome;
     public int id;
     internal int missaoAtual;
-    internal bool jaDialogou;
+    public bool jaDialogou;
     internal bool inQuest;
     internal bool recusou;
     internal bool redimiu;
@@ -29,12 +29,14 @@ public class AnimalScript : MonoBehaviour
     public QuestPageManager questPageManager;
     public Animator playerAnimator;
     public AnimalPageManager animalPageManager;
+    public soundEmitter soundEmitterRef;
 
     public GameObject itemQuestAnimal;
 
 
     void Start()
     {
+        jaDialogou = false;
         missaoAtual = PlayerPrefs.GetInt("fase", 0);
     }
 
@@ -58,8 +60,8 @@ public class AnimalScript : MonoBehaviour
     }
     public void dialogar()
     {
+        soundEmitterRef.pararSom();
         dialogueManager.StartDialogue(dialogue, this);
-
     }
 
     
@@ -71,6 +73,7 @@ public class AnimalScript : MonoBehaviour
 
     public void concluiuQuest(){
         missaoAtual = PlayerPrefs.GetInt("fase", 0);
+        pageTemplate.questFineshed = true;
         questPageManager.updateInfos();
         animalPageManager.updateInfos();
     }

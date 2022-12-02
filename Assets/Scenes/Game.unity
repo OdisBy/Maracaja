@@ -761,7 +761,7 @@ RectTransform:
   m_Children:
   - {fileID: 775609435}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2249,11 +2249,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.99, y: 38.9}
+  m_AnchoredPosition: {x: -151.02933, y: 38.9}
   m_SizeDelta: {x: 278.37, y: 29.608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143859438
@@ -2562,6 +2562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Tamandua
   id: 0
+  jaDialogou: 0
   podeFotografar: 0
   trigger: {fileID: 158691008}
   player: {fileID: 727026788}
@@ -2588,6 +2589,7 @@ MonoBehaviour:
   questPageManager: {fileID: 1674582552}
   playerAnimator: {fileID: 727026784}
   animalPageManager: {fileID: 798514195}
+  soundEmitterRef: {fileID: 1048629194}
   itemQuestAnimal: {fileID: 615869054}
 --- !u!95 &158691010
 Animator:
@@ -2859,7 +2861,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1164159}
+  m_Offset: {x: 0.09402959, y: -0.11641592}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2870,7 +2872,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.76716816}
+  m_Size: {x: 0.28881565, y: 0.76716816}
   m_EdgeRadius: 0
 --- !u!1 &198973591
 GameObject:
@@ -3030,7 +3032,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.09663078}
+  m_Offset: {x: 0.077985674, y: -0.09663078}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3041,7 +3043,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.80673844}
+  m_Size: {x: 0.68795997, y: 0.80673844}
   m_EdgeRadius: 0
 --- !u!1 &233026364
 GameObject:
@@ -3658,7 +3660,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.13059857}
+  m_Offset: {x: 0.1838978, y: -0.13059857}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3669,7 +3671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.73880285}
+  m_Size: {x: 0.34170008, y: 0.73880285}
   m_EdgeRadius: 0
 --- !u!1 &262581699
 GameObject:
@@ -4252,6 +4254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: "On\xE7a"
   id: 3
+  jaDialogou: 0
   podeFotografar: 0
   trigger: {fileID: 298190019}
   player: {fileID: 727026788}
@@ -4276,6 +4279,7 @@ MonoBehaviour:
   questPageManager: {fileID: 1674582552}
   playerAnimator: {fileID: 727026784}
   animalPageManager: {fileID: 798514195}
+  soundEmitterRef: {fileID: 453084419}
   itemQuestAnimal: {fileID: 1232398805}
 --- !u!212 &298190021
 SpriteRenderer:
@@ -4518,67 +4522,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &360784488
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 360784490}
-  - component: {fileID: 360784489}
-  m_Layer: 0
-  m_Name: BG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &360784489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360784488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -297744818
-      Data2: 1172324885
-      Data3: 837608580
-      Data4: -1612260691
-    Path: event:/DayBG
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &360784490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360784488}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.720001, y: -0.36999893, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2078728035}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &365292239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,7 +4633,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.089232504}
+  m_Offset: {x: 0.1218425, y: -0.089232504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4701,7 +4644,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.821535}
+  m_Size: {x: 0.5501324, y: 0.821535}
   m_EdgeRadius: 0
 --- !u!1 &399293296
 GameObject:
@@ -5269,7 +5212,7 @@ RectTransform:
   - {fileID: 1925544228}
   - {fileID: 1600937454}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5761,6 +5704,7 @@ MonoBehaviour:
       Data3: -1666582625
       Data4: 2125105118
     Path: event:/Onca
+  animal: {fileID: 298190020}
   somAnimais: 0
 --- !u!61 &453084420
 BoxCollider2D:
@@ -6125,7 +6069,7 @@ RectTransform:
   m_Children:
   - {fileID: 740826020}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6528,7 +6472,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07150419}
+  m_Offset: {x: 0.116572686, y: -0.071504176}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6539,7 +6483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.85699165}
+  m_Size: {x: 0.5337051, y: 0.85699165}
   m_EdgeRadius: 0
 --- !u!1 &493857040
 GameObject:
@@ -7445,11 +7389,11 @@ RectTransform:
   m_Children:
   - {fileID: 233026365}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -44.104}
+  m_AnchoredPosition: {x: 135.5558, y: -44.104}
   m_SizeDelta: {x: 118.8675, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576889675
@@ -7783,7 +7727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.8, y: -15.2}
+  m_AnchoredPosition: {x: 37.8, y: -17.59874}
   m_SizeDelta: {x: 14.48468, y: 17.4089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593055899
@@ -9487,6 +9431,7 @@ MonoBehaviour:
       Data3: 1585690515
       Data4: -372842783
     Path: event:/Ararajuba
+  animal: {fileID: 1930492858}
   somAnimais: 0
 --- !u!61 &696646972
 BoxCollider2D:
@@ -9966,7 +9911,7 @@ Transform:
   m_Children:
   - {fileID: 696206529}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &727026791
 MonoBehaviour:
@@ -10013,11 +9958,11 @@ RectTransform:
   m_Children:
   - {fileID: 984538124}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 248.80623, y: -44.104}
+  m_AnchoredPosition: {x: 273.57672, y: -44.104}
   m_SizeDelta: {x: 118.8675, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727245210
@@ -10158,7 +10103,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07383582}
+  m_Offset: {x: 0.06626807, y: -0.07383582}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10169,7 +10114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.85232836}
+  m_Size: {x: 0.63343024, y: 0.85232836}
   m_EdgeRadius: 0
 --- !u!1 &740826019
 GameObject:
@@ -11475,7 +11420,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.072095156}
+  m_Offset: {x: 0.109797, y: -0.072095156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11486,7 +11431,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8558097}
+  m_Size: {x: 0.5130839, y: 0.8558097}
   m_EdgeRadius: 0
 --- !u!1 &798506337
 GameObject:
@@ -11920,10 +11865,6 @@ MonoBehaviour:
   somMusica: 0
   somPersonagem: 0
   dayNight: 0
-  BGM: {fileID: 2013436008}
-  BG: {fileID: 360784488}
-  BGTheme: {fileID: 2092864560}
-  BGNight: {fileID: 1240403632}
   miadoGatoRef:
     Guid:
       Data1: -2103597171
@@ -11980,6 +11921,34 @@ MonoBehaviour:
       Data3: -1298019410
       Data4: 1474467367
     Path: event:/Zoom
+  bgMusicaDiaSoundRef:
+    Guid:
+      Data1: -2025684778
+      Data2: 1326309715
+      Data3: -535660643
+      Data4: 1076973544
+    Path: event:/Orquestra-Selvagem
+  bgSoundDiaSoundRef:
+    Guid:
+      Data1: -297744818
+      Data2: 1172324885
+      Data3: 837608580
+      Data4: -1612260691
+    Path: event:/DayBG
+  bgMusicaNoiteSoundRef:
+    Guid:
+      Data1: -553500969
+      Data2: 1311156916
+      Data3: 51964047
+      Data4: -1187007369
+    Path: event:/NightTheme
+  bgSoundNoiteSoundRef:
+    Guid:
+      Data1: -20850444
+      Data2: 1328780199
+      Data3: 1460076951
+      Data4: -1186370582
+    Path: event:/NightBG
   player: {fileID: 727026783}
 --- !u!4 &841670207
 Transform:
@@ -12247,7 +12216,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.14005366}
+  m_Offset: {x: 0.1171979, y: -0.14005366}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12258,7 +12227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7198927}
+  m_Size: {x: 0.5547337, y: 0.7198927}
   m_EdgeRadius: 0
 --- !u!1 &928805420
 GameObject:
@@ -13410,6 +13379,9 @@ MonoBehaviour:
   somMusica: 0
   somPersonagem: 0
   GOConfiguracoes: {fileID: 1600937453}
+  audioController: {fileID: 841670206}
+  soundEmitterRef: []
+  player: {fileID: 727026788}
 --- !u!1 &1002580013
 GameObject:
   m_ObjectHideFlags: 0
@@ -13891,6 +13863,7 @@ MonoBehaviour:
       Data3: 226786178
       Data4: 1626098893
     Path: event:/Tamandua
+  animal: {fileID: 158691009}
   somAnimais: 0
 --- !u!1 &1051621875
 GameObject:
@@ -14186,7 +14159,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 3
+  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -15095,7 +15068,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07032229}
+  m_Offset: {x: 0.055289656, y: -0.070322275}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15106,7 +15079,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.85935545}
+  m_Size: {x: 0.5471946, y: 0.85935545}
   m_EdgeRadius: 0
 --- !u!1 &1108434450
 GameObject:
@@ -15506,11 +15479,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0583, y: -6.4819}
+  m_AnchoredPosition: {x: 4.244235, y: -6.4819}
   m_SizeDelta: {x: 594.1235, y: 61.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136647358
@@ -15928,7 +15901,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.079186454}
+  m_Offset: {x: 0.07846861, y: -0.07918644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15939,7 +15912,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8416271}
+  m_Size: {x: 0.58270884, y: 0.8416271}
   m_EdgeRadius: 0
 --- !u!1 &1158451933
 GameObject:
@@ -16169,7 +16142,7 @@ RectTransform:
   m_Children:
   - {fileID: 1766123016}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17317,67 +17290,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237361740}
   m_CullTransparentMesh: 1
---- !u!1 &1240403632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1240403633}
-  - component: {fileID: 1240403634}
-  m_Layer: 0
-  m_Name: BGNight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1240403633
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240403632}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.720001, y: -0.36999893, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2078728035}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1240403634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240403632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -20850444
-      Data2: 1328780199
-      Data3: 1460076951
-      Data4: -1186370582
-    Path: event:/NightBG
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1262623452
 GameObject:
   m_ObjectHideFlags: 0
@@ -18223,8 +18135,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.5
-  m_fontSizeBase: 2.5
+  m_fontSize: 2.23
+  m_fontSizeBase: 2.23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 2.87
@@ -18241,7 +18153,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 3
+  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -18259,7 +18171,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 3.7039795}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18330,6 +18242,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1361714838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361714839}
+  - component: {fileID: 1361714841}
+  - component: {fileID: 1361714840}
+  m_Layer: 5
+  m_Name: Caixa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1361714839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361714838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993622743}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2.9621, y: -20.1185}
+  m_SizeDelta: {x: 638.7848, y: 206.2881}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1361714840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361714838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: eae4eb4972656364ab15dfd3a123cbc7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1361714841
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361714838}
+  m_CullTransparentMesh: 1
 --- !u!1 &1367027253
 GameObject:
   m_ObjectHideFlags: 0
@@ -18590,7 +18577,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.057912484}
+  m_Offset: {x: 0.077934615, y: -0.05791247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -18601,7 +18588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.88417506}
+  m_Size: {x: 0.6298227, y: 0.88417506}
   m_EdgeRadius: 0
 --- !u!1 &1379447836
 GameObject:
@@ -19437,11 +19424,11 @@ RectTransform:
   m_Children:
   - {fileID: 142690890}
   m_Father: {fileID: 1993622743}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 248.80623, y: -44.104}
+  m_AnchoredPosition: {x: 264.95044, y: -44.104}
   m_SizeDelta: {x: 118.8675, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470861452
@@ -19639,7 +19626,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06854947}
+  m_Offset: {x: 0.070324786, y: -0.068549454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -19650,7 +19637,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8629011}
+  m_Size: {x: 0.60148966, y: 0.8629011}
   m_EdgeRadius: 0
 --- !u!1 &1487176412
 GameObject:
@@ -19696,7 +19683,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.14064462}
+  m_Offset: {x: 0.12681088, y: -0.14064461}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -19707,7 +19694,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7187108}
+  m_Size: {x: 0.47781885, y: 0.7187108}
   m_EdgeRadius: 0
 --- !u!1 &1490432617
 GameObject:
@@ -19810,7 +19797,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.089823455}
+  m_Offset: {x: 0.05558899, y: -0.089823455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -19821,7 +19808,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8203531}
+  m_Size: {x: 0.55527663, y: 0.8203531}
   m_EdgeRadius: 0
 --- !u!1 &1500749347
 GameObject:
@@ -20287,7 +20274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -38, y: -15.2}
+  m_AnchoredPosition: {x: -38, y: -17.59874}
   m_SizeDelta: {x: 14.48468, y: 17.4089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1538531499
@@ -22088,7 +22075,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.09514195}
+  m_Offset: {x: 0.06875317, y: -0.09514195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -22099,7 +22086,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8097161}
+  m_Size: {x: 0.6416193, y: 0.8097161}
   m_EdgeRadius: 0
 --- !u!1 &1736885363
 GameObject:
@@ -22247,7 +22234,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06677665}
+  m_Offset: {x: 0.07102592, y: -0.06677663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -22258,7 +22245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.86644673}
+  m_Size: {x: 0.41601345, y: 0.86644673}
   m_EdgeRadius: 0
 --- !u!1 &1745948320
 GameObject:
@@ -24228,7 +24215,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07386798}
+  m_Offset: {x: 0.07121548, y: -0.07386798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -24239,7 +24226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.85226405}
+  m_Size: {x: 0.6018926, y: 0.85226405}
   m_EdgeRadius: 0
 --- !u!1 &1908236453
 GameObject:
@@ -24749,7 +24736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c5bb9866a4ed67439a1a45ab606d6c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1af482ee6544e5b4d85e110ddca87a98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24867,6 +24854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Ararajuba
   id: 1
+  jaDialogou: 0
   podeFotografar: 0
   trigger: {fileID: 1930492859}
   player: {fileID: 727026788}
@@ -24896,6 +24884,7 @@ MonoBehaviour:
   questPageManager: {fileID: 1674582552}
   playerAnimator: {fileID: 727026784}
   animalPageManager: {fileID: 798514195}
+  soundEmitterRef: {fileID: 696646971}
   itemQuestAnimal: {fileID: 1181200542}
 --- !u!58 &1930492859
 CircleCollider2D:
@@ -25591,6 +25580,7 @@ MonoBehaviour:
       Data3: 1995338890
       Data4: 584033366
     Path: event:/macaco
+  animal: {fileID: 2037365593}
   somAnimais: 0
 --- !u!61 &1971004379
 BoxCollider2D:
@@ -25810,6 +25800,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1361714839}
   - {fileID: 143859437}
   - {fileID: 1136647357}
   - {fileID: 39932449}
@@ -25858,7 +25849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6603774, g: 0.63857245, b: 0.63857245, a: 0.43529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -26060,7 +26051,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10223326}
+  m_Offset: {x: 0.15805493, y: -0.10223326}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -26071,7 +26062,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7955335}
+  m_Size: {x: 0.33056423, y: 0.7955335}
   m_EdgeRadius: 0
 --- !u!1 &2004084483
 GameObject:
@@ -26254,67 +26245,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &2013436008
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2013436010}
-  - component: {fileID: 2013436009}
-  m_Layer: 0
-  m_Name: BGM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2013436009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013436008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -2025684778
-      Data2: 1326309715
-      Data3: -535660643
-      Data4: 1076973544
-    Path: event:/Orquestra-Selvagem
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &2013436010
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013436008}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2078728035}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2017865003
 GameObject:
   m_ObjectHideFlags: 0
@@ -26416,7 +26346,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11818875}
+  m_Offset: {x: 0.20931374, y: -0.11818874}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -26427,7 +26357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7636225}
+  m_Size: {x: 0.291499, y: 0.7636225}
   m_EdgeRadius: 0
 --- !u!1 &2029949153
 GameObject:
@@ -26666,6 +26596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Macaco-Aranha
   id: 2
+  jaDialogou: 0
   podeFotografar: 0
   trigger: {fileID: 2037365592}
   player: {fileID: 727026788}
@@ -26694,6 +26625,7 @@ MonoBehaviour:
   questPageManager: {fileID: 1674582552}
   playerAnimator: {fileID: 727026784}
   animalPageManager: {fileID: 798514195}
+  soundEmitterRef: {fileID: 1971004378}
   itemQuestAnimal: {fileID: 1608474017}
 --- !u!212 &2037365594
 SpriteRenderer:
@@ -27039,7 +26971,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.10356839}
+  m_Offset: {x: 0.11887919, y: -0.103568375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -27050,7 +26982,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.79286325}
+  m_Size: {x: 0.6227733, y: 0.79286325}
   m_EdgeRadius: 0
 --- !u!1 &2077034131
 GameObject:
@@ -27197,11 +27129,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 78.33, y: -44.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2013436010}
-  - {fileID: 360784490}
-  - {fileID: 2092864561}
-  - {fileID: 1240403633}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27412,67 +27340,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &2092864560
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2092864561}
-  - component: {fileID: 2092864562}
-  m_Layer: 0
-  m_Name: BGTheme
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2092864561
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092864560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2078728035}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2092864562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092864560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -553500969
-      Data2: 1311156916
-      Data3: 51964047
-      Data4: -1187007369
-    Path: event:/NightTheme
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &2101260592
 GameObject:
   m_ObjectHideFlags: 0
@@ -27574,7 +27441,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06264004}
+  m_Offset: {x: 0.060506195, y: -0.06264004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -27585,7 +27452,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8747199}
+  m_Size: {x: 0.61218137, y: 0.8747199}
   m_EdgeRadius: 0
 --- !u!1 &2107023300
 GameObject:

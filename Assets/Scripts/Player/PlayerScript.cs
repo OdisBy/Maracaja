@@ -128,7 +128,8 @@ public class PlayerScript : MonoBehaviour
         //SOM MIADO
         if (Time.time > proximoMiado) {
             proximoMiado += period;
-            sonsPlay(2);
+            sonsPlay(1);
+            Debug.Log("miado");
         }
         
         //MOVEMENT
@@ -252,8 +253,6 @@ public class PlayerScript : MonoBehaviour
             if(isPaused)
             {
                 gameConfigs.fecharConfiguracoes();
-                isPaused = false;
-                Time.timeScale = 1;
                 return;
             }
             if(catalogue.isOpen){

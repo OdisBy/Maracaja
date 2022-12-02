@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1700
+  Length: 3100
 --- !u!114 &-6520123813183136801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638053976134998145
+  lastModified: 638055392953358812
   FileSizes:
   - Name: Desktop
     Value: 1614
@@ -181,7 +181,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1250
+  Length: 1180
 --- !u!114 &-3486160300340323569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   - {fileID: 3057343605701101963}
   StringsBanks:
   - {fileID: -6520123813183136801}
-  cacheTime: 638053976134998145
+  cacheTime: 638055392953358812
   cacheVersion: 131591
 --- !u!114 &188710706303922508
 MonoBehaviour:
@@ -484,7 +484,7 @@ MonoBehaviour:
   Path: Audio/cudoce/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638053976134967893
+  lastModified: 638055392953338804
   FileSizes:
   - Name: Desktop
     Value: 6070880

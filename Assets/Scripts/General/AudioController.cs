@@ -14,8 +14,6 @@ public class AudioController : MonoBehaviour
 
     public int dayNight;
 
-    public GameObject BGM, BG;
-    public GameObject BGTheme, BGNight;
 
 
     public FMODUnity.EventReference miadoGatoRef;
@@ -26,6 +24,10 @@ public class AudioController : MonoBehaviour
     public FMODUnity.EventReference caindoSoundRef;
     public FMODUnity.EventReference pulandoSoundRef;
     public FMODUnity.EventReference zoomSoundRef;
+    public FMODUnity.EventReference bgMusicaDiaSoundRef;
+    public FMODUnity.EventReference bgSoundDiaSoundRef;
+    public FMODUnity.EventReference bgMusicaNoiteSoundRef;
+    public FMODUnity.EventReference bgSoundNoiteSoundRef;
 
     public FMOD.Studio.EventInstance miadoGato;
     public FMOD.Studio.EventInstance fotoSound;
@@ -35,15 +37,15 @@ public class AudioController : MonoBehaviour
     public FMOD.Studio.EventInstance pulandoSound;
     public FMOD.Studio.EventInstance passosSound;
     public FMOD.Studio.EventInstance zoomSound;
+    public FMOD.Studio.EventInstance bgMusicaDiaSound;
+    public FMOD.Studio.EventInstance bgSoundDiaSound;
+    public FMOD.Studio.EventInstance bgMusicaNoiteSound;
+    public FMOD.Studio.EventInstance bgSoundNoiteSound;
 
     public GameObject player;
 
     public void Start(){
         atualizarSom();
-        BGM.SetActive(true);
-        BG.SetActive(true);
-        BGTheme.SetActive(false);
-        BGNight.SetActive(false);
 
 
         miadoGato = FMODUnity.RuntimeManager.CreateInstance(miadoGatoRef);
@@ -55,6 +57,12 @@ public class AudioController : MonoBehaviour
         pulandoSound = FMODUnity.RuntimeManager.CreateInstance(pulandoSoundRef);
         zoomSound = FMODUnity.RuntimeManager.CreateInstance(zoomSoundRef);
 
+        bgMusicaDiaSound = FMODUnity.RuntimeManager.CreateInstance(bgMusicaDiaSoundRef);
+        bgSoundDiaSound = FMODUnity.RuntimeManager.CreateInstance(bgSoundDiaSoundRef);
+        bgMusicaNoiteSound = FMODUnity.RuntimeManager.CreateInstance(bgMusicaNoiteSoundRef);
+        bgSoundNoiteSound = FMODUnity.RuntimeManager.CreateInstance(bgSoundNoiteSoundRef);
+
+        tocarDia();
     }
 
     void Update(){
@@ -66,26 +74,30 @@ public class AudioController : MonoBehaviour
         caindoChaoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         caindoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         pulandoSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+
+        bgMusicaDiaSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        bgSoundDiaSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        bgMusicaNoiteSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        bgSoundNoiteSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+
     }
     public void diaNoite(){
         dayNight = PlayerPrefs.GetInt("fase", 0);
+        atualizarSom();
 
         if(dayNight % 2 == 0){
-            BGM.SetActive(true);
-            BG.SetActive(true);
-            BGTheme.SetActive(false);
-            BGNight.SetActive(false);
+            trocarNoiteParaDia();
         }else {
-            BGM.SetActive(false);
-            BG.SetActive(false);
-            BGTheme.SetActive(true);
-            BGNight.SetActive(true);
+            trocarDiaParaNoite();
         }
     }
     public void atualizarSom(){
         getActualVolume();
 
+        somPersonagem *= (somGeral / 1);
+        somBG *= (somGeral / 1);
         //PERSONAGEM SONS
+
         miadoGato.setVolume(somPersonagem);
         passosSound.setVolume(somPersonagem);
         fotoSound.setVolume(somPersonagem);
@@ -94,6 +106,11 @@ public class AudioController : MonoBehaviour
         caindoSound.setVolume(somPersonagem);
         pulandoSound.setVolume(somPersonagem);
         zoomSound.setVolume(somPersonagem);
+
+        bgMusicaDiaSound.setVolume(somBG);
+        bgSoundDiaSound.setVolume(somBG);
+        bgMusicaNoiteSound.setVolume(somBG);
+        bgSoundNoiteSound.setVolume(somBG);
     }
 
     void getActualVolume(){
@@ -126,9 +143,56 @@ public class AudioController : MonoBehaviour
     public void Pulando(){
         pulandoSound.start();
     }
-
     public void miadoGatoFunc(){
         miadoGato.start();
     }
 
+    public void tocarDia(){
+        atualizarSom();
+        bgMusicaDiaSound.start();
+        bgSoundDiaSound.start();
+    }
+    public void tocarNoite(){
+        atualizarSom();
+        bgMusicaNoiteSound.start();
+        bgSoundNoiteSound.start();
+    }
+    public void trocarDiaParaNoite(){
+        atualizarSom();
+        bgMusicaDiaSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        bgSoundDiaSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+        tocarNoite();
+    }
+    public void trocarNoiteParaDia(){
+        bgMusicaNoiteSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        bgSoundNoiteSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+        tocarDia();
+    }
+
+    public void pararSomConfig(){
+        dayNight = PlayerPrefs.GetInt("fase", 0);
+        atualizarSom();
+
+        if(dayNight % 2 == 0){
+            bgMusicaDiaSound.setPaused(true);
+            bgSoundDiaSound.setPaused(true);
+        }else {
+            bgMusicaNoiteSound.setPaused(true);
+            bgSoundNoiteSound.setPaused(true);
+        }
+    }
+    public void voltarSomConfig(){
+        dayNight = PlayerPrefs.GetInt("fase", 0);
+        atualizarSom();
+
+        if(dayNight % 2 == 0){
+            bgMusicaDiaSound.setPaused(false);
+            bgSoundDiaSound.setPaused(false);
+        }else {
+            bgMusicaNoiteSound.setPaused(false);
+            bgSoundNoiteSound.setPaused(false);
+        }
+    }
 }

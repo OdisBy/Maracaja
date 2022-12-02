@@ -11,19 +11,43 @@ public class gameConfigs : MonoBehaviour
     public Slider somMusicaSlider;
     public Slider somPersonagemSlider;
 
+
     public float somGeral;
     public float somAnimais;
     public float somBG;
     public float somMusica;
     public float somPersonagem;
     public GameObject GOConfiguracoes;
+
+    public AudioController audioController;
+
+    public soundEmitter[] soundEmitterRef;
+
+    public PlayerScript player;
+
+
+    float questIdFloat;
+    
     public void abrirConfiguracoes(){
+        audioController.pararSomConfig();
+    
         GOConfiguracoes.SetActive(true);
         setVolumeSlider();
     }
 
     public void fecharConfiguracoes(){
+        audioController.voltarSomConfig();
         GOConfiguracoes.SetActive(false);
+
+        player.isPaused = false;
+        Time.timeScale = 1;
+
+
+        audioController.atualizarSom();
+        foreach (soundEmitter item in soundEmitterRef)
+        {
+            item.atualizarSom();
+        }
     }
 
     public void quitGame(){

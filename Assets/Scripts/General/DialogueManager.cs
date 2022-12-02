@@ -81,6 +81,7 @@ public class DialogueManager : MonoBehaviour
                 //BOTOES
                 // closeButton.SetActive(true);
                 declineButton.SetActive(true);
+                fecharButton.SetActive(true);
 
                 //DIALOGO
                 dialogueText.text = inQuestSentenca;
