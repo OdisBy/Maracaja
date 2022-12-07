@@ -28,6 +28,7 @@ public class AudioController : MonoBehaviour
     public FMODUnity.EventReference bgSoundDiaSoundRef;
     public FMODUnity.EventReference bgMusicaNoiteSoundRef;
     public FMODUnity.EventReference bgSoundNoiteSoundRef;
+    public FMODUnity.EventReference successSoundRef;
 
     public FMOD.Studio.EventInstance miadoGato;
     public FMOD.Studio.EventInstance fotoSound;
@@ -41,6 +42,7 @@ public class AudioController : MonoBehaviour
     public FMOD.Studio.EventInstance bgSoundDiaSound;
     public FMOD.Studio.EventInstance bgMusicaNoiteSound;
     public FMOD.Studio.EventInstance bgSoundNoiteSound;
+    public FMOD.Studio.EventInstance successSound;
 
     public GameObject player;
 
@@ -62,6 +64,8 @@ public class AudioController : MonoBehaviour
         bgMusicaNoiteSound = FMODUnity.RuntimeManager.CreateInstance(bgMusicaNoiteSoundRef);
         bgSoundNoiteSound = FMODUnity.RuntimeManager.CreateInstance(bgSoundNoiteSoundRef);
 
+        successSound = FMODUnity.RuntimeManager.CreateInstance(successSoundRef);
+
         tocarDia();
     }
 
@@ -79,6 +83,7 @@ public class AudioController : MonoBehaviour
         bgSoundDiaSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         bgMusicaNoiteSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
         bgSoundNoiteSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
+        successSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(player));
 
     }
     public void diaNoite(){
@@ -111,6 +116,7 @@ public class AudioController : MonoBehaviour
         bgSoundDiaSound.setVolume(somBG);
         bgMusicaNoiteSound.setVolume(somBG);
         bgSoundNoiteSound.setVolume(somBG);
+        successSound.setVolume(somBG);
     }
 
     void getActualVolume(){
@@ -145,6 +151,9 @@ public class AudioController : MonoBehaviour
     }
     public void miadoGatoFunc(){
         miadoGato.start();
+    }
+    public void successSoundFunc(){
+        successSound.start();
     }
 
     public void tocarDia(){

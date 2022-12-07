@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   faseDia: 0
-  isUnlocked: 1
+  isUnlocked: 0
   inQuest: 0
   questFineshed: 0
   fotoItem: {fileID: 21300000, guid: b1ed7f016e0ce984c9584d5502ad9c08, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: e26f4a3bf72e6a041a1ea51b92246a13, type: 3}
   FotoReal: {fileID: 21300000, guid: ef86df1e541e13a42b6c41e5baa28bd2, type: 3}
   foto: {fileID: 21300000, guid: 67bd4d3d7241c4a4cb43b9b3de325197, type: 3}
+  comItem: 0
   infos_1: "<color=\"blue\">Nome:</color> Ararajuba(Guaruba guarouba)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Aves\r\n\n<color=\"blue\">Ordem:</color>
-    Psittaciformes\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Psittacidae\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    Psittaciformes\r\n\n<color=\"blue\">Fam\xEDlia:</color> Psittacidae\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
     F\xEDsica:</color> A ararajuba pode ser notada por seu pequeno porte (cerca de
     34cm), al\xE9m de suas cores claras e caracter\xEDsticas, que remetem \xE0 bandeira
     brasileira. Apesar destas caracter\xEDsticas ela \xE9 extremamente similar em

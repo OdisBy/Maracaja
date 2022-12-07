@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     private string redencaoSentenca;
     // private string finalSentenca = "Muito obrigado por me ajudar meu amiguinho. Pode retornar para casa agora!";
     private string concluiuSentenca;
+    private string retornarBase = "Agora retorne a sua base e então aperte a tecla <color=\"green\">P</color> para passar de fase.";
 
     public bool terminou;
 
@@ -62,10 +63,11 @@ public class DialogueManager : MonoBehaviour
         {
             if(animal.comItem){
                 sentencas.Clear();
-                sentencas.Enqueue(concluiuSentenca);
+                sentencas.Enqueue(concluiuSentenca + " " + retornarBase);
                 DisplayNextSentence();
 
                 fecharButton.SetActive(true);
+
                 redencaoButton.SetActive(false);
                 declineButton.SetActive(false);
                 acceptButton.SetActive(false);
@@ -123,7 +125,7 @@ public class DialogueManager : MonoBehaviour
         redencaoButton.SetActive(false);
         if(animalSelected.comItem){
             sentencas.Clear();
-            sentencas.Enqueue(concluiuSentenca);
+            sentencas.Enqueue(concluiuSentenca + " " + retornarBase);
             fecharButton.SetActive(true);
             animalSelected.concluiuQuest();
         }else{

@@ -38,7 +38,6 @@ public class soundEmitter : MonoBehaviour
         if(!animal.jaDialogou){
             getActualVolume();
             instanceFMOD.setVolume(somAnimais);
-            
             instanceFMOD.start();
         }
     }

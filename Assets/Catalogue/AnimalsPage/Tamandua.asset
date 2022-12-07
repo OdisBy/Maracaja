@@ -16,14 +16,15 @@ MonoBehaviour:
   faseDia: 1
   isUnlocked: 1
   inQuest: 0
-  questFineshed: 0
+  questFineshed: 1
   fotoItem: {fileID: 21300000, guid: aad0c3f95d8d5de4a8fcf06fb302d7ca, type: 3}
   fotoBloqueada: {fileID: 21300000, guid: 2f5187cef51334e49b47327f744baedf, type: 3}
   FotoReal: {fileID: 21300000, guid: 876297aed1f528b4eb23dc536548a867, type: 3}
   foto: {fileID: 21300000, guid: b2ecb79882d6a734f874c56f095ffdaa, type: 3}
-  infos_1: "<color=\"blue\">Nome:</color> Tamandu\xE1-Bandeira\n\n<color=\"blue\">Filo:</color>
+  comItem: 0
+  infos_1: "<color=\"blue\">Nome:</color> Tamandu\xE1-bandeira(Myrmecophaga trindactyla)\n\n<color=\"blue\">Filo:</color>
     Chordata\r\n\n<color=\"blue\">Classe:</color> Mammalia\r\n\n<color=\"blue\">Ordem:</color>
-    Pilosa\r\n\n<color=\"blue\">Fam\xEDlia:</color>: Mirmecofag\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
+    Pilosa\r\n\n<color=\"blue\">Fam\xEDlia:</color> Mirmecofag\xEDdeos\r\n\r\n<color=\"blue\">Descri\xE7\xE3o
     F\xEDsica:</color> O Tamandu\xE1-Bandeira pode ser identificado pela sua cauda
     peluda e seus p\xEAlos pretos e marrons, al\xE9m de sua boca longa que \xE9 usada
     para se alimentar de pequenos vermes e cupins"

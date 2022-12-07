@@ -32,6 +32,8 @@ public class AnimalScript : MonoBehaviour
     public soundEmitter soundEmitterRef;
 
     public GameObject itemQuestAnimal;
+    public GameObject particulas;
+    public AudioController AudioController;
 
 
     void Start()
@@ -61,7 +63,11 @@ public class AnimalScript : MonoBehaviour
     public void dialogar()
     {
         soundEmitterRef.pararSom();
-        dialogueManager.StartDialogue(dialogue, this);
+        if(comItem){
+            StartCoroutine(particulasItem());
+        }else{
+            dialogueManager.StartDialogue(dialogue, this);
+        }
     }
 
     
@@ -76,5 +82,15 @@ public class AnimalScript : MonoBehaviour
         pageTemplate.questFineshed = true;
         questPageManager.updateInfos();
         animalPageManager.updateInfos();
+    }
+
+    IEnumerator particulasItem(){
+        particulas.SetActive(true);
+        AudioController.successSoundFunc();
+        particulas.GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSecondsRealtime(3f);
+        particulas.GetComponent<ParticleSystem>().Stop();
+        particulas.SetActive(false);
+        dialogueManager.StartDialogue(dialogue, this);
     }
 }

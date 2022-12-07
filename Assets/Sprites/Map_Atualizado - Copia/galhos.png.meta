@@ -1,7 +1,283 @@
 fileFormatVersion: 2
 guid: 78d948bc814f02f41bb664b0322d7d31
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8521662912387953171
+    second: galhos_0
+  - first:
+      213: 4468639211456333891
+    second: galhos_1
+  - first:
+      213: 1169684458526921036
+    second: galhos_2
+  - first:
+      213: -5756808201126917857
+    second: galhos_3
+  - first:
+      213: -8493171322757298234
+    second: galhos_4
+  - first:
+      213: -1593761856815253158
+    second: galhos_5
+  - first:
+      213: -4825403866627116036
+    second: galhos_6
+  - first:
+      213: -5689578271037874902
+    second: galhos_7
+  - first:
+      213: 1679766993848779090
+    second: galhos_8
+  - first:
+      213: -3937949356965868009
+    second: galhos_9
+  - first:
+      213: -9032879568567074807
+    second: galhos_10
+  - first:
+      213: -836868002227167186
+    second: galhos_11
+  - first:
+      213: -2858822069494787342
+    second: galhos_12
+  - first:
+      213: -5732394174160809604
+    second: galhos_13
+  - first:
+      213: 1642016507633914626
+    second: galhos_14
+  - first:
+      213: 6749596259229520235
+    second: galhos_15
+  - first:
+      213: -7323214815126805362
+    second: galhos_16
+  - first:
+      213: 6099635432380467855
+    second: galhos_17
+  - first:
+      213: -1621264678919979234
+    second: galhos_18
+  - first:
+      213: -4643621133119359669
+    second: galhos_19
+  - first:
+      213: 3952150474221300451
+    second: galhos_20
+  - first:
+      213: 1041547631142611954
+    second: galhos_21
+  - first:
+      213: 1905297818683457341
+    second: galhos_22
+  - first:
+      213: -6326464277602373328
+    second: galhos_23
+  - first:
+      213: 6697449866286405287
+    second: galhos_24
+  - first:
+      213: 4970211087678102269
+    second: galhos_25
+  - first:
+      213: -7028819301646425722
+    second: galhos_26
+  - first:
+      213: 2912532070015714237
+    second: galhos_27
+  - first:
+      213: 2223433412262216392
+    second: galhos_28
+  - first:
+      213: -1724706208026763524
+    second: galhos_29
+  - first:
+      213: -2837649848956899769
+    second: galhos_30
+  - first:
+      213: 8111999728366888500
+    second: galhos_31
+  - first:
+      213: 3736534752068093044
+    second: galhos_32
+  - first:
+      213: 8194410212234393104
+    second: galhos_33
+  - first:
+      213: 6339389983844101410
+    second: galhos_34
+  - first:
+      213: -8966868808154377714
+    second: galhos_35
+  - first:
+      213: -567391077955944351
+    second: galhos_36
+  - first:
+      213: -9032071913825125045
+    second: galhos_37
+  - first:
+      213: -1858959331958481404
+    second: galhos_38
+  - first:
+      213: 2013831932687271422
+    second: galhos_39
+  - first:
+      213: -4733043297775489144
+    second: galhos_40
+  - first:
+      213: -4008181652588451832
+    second: galhos_41
+  - first:
+      213: 1430878783358265882
+    second: galhos_42
+  - first:
+      213: 4443909407698815081
+    second: galhos_43
+  - first:
+      213: -5982258005351207717
+    second: galhos_44
+  - first:
+      213: -5118313266545986471
+    second: galhos_45
+  - first:
+      213: -4163649818438735061
+    second: galhos_46
+  - first:
+      213: 3091509745544017338
+    second: galhos_47
+  - first:
+      213: 7692483716076446060
+    second: galhos_48
+  - first:
+      213: -7578585822625563397
+    second: galhos_49
+  - first:
+      213: 2386502640700368447
+    second: galhos_50
+  - first:
+      213: -3343456005979071335
+    second: galhos_51
+  - first:
+      213: -1366032828234863641
+    second: galhos_52
+  - first:
+      213: -1195146235428290390
+    second: galhos_53
+  - first:
+      213: 4212456988724721126
+    second: galhos_54
+  - first:
+      213: -5565556466267642213
+    second: galhos_55
+  - first:
+      213: 1151419492240731714
+    second: galhos_56
+  - first:
+      213: -2359060850284163413
+    second: galhos_57
+  - first:
+      213: -6365139317584892536
+    second: galhos_58
+  - first:
+      213: -9178856111568222513
+    second: galhos_59
+  - first:
+      213: 5993408068415183233
+    second: galhos_60
+  - first:
+      213: -1144656797531003744
+    second: galhos_61
+  - first:
+      213: -6689655541236582748
+    second: galhos_62
+  - first:
+      213: -5403196319088106476
+    second: galhos_63
+  - first:
+      213: -4690281576604321284
+    second: galhos_64
+  - first:
+      213: 7435070646436720866
+    second: galhos_65
+  - first:
+      213: 1664626446343446034
+    second: galhos_66
+  - first:
+      213: -7297474118046125035
+    second: galhos_67
+  - first:
+      213: 6385409231523357343
+    second: galhos_68
+  - first:
+      213: 5791227780502578980
+    second: galhos_69
+  - first:
+      213: 2257024178610762553
+    second: galhos_70
+  - first:
+      213: -7901176495191607212
+    second: galhos_71
+  - first:
+      213: 2286456631072216594
+    second: galhos_72
+  - first:
+      213: 351769952302771929
+    second: galhos_73
+  - first:
+      213: -1540053015572382754
+    second: galhos_74
+  - first:
+      213: -6911087786615172383
+    second: galhos_75
+  - first:
+      213: -2431662742384578242
+    second: galhos_76
+  - first:
+      213: -213837169023715004
+    second: galhos_77
+  - first:
+      213: 7586650135743070623
+    second: galhos_78
+  - first:
+      213: 7889076475918540430
+    second: galhos_79
+  - first:
+      213: 7086753752646814106
+    second: galhos_80
+  - first:
+      213: -7818274734202126573
+    second: galhos_81
+  - first:
+      213: 8201499622828794491
+    second: galhos_82
+  - first:
+      213: -5177463556737346825
+    second: galhos_83
+  - first:
+      213: -7871266426996621511
+    second: galhos_84
+  - first:
+      213: -5795928514724109069
+    second: galhos_85
+  - first:
+      213: -2779032970674358935
+    second: galhos_86
+  - first:
+      213: 8809807224436924704
+    second: galhos_87
+  - first:
+      213: -1909955136111494666
+    second: galhos_88
+  - first:
+      213: 2860057188510088516
+    second: galhos_89
+  - first:
+      213: -5048199240960815446
+    second: galhos_90
+  - first:
+      213: 598394706960370899
+    second: galhos_91
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -33,8 +309,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -101,7 +377,1939 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: galhos_0
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 715
+        width: 142
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3123184e447034670800000000000000
+      internalID: 8521662912387953171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_1
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 715
+        width: 135
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3488c3cdfabc30e30800000000000000
+      internalID: 4468639211456333891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_2
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 728
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41dac951dd8b3010800000000000000
+      internalID: 1169684458526921036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 689
+        width: 81
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1946c32175bb10b0800000000000000
+      internalID: -5756808201126917857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 623
+        width: 204
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c744824ea1322a80800000000000000
+      internalID: -8493171322757298234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_5
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 668
+        width: 170
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59b5fb0902d1e9e0800000000000000
+      internalID: -1593761856815253158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_6
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 702
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3f4e7dfb8b80db0800000000000000
+      internalID: -4825403866627116036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_7
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 689
+        width: 94
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d910905be8a01b0800000000000000
+      internalID: -5689578271037874902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_8
+      rect:
+        serializedVersion: 2
+        x: 3459
+        y: 702
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25148cd5e2bbf4710800000000000000
+      internalID: 1679766993848779090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_9
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 668
+        width: 172
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e429a8ce79959c0800000000000000
+      internalID: -3937949356965868009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_10
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 681
+        width: 164
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9000da004e3c4a280800000000000000
+      internalID: -9032879568567074807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_11
+      rect:
+        serializedVersion: 2
+        x: 4491
+        y: 689
+        width: 94
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20eb536cf8d264f0800000000000000
+      internalID: -836868002227167186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_12
+      rect:
+        serializedVersion: 2
+        x: 4995
+        y: 623
+        width: 203
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f257b7797c6358d0800000000000000
+      internalID: -2858822069494787342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_13
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 686
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7150a0ced17270b0800000000000000
+      internalID: -5732394174160809604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_14
+      rect:
+        serializedVersion: 2
+        x: 4052
+        y: 686
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203d8dc505d99c610800000000000000
+      internalID: 1642016507633914626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_15
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 647
+        width: 81
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b615ea079026bad50800000000000000
+      internalID: 6749596259229520235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_16
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 647
+        width: 81
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e842d7afce6be5a90800000000000000
+      internalID: -7323214815126805362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_17
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 650
+        width: 189
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a8c66cb1246a450800000000000000
+      internalID: 6099635432380467855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_18
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 639
+        width: 112
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f36164d5c1089e0800000000000000
+      internalID: -1621264678919979234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_19
+      rect:
+        serializedVersion: 2
+        x: 4083
+        y: 647
+        width: 91
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b457ce0be2b8e8fb0800000000000000
+      internalID: -4643621133119359669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_20
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 647
+        width: 78
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2adabaebd8d630800000000000000
+      internalID: 3952150474221300451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_21
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 639
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fba7ea5d02547e00800000000000000
+      internalID: 1041547631142611954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_22
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 496
+        width: 203
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f34f9754af07a10800000000000000
+      internalID: 1905297818683457341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_23
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 587
+        width: 117
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031ff413242e338a0800000000000000
+      internalID: -6326464277602373328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_24
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 597
+        width: 89
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a61df43b2f12fc50800000000000000
+      internalID: 6697449866286405287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_25
+      rect:
+        serializedVersion: 2
+        x: 2017
+        y: 605
+        width: 107
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfad2c3a6acb9f440800000000000000
+      internalID: 4970211087678102269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_26
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 587
+        width: 115
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681a4fed51e947e90800000000000000
+      internalID: -7028819301646425722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_27
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 577
+        width: 94
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db348368c746b6820800000000000000
+      internalID: 2912532070015714237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_28
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 605
+        width: 109
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2cf9f78e83bde10800000000000000
+      internalID: 2223433412262216392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_29
+      rect:
+        serializedVersion: 2
+        x: 4355
+        y: 577
+        width: 94
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe57a877dc9018e0800000000000000
+      internalID: -1724706208026763524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_30
+      rect:
+        serializedVersion: 2
+        x: 4616
+        y: 587
+        width: 117
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74eabf33f74ae98d0800000000000000
+      internalID: -2837649848956899769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_31
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 532
+        width: 141
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436af5316cc939070800000000000000
+      internalID: 8111999728366888500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_32
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 496
+        width: 13
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474cbeb5f86dad330800000000000000
+      internalID: 3736534752068093044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_33
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 545
+        width: 130
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01670141ca468b170800000000000000
+      internalID: 8194410212234393104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_34
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 532
+        width: 141
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d62bf4a990af750800000000000000
+      internalID: 6339389983844101410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_35
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 522
+        width: 99
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e029d66d3584f8380800000000000000
+      internalID: -8966868808154377714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_36
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 511
+        width: 217
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160c5bd12d83028f0800000000000000
+      internalID: -567391077955944351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_37
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 509
+        width: 91
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dbba6c272a7a280800000000000000
+      internalID: -9032071913825125045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_38
+      rect:
+        serializedVersion: 2
+        x: 4091
+        y: 545
+        width: 130
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e97b63656a336e0800000000000000
+      internalID: -1858959331958481404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_39
+      rect:
+        serializedVersion: 2
+        x: 4781
+        y: 532
+        width: 141
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5c929197192fb10800000000000000
+      internalID: 2013831932687271422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_40
+      rect:
+        serializedVersion: 2
+        x: 5008
+        y: 496
+        width: 13
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f6c89823ad05eb0800000000000000
+      internalID: -4733043297775489144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_41
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 514
+        width: 126
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8082a32f5041068c0800000000000000
+      internalID: -4008181652588451832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_42
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 540
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a66be1ca08bd310800000000000000
+      internalID: 1430878783358265882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_43
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 522
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96887ebbf00fbad30800000000000000
+      internalID: 4443909407698815081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_44
+      rect:
+        serializedVersion: 2
+        x: 4470
+        y: 506
+        width: 94
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdced4c1a00cafca0800000000000000
+      internalID: -5982258005351207717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_45
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 509
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9547b5ab33918f8b0800000000000000
+      internalID: -5118313266545986471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_46
+      rect:
+        serializedVersion: 2
+        x: 4459
+        y: 509
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2be6d2dc8eb736c0800000000000000
+      internalID: -4163649818438735061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_47
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 446
+        width: 149
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab53fcaebbf37ea20800000000000000
+      internalID: 3091509745544017338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_48
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 475
+        width: 89
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61a639ee2131ca60800000000000000
+      internalID: 7692483716076446060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_49
+      rect:
+        serializedVersion: 2
+        x: 3644
+        y: 475
+        width: 89
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc779ee85473d690800000000000000
+      internalID: -7578585822625563397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_50
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 462
+        width: 151
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f362a7ae18f8e1120800000000000000
+      internalID: 2386502640700368447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_51
+      rect:
+        serializedVersion: 2
+        x: 4169
+        y: 467
+        width: 162
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c98791a78a991d0800000000000000
+      internalID: -3343456005979071335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_52
+      rect:
+        serializedVersion: 2
+        x: 4804
+        y: 446
+        width: 149
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebe9895160ea0de0800000000000000
+      internalID: -1366032828234863641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_53
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 454
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0c6aeb4dcf96fe0800000000000000
+      internalID: -1195146235428290390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_54
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 449
+        width: 94
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e57c8c0057a57a30800000000000000
+      internalID: 4212456988724721126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_55
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 446
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962dbaa1eb23c2b0800000000000000
+      internalID: -5565556466267642213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_56
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 446
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e287e7de9aaff00800000000000000
+      internalID: 1151419492240731714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_57
+      rect:
+        serializedVersion: 2
+        x: 4958
+        y: 446
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae084fc7aee24fd0800000000000000
+      internalID: -2359060850284163413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 363
+        width: 112
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dea7db38b7aa7a0800000000000000
+      internalID: -6365139317584892536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_59
+      rect:
+        serializedVersion: 2
+        x: 3527
+        y: 410
+        width: 109
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc68d898ff62e9080800000000000000
+      internalID: -9178856111568222513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_60
+      rect:
+        serializedVersion: 2
+        x: 4642
+        y: 363
+        width: 115
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d8df32ecdc2350800000000000000
+      internalID: 5993408068415183233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_61
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 389
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4ad6115bc5d10f0800000000000000
+      internalID: -1144656797531003744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_62
+      rect:
+        serializedVersion: 2
+        x: 3801
+        y: 381
+        width: 125
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6bed28ab19923a0800000000000000
+      internalID: -6689655541236582748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_63
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 389
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4142e0d339df305b0800000000000000
+      internalID: -5403196319088106476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_64
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 355
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9b0f991c5c8eeb0800000000000000
+      internalID: -4690281576604321284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_65
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 318
+        width: 165
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e07bc83c5dae2760800000000000000
+      internalID: 7435070646436720866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_66
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 342
+        width: 149
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e9502fee0f91710800000000000000
+      internalID: 1664626446343446034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_67
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 355
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514f04c04f92aba90800000000000000
+      internalID: -7297474118046125035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_68
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 363
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92237e5dd78d9850800000000000000
+      internalID: 6385409231523357343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_69
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 329
+        width: 141
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427ea3eabf29e5050800000000000000
+      internalID: 5791227780502578980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_70
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 318
+        width: 164
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ff8f388f825f10800000000000000
+      internalID: 2257024178610762553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_71
+      rect:
+        serializedVersion: 2
+        x: 4180
+        y: 329
+        width: 133
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458307007d1695290800000000000000
+      internalID: -7901176495191607212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_72
+      rect:
+        serializedVersion: 2
+        x: 4757
+        y: 355
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216556911302bbf10800000000000000
+      internalID: 2286456631072216594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_73
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 357
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dea9a968ecb1e400800000000000000
+      internalID: 351769952302771929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_74
+      rect:
+        serializedVersion: 2
+        x: 4323
+        y: 357
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbf98f11f1a0aae0800000000000000
+      internalID: -1540053015572382754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_75
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 308
+        width: 154
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2134b4642e610a0800000000000000
+      internalID: -6911087786615172383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_76
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 350
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e317d9a8e9ff04ed0800000000000000
+      internalID: -2431662742384578242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_77
+      rect:
+        serializedVersion: 2
+        x: 3469
+        y: 350
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449f09c4a3c480df0800000000000000
+      internalID: -213837169023715004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_78
+      rect:
+        serializedVersion: 2
+        x: 4316
+        y: 352
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9182284a12394960800000000000000
+      internalID: 7586650135743070623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_79
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 344
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ed309b141ab7d60800000000000000
+      internalID: 7889076475918540430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_80
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 344
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a990e25adf4395260800000000000000
+      internalID: 7086753752646814106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_81
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 313
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f787f5d88ef7390800000000000000
+      internalID: -7818274734202126573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_82
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 323
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72e53c147491d170800000000000000
+      internalID: 8201499622828794491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_83
+      rect:
+        serializedVersion: 2
+        x: 3477
+        y: 313
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2d3279354f528b0800000000000000
+      internalID: -5177463556737346825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_84
+      rect:
+        serializedVersion: 2
+        x: 4321
+        y: 323
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f786e63e4a3c290800000000000000
+      internalID: -7871266426996621511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_85
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 21
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4ef4859b9b09fa0800000000000000
+      internalID: -5795928514724109069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_86
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 21
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9653bd3bc34ee69d0800000000000000
+      internalID: -2779032970674358935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_87
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 21
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021ab388ef8b24a70800000000000000
+      internalID: 8809807224436924704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_88
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 21
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9342f4ce97e75e0800000000000000
+      internalID: -1909955136111494666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_89
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 21
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d32761cd6f0b720800000000000000
+      internalID: 2860057188510088516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_90
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 21
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae422f698131f9b0800000000000000
+      internalID: -5048199240960815446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: galhos_91
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 21
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcc8d7c0dced4800800000000000000
+      internalID: 598394706960370899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

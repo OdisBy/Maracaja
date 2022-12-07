@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 9e0fb711aefcb8041ae8b3b5f718e922
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2250600938859180267
+    second: UvyiSyF_0
+  - first:
+      213: -7198869585565120004
+    second: UvyiSyF_1
+  - first:
+      213: 1458492989657669781
+    second: UvyiSyF_2
+  - first:
+      213: 7970593027341662069
+    second: UvyiSyF_3
+  - first:
+      213: 3970144115702875946
+    second: UvyiSyF_4
+  - first:
+      213: 6768639847472874857
+    second: UvyiSyF_5
+  - first:
+      213: 3203348205784609298
+    second: UvyiSyF_6
+  - first:
+      213: -2045895011571417958
+    second: UvyiSyF_7
+  - first:
+      213: -253256404951251161
+    second: UvyiSyF_8
+  - first:
+      213: 4387779109939677985
+    second: UvyiSyF_9
+  - first:
+      213: -8113223905523954746
+    second: UvyiSyF_10
+  - first:
+      213: -1026434387595827977
+    second: UvyiSyF_11
+  - first:
+      213: 5837087382122251944
+    second: UvyiSyF_12
+  - first:
+      213: -8914924729797157757
+    second: UvyiSyF_13
+  - first:
+      213: -8870335744411263557
+    second: UvyiSyF_14
+  - first:
+      213: 5643660345761759603
+    second: UvyiSyF_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UvyiSyF_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 770
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f432cce5244c0e0800000000000000
+      internalID: -2250600938859180267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 770
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf90700d04a781c90800000000000000
+      internalID: -7198869585565120004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 770
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59061fb85ab9d3410800000000000000
+      internalID: 1458492989657669781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_3
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 770
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577b7ebd02c3d9e60800000000000000
+      internalID: 7970593027341662069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 514
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27c39bd909c81730800000000000000
+      internalID: 3970144115702875946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 514
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965cc29541a0fed50800000000000000
+      internalID: 6768639847472874857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_6
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 514
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2123da99834947c20800000000000000
+      internalID: 3203348205784609298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_7
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 514
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cba8b93558b93e0800000000000000
+      internalID: -2045895011571417958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 258
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727c9c934a04c7cf0800000000000000
+      internalID: -253256404951251161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 258
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b85d06ad584ec30800000000000000
+      internalID: 4387779109939677985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_10
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 258
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb8908f7d9086f80800000000000000
+      internalID: -8113223905523954746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_11
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 258
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4ea1edc5f51c1f0800000000000000
+      internalID: -1026434387595827977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6cf4e3c00810150800000000000000
+      internalID: 5837087382122251944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c58190133d74480800000000000000
+      internalID: -8914924729797157757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_14
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd9ae333ac36e480800000000000000
+      internalID: -8870335744411263557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UvyiSyF_15
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371861ede2f425e40800000000000000
+      internalID: 5643660345761759603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
