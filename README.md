@@ -3,9 +3,4 @@
 
 ### A game where you are a cat from Amazonian Rainforest and you are gonna help scientists to search about the biodiversity of Amazonian.
 
-#### Delivery date: Final of 2022
-
-
-
-Mechanics to do
-- [ ] Go down from bough
+#### Delivered at Dezembre/2022
